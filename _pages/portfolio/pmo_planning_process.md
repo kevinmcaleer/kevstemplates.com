@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: portfolio
 section: Portfolio
 name: PMO Planning Process
+
 ---
 
 Portfolio

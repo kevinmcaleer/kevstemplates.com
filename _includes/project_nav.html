@@ -1,0 +1,6 @@
+{% assign projects = site.pages | where: "section","Project" %}
+<ul>
+{% for item in projects %}
+<li><a href="{{ item.url }}">{{ item.name }}</a></li>
+{% endfor %}
+</ul>

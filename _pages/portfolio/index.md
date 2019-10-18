@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: portfolio
 section: Portfolio
 name: Portfolio
 ---
 
-Portfolio
+# Portfolio
 PMO Planning Process
 
 Roles and Responsibilities

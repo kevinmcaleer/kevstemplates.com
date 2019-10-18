@@ -1,0 +1,6 @@
+{% assign portfolio = site.pages | where: "section","Portfolio" %}
+<ul>
+{% for item in portfolio %}
+<li><a href="{{ item.url }}">{{ item.name }}</a></li>
+{% endfor %}
+</ul>

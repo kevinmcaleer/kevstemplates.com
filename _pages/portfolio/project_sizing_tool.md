@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio
 section: Portfolio
 name: Project sizing tool
 download: /download/project_sizing_tool.xlsx

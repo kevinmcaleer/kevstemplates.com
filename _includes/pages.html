@@ -1,0 +1,6 @@
+<div class="pages">
+{% assign pages = site.pages %}
+{% for item in pages %}
+<a href="{{ item.url }}">{{ item.name }}</a>
+{% endfor %}
+</div>

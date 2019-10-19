@@ -5,7 +5,7 @@ name: Projects
 ---
 
 # Projects
-- Project Mandate
+- [Project Mandate](project_mandate)
 - Project Brief
 - Project Product Description
 - Meeting Agenda

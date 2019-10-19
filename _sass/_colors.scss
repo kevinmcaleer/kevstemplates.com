@@ -1,0 +1,24 @@
+$clr-blue: #108BB9;
+$dark-blue: #072441;
+$clr-black: #222222;
+$clr-grey: #e9ecef;
+$clr-red: #ff0000;
+$clr-red-hover: #ffeeee;
+$clr-text-lg: #A9A9A9;
+$clr-nav-background: #ffffff;
+$clr-translucent: rgba(255,255,255,0.9);
+$clr-orange: #FF5800;
+$clr-darkgrey: #888888;
+
+/* import only the necessary Bootstrap files */
+// @import "bootstrap/scss/functions";
+// @import "bootstrap/scss/variables";
+// /* -------begin customization-------- */
+// /* change the primary theme color, and add a new theme color */
+// $theme-colors: (
+//   orange: $clr-orange, // orange
+//   cyan: $clr-blue // cyan
+// );
+// /* -------end customization-------- */
+// /* finally, import Bootstrap to set the changes! */
+// @import "bootstrap";

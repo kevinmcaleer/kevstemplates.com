@@ -1,0 +1,14 @@
+<h5>Themes</h5>
+{% assign theme_array = '' | split: ',' %}
+{% for page in site.pages %}
+  {% for individual_theme in page.themes %}
+    {% assign theme_array = theme_array | push: individual_theme %}
+  {% endfor %}
+{% endfor %}
+
+{% assign themes = theme_array | uniq %}
+<ul class="nav flex-column">
+{% for theme in themes %}
+  <li class="nav-item"><a class="nav-link" href="/themes#{{theme}}">{{ theme }}</a></li>
+{% endfor %}
+</ul>

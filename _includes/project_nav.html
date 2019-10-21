@@ -1,6 +1,7 @@
+
 {% assign projects = site.pages | where: "section","Project" %}
-<ul>
+<ul class="nav flex-column">
 {% for item in projects %}
-<li><a href="{{ item.url }}">{{ item.name }}</a></li>
+<li class="nav-item"><a class="nav-link {% if page.url == item.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a></li>
 {% endfor %}
 </ul>

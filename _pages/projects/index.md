@@ -1,10 +1,13 @@
 ---
 layout: project
-section: Projects
+section: Project
 name: Projects
+tags: [project toolkit, templates]
+themes: [governance]
 ---
 
 # Projects
+- [Project Lifecycle](project_lifecycle)
 - [Project Mandate](project_mandate)
 - Project Brief
 - Project Product Description

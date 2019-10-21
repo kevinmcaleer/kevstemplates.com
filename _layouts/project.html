@@ -1,11 +1,16 @@
 ---
 layout: default
 ---
+<div class="row">
+  <div class="project_nav col-12 col-sm-2">
+    {% include project_nav.html %}
+  </div>
 
-<div class="project_nav">
-  {% include project_nav.html %}
-</div>
+  <div class="content col-12 col-sm-8">
+    {{ content }}
+  </div>
 
-<div class="content">
-  {{ content }}
+  <div class="theme col-12 col-sm-2">
+    {% include themes.html %}
+  </div>
 </div>

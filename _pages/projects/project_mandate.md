@@ -5,6 +5,7 @@ name: Project Mandate
 description: The Project Mandate
 process: startup
 tags: [mandate, startup]
+themes: [startup]
 purpose:
 composition:
 derivation:

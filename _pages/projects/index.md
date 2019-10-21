@@ -1,15 +1,18 @@
 ---
 layout: project
 section: Project
-name: Projects
+name: Project Toolkit
 tags: [project toolkit, templates]
 themes: [governance]
 ---
+# Projects Toolkit
 
-# Projects
-- [Project Lifecycle](project_lifecycle)
+{% include project_toolkit.html %}
+---
+
+- [Project Lifecycle](lifecycle)
 - [Project Mandate](project_mandate)
-- Project Brief
+- [Project Brief](project_brief)
 - Project Product Description
 - Meeting Agenda
 - Event Management Checklist

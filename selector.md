@@ -1,6 +1,6 @@
 ---
-layout: default
-name: selector
+layout: page
+name: Selector
 ---
-
 {% include selector.html %}
+---

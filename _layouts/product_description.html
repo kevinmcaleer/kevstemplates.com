@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="row">
+
+  <div class="content col-12 col-sm-8">
+    {{ content }}
+  </div>
+  <div class="col-12 col-sm-2">
+    <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-header">Downloads</div>
+      <div class="card-body">
+        <a href="/download/{{page.download}}"><h5 class="card-title">{{page.download}}</h5></a>
+        <p class="card-text">{{page.download_text}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="theme col-12 col-sm-2">
+    <h5>Themes</h5>
+    {% for item in page.themes %}
+    <p class="text-muted">{{ item }}</p>
+    {% endfor %}
+    <h5>Links</h5>
+    <ul class="nav">
+    {% for link in page.links %}
+    <li class="nav-item"><a class="nav-link" href="{{ link.link }}">{{ link.name }}</a></li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>

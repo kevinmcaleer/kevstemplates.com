@@ -1,10 +1,12 @@
 ---
 layout: portfolio
 section: Portfolio
-name: Portfolio
+name: Portfolio Toolkit
 ---
 
-# Portfolio
+# Portfolio Toolkit
+{% include portfolio_toolkit.html %}
+---
 - PMO Planning Process
 - Roles and Responsibilities
 - SRO and Programme Manager Role Description

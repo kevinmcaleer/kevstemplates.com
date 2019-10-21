@@ -11,6 +11,9 @@ layout: default
   </div>
 
   <div class="theme col-12 col-sm-2">
-    {% include themes.html %}
+    <h5>Themes</h5>
+    {% for item in page.themes %}
+    <p class="text-muted">{{ item }}</p>
+    {% endfor %}
   </div>
 </div>

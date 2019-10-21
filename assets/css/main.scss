@@ -382,7 +382,7 @@ ul.nav.flex-column {
     font-size: 12pt;
     font-weight: bold;
   li.nav-item a.nav-link {
-    color: $clr-blue;
+    color: $clr-royal-blue-100;
     font-weight: normal;
 
     margin-bottom: 12px;
@@ -396,7 +396,7 @@ ul.nav.flex-column {
     color: white;
   }
   li.nav-item a.active:hover {
-    background-color: $clr-blue;
+    background-color: $clr-royal-blue-100;
     color: white;
   }
 }
@@ -464,6 +464,10 @@ ul.link {
   margin: 0px;
 }
 
+.dobutton:hover {
+  background-color: $clr-orange;
+  color: white;
+}
 .dotitle {
   width: $do_width;
   height: $do_height / 2;
@@ -717,4 +721,13 @@ ul.link {
 }
 .royal-blue-900 {
   background-color: $clr-royal-blue-900;
+}
+
+ul.nav.flex-column li.nav-item a.nav-link {
+  margin: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 11pt;
 }

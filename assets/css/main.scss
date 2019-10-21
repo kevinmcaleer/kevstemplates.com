@@ -437,6 +437,20 @@ ul.link {
     color: white;
     text-decoration:none;
   }
+  .col-sm-3 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .col-xs-6 {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .row {
+    padding: 0px;
+    margin: 0px;
+  }
 }
 .dobutton {
   // background-color: $clr-selector-grey;
@@ -447,7 +461,7 @@ ul.link {
   clip-path: polygon(85% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
   border: 1px solid white;
   font-size: 10pt;
-
+  margin: 0px;
 }
 
 .teal-100 {

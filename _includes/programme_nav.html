@@ -1,6 +1,6 @@
-{% assign projects = site.pages | where: "section","Project" %}
+{% assign programmes = site.pages | where: "section","Programme" %}
 <ul class="nav flex-column">
-  {% for item in projects %}
+  {% for item in programmes %}
   <li class="nav-item"><a class="nav-link {% if page.url == item.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a></li>
   {% endfor %}
 </ul>

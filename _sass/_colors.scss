@@ -82,16 +82,3 @@ $clr-royal-blue-600: #133155;
 $clr-royal-blue-700: #122C4C;
 $clr-royal-blue-800: #102744;
 $clr-royal-blue-900: #0F243E;
-
-/* import only the necessary Bootstrap files */
-// @import "bootstrap/scss/functions";
-// @import "bootstrap/scss/variables";
-// /* -------begin customization-------- */
-// /* change the primary theme color, and add a new theme color */
-// $theme-colors: (
-//   orange: $clr-orange, // orange
-//   cyan: $clr-blue // cyan
-// );
-// /* -------end customization-------- */
-// /* finally, import Bootstrap to set the changes! */
-// @import "bootstrap";

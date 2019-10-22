@@ -54,7 +54,7 @@ plugins:
 #   - vendor/ruby/
 
 gems:
-  - octicons
+  - jekyll-octicons
 
 collections:
   pages:

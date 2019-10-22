@@ -10,7 +10,7 @@ layout: default
     <div class="card bg-light mb-3" style="max-width: 18rem;">
       <div class="card-header">Downloads</div>
       <div class="card-body">
-        <a href="/download/{{page.download}}"><h5 class="card-title">{{page.download}}</h5></a>
+        {% octicon cloud-download %}<a href="/download/{{page.download}}"><h5 class="card-title">{{page.download}}</h5></a>
         <p class="card-text">{{page.download_text}}</p>
       </div>
     </div>

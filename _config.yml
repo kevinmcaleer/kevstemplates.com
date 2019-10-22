@@ -60,3 +60,6 @@ collections:
   pages:
     output: true
     permalink: /:path
+
+sass:
+    sass_dir: _sass

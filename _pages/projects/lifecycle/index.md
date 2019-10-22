@@ -10,8 +10,5 @@ themes: [governance, lifecycle]
 # Project Lifecycle
 
 The basic project lifecycle follows 5 key stages:
-- [Startup](startup)
-- [Initiation](initiation)
-- [Planning](planning)
-- [Delivery](delivery)
-- [Closure](closure)
+
+{% include startup.html %}

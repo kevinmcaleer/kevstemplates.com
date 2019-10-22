@@ -62,4 +62,4 @@ collections:
     permalink: /:path
 
 sass:
-    sass_dir: /_sass
+  style: :compressed

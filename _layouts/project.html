@@ -2,18 +2,21 @@
 layout: default
 ---
 <div class="row">
-  <div class="project_nav col-12 col-sm-12 col-lg-2">
+  <div class="project_nav col-12 col-sm-12 col-lg-2 col-xl-2">
     {% include project_nav.html %}
   </div>
 
-  <div class="content col-12 col-sm-12 col-lg-8">
+  <div class="content col-12 col-sm-12 col-lg-10 col-xl-8">
     {{ content }}
   </div>
 
-  <div class="theme bg-light col-12 col-sm-12 col-lg-2">
-    <h5>Themes</h5>
-    {% for item in page.themes %}
-    <p class="text-muted">{{ item }}</p>
-    {% endfor %}
+  <div class="theme col-12 col-sm-12 col-lg-12 col-xl-2">
+    <div class="container-fluid bg-light py-3 mb-3">
+      <h5>Themes</h5>
+      {% for item in page.themes %}
+      <p class="text-muted">{{ item }}</p>
+      {% endfor %}
+    </div>
+
   </div>
 </div>

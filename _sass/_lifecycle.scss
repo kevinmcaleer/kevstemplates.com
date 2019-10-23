@@ -111,7 +111,7 @@
         margin: 0px;
         padding: 0px;
       }
-      .start-shape, .process-shape {
+      .start-shape, .process-shape, .end-shape {
         padding-top: 5px;
         padding-bottom: 5px;
         margin-top: 5px;
@@ -131,13 +131,6 @@
         margin-left: 0px;
         margin-right: 0px;
       .lifecycle-row {
-        .empty-shape {
-          width: $do_width;
-          height: $do_height;
-          padding: 0px;
-          margin: 0px;
-          visibility: visible;
-        }
       }
       .lifecycle-border {
         border-right: 2px dashed white;
@@ -147,6 +140,14 @@
         width: fit-content;
       }
     }
-  }
+    .empty-shape {
+      width: $do_width;
+      height: $do_height;
+      padding: 0px;
+      margin: 0px;
+      visibility: visible;
+    }
+
+    }
 
 }

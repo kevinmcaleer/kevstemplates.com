@@ -6,6 +6,8 @@
 @import 'colors';
 @import 'fonts';
 @import 'custom';
+@import 'lifecycle';
+@import 'debug';
 // @import 'bootstrap';
 html {
 
@@ -24,10 +26,61 @@ body
     1fr 5fr 5fr 1fr;
   grid-template-areas:
     "header  header  header  header"
-    "....... breadcrumb breadcrumb ......."
+    "....... breadcrumbs breadcrumbs ......."
     "....... main    main    ......."
     "sitemap sitemap sitemap sitemap"
     "footer  footer  footer  footer"
+}
+
+@media (max-width: 700px) {
+  body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns:
+    1fr 10fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "breadcrumbs breadcrumbs breadcrumbs"
+    "..... main ....."
+    "sitemap sitemap sitemap"
+    "footer footer footer"
+  }
+  .breadcrumbs {
+    grid-area: breadcrumbs;
+
+    // background: $clr-grey;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 700px) {
+  .breadcrumbs {
+    grid-area: breadcrumbs;
+
+    // background: $clr-grey;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    ol {
+      li {
+        color:inherit;
+        // margin: 0px;
+        // padding: 0px;
+        a {
+          text-decoration: none;
+        }
+        a:hover {
+          color: $clr-orange;
+        }
+      }
+      .breadcrumb-item {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
 }
 
 .blog
@@ -211,27 +264,6 @@ p {
   grid-area: main;
   // grid-column:  3 / 6;
 }
-.breadcrumb {
-  grid-area: breadcrumb;
-  background: $clr-grey;
-
-
-  li {
-    color:inherit;
-    // margin: 0px;
-    // padding: 0px;
-    a {
-      text-decoration: none;
-    }
-    a:hover {
-      color: $clr-orange;
-    }
-  }
-  .breadcrumb-item {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
 
 .tags {
   display: grid;
@@ -351,6 +383,15 @@ div.blog
       }
   }
 
+@media (max-width: 900px) {
+  .project-navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .project-navbar-collapse.collapse {
+      display: none;
+  }
+}
   a.btn.btn-orange {
     background-color: $clr-orange;
     color: white;
@@ -454,69 +495,7 @@ ul.link {
   }
 }
 
-.lifecycle {
-  background-color: $clr-teal-300;
-  .nav-link {
-    border: 1px solid white;
-    color: white;
-  }
-  .nav-link.active {
-    background-color: $clr-teal-100;
-    border: 1px solid white;
-    border-bottom: 1px solid $clr-teal-100;
-    color: white;
-  }
-}
 
-.lifecycle-content {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-}
-
-.col-12.col-sm-2.border-right {
-  border-right: 2px dotted white;
-}
-
-.shape {
-  display: inline-block;
-  font-size: 10pt;
-  width: $do_width;
-  height: $do_height;
-  background-color: white;
-  color: $clr-teal-100;
-  padding: 5px;
-  // padding-top: 15px;
-  border: 1px solid white;
-  text-align: center;
-  align-content: center;
-  margin: 10px;
-}
-
-.shape:hover {
-  text-decoration: none;
-}
-
-.empty-shape {
-  background-color: $clr-teal-100;
-  border: 0px;
-}
-.process-shape {
-  clip-path: polygon(85% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
-}
-
-.start-shape {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
-.end-shape {
-
-  clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
-}
-
-.stage-shape {
-  padding-top: 15px;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
 
 .dobutton {
   // background-color: $clr-selector-grey;

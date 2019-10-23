@@ -2,15 +2,15 @@
 layout: default
 ---
 <div class="row">
-  <div class="project_nav col-12 col-sm-2">
+  <div class="project_nav col-12 col-sm-12 col-lg-2">
     {% include project_nav.html %}
   </div>
 
-  <div class="content col-12 col-sm-8">
+  <div class="content col-12 col-sm-12 col-lg-8">
     {{ content }}
   </div>
 
-  <div class="theme col-12 col-sm-2">
+  <div class="theme bg-light col-12 col-sm-12 col-lg-2">
     <h5>Themes</h5>
     {% for item in page.themes %}
     <p class="text-muted">{{ item }}</p>

@@ -1,0 +1,152 @@
+.shape {
+  display: inline-block;
+  font-size: 10pt;
+  width: $do_width;
+  height: $do_height;
+
+  color: $clr-teal-100;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  padding-right: 20px;
+
+  // padding-top: 15px;
+  border: 1px solid white;
+  text-align: left;
+  align-content: center;
+  margin-top: 10px;
+}
+
+.shape:hover {
+  text-decoration: none;
+  background-color: $clr-banana-100;
+  border: 1px solid $clr-banana-100;
+  color: black;
+}
+
+.empty-shape {
+  // background-color: $clr-teal-100;
+  border: 0px;
+  background-color: inherit;
+}
+.process-shape {
+  clip-path: polygon(85% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+  padding-left: 5px;
+  background-color: white;
+}
+
+.start-shape {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  padding-left: 5px;
+  background-color: white;
+
+}
+
+.end-shape {
+  padding-left: 30px;
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
+  background-color: white;
+}
+
+.stage-shape {
+  padding-top: 15px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background-color: white;
+}
+
+.lifecycle {
+  background-color: $clr-teal-300;
+  .nav-link {
+    border: 1px solid white;
+    color: white;
+  }
+  .nav-link.active {
+    background-color: $clr-teal-100;
+    border: 1px solid white;
+    border-bottom: 1px solid $clr-teal-100;
+    color: white;
+  }
+  .nav-link:hover {
+    background-color: $clr-banana-100;
+    color: black;
+    border: 1px solid $clr-banana-100;
+  }
+}
+
+.lifecycle-content {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.lifecycle-row {
+  width: 100%;
+  text-align: center; // center the content of the container
+}
+
+// for screen sizes less than 576px
+@include media-breakpoint-up(xs){
+  .lifecycle-content {
+    .row {
+      padding-left: 0px;
+      padding-right: 0px;
+      margin: 0px;
+    }
+    .lifecycle-row {
+      padding-left: 0px;
+      padding-right: 0px;
+      .lifecycle-border {
+        border-bottom: 2px dashed white;
+        align-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+      .empty-shape {
+        // background-color: $clr-stone-100;
+        border: 0px;
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+      .start-shape, .process-shape {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+    .col-sm-8 {
+      margin: 0px;
+    }
+  }
+}
+
+// for screen sized more than 577px
+@include media-breakpoint-up(md) {
+  .lifecycle-content {
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+      .lifecycle-row {
+        .empty-shape {
+          width: $do_width;
+          height: $do_height;
+          padding: 0px;
+          margin: 0px;
+          visibility: visible;
+        }
+      }
+      .lifecycle-border {
+        border-right: 2px dashed white;
+        border-bottom: 0px;
+      }
+      .col-sm-2 {
+        width: fit-content;
+      }
+    }
+  }
+
+}

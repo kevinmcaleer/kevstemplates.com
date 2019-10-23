@@ -34,12 +34,14 @@
 }
 .process-shape {
   clip-path: polygon(85% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(85% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
   padding-left: 5px;
   background-color: white;
 }
 
 .start-shape {
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   padding-left: 5px;
   background-color: white;
 
@@ -48,12 +50,14 @@
 .end-shape {
   padding-left: 30px;
   clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
+  -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 25% 100%, 0 50%);
   background-color: white;
 }
 
 .stage-shape {
   padding-top: 15px;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   background-color: white;
 }
 

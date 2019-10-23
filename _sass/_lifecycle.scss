@@ -14,7 +14,9 @@
   border: 1px solid white;
   text-align: left;
   align-content: center;
-  margin-top: 10px;
+  margin: 5px;
+  overflow: hidden;
+  vertical-align: bottom;
 }
 
 .shape:hover {
@@ -26,8 +28,9 @@
 
 .empty-shape {
   // background-color: $clr-teal-100;
-  border: 0px;
+  border: 1px;
   background-color: inherit;
+  margin: 5px;
 }
 .process-shape {
   clip-path: polygon(85% 0, 100% 25%, 100% 100%, 0 100%, 0 0);
@@ -84,7 +87,7 @@
 }
 
 // for screen sizes less than 576px
-@include media-breakpoint-up(xs){
+@media (max-width: 990.98px){
   .lifecycle-content {
     .row {
       padding-left: 0px;
@@ -94,21 +97,22 @@
     .lifecycle-row {
       padding-left: 0px;
       padding-right: 0px;
+
       .lifecycle-border {
         border-bottom: 2px dashed white;
         align-content: center;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
       }
       .empty-shape {
-        // background-color: $clr-stone-100;
+        background-color: $clr-stone-100;
         border: 0px;
-        visibility: collapse;
-        height: 0px;
-        width: 0px;
-        margin: 0px;
+        display:none;
+        height: $do_height;
+        width: $do_width;
+        margin: 5px;
         padding: 0px;
       }
       .start-shape, .process-shape, .end-shape {
@@ -118,14 +122,16 @@
         margin-bottom: 5px;
       }
     }
-    .col-sm-8 {
+    .col-sm-8, .col-md-4, .col-sm-12, .col-12 {
       margin: 0px;
+      padding: 0px;
+      vertical-align: top;
     }
   }
 }
 
 // for screen sized more than 577px
-@include media-breakpoint-up(md) {
+@media (min-width: 991px) {
   .lifecycle-content {
     .row {
         margin-left: 0px;
@@ -136,16 +142,18 @@
         border-right: 2px dashed white;
         border-bottom: 0px;
       }
-      .col-sm-2 {
-        width: fit-content;
+      .col-lg-4, .col-lg-6, .col-lg-3 {
+        margin: 0px;
+        padding: 0px;
       }
     }
     .empty-shape {
       width: $do_width;
       height: $do_height;
       padding: 0px;
-      margin: 0px;
-      visibility: visible;
+      margin: 5px;
+      visibility: hidden;
+      display: inline-block;
     }
 
     }

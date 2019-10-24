@@ -1,10 +1,10 @@
-<div class="navbar navbar-expand-sm navbar-light">
-  <button class="btn btn-primary" data-toggle="collapse" data-target="#projectNavbarNav">Navigation</button>
+<div class="navbar navbar-expand-xl navbar-light">
+  <!-- <button class="btn btn-primary" data-toggle="collapse" data-target="#projectNavbarNav">Navigation</button> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#projectNavbarNav" aria-control="projectNavbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 {% assign projects = site.pages | where: "section","Project" %}
-  <div class="collapse flex-column" id="projectNavbarNav">
+  <div class="collapse navbar-collapse flex-column projectnav" id="projectNavbarNav">
     {% for item in projects %}
     <a class="nav-link {% if page.url == item.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a>
     {% endfor %}

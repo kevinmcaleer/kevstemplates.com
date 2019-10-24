@@ -1,5 +1,5 @@
 ---
-layout: portfolio
+layout: portfolio_section
 section: Portfolio
 name: Portfolio Toolkit
 ---

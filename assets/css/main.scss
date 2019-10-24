@@ -6,9 +6,13 @@
 @import 'colors';
 @import 'fonts';
 @import 'custom';
-@import 'lifecycle';
-@import 'debug';
+@import 'lifecycle'; // the lifecycle tool
+@import 'debug';     // the size debug tool
+@import 'selector';  // the toolkit selector
+@import 'article';   // each article page with title
+@import 'markdown_toc';  // markdown table of contents
 // @import 'bootstrap';
+
 html {
 
   font-family: $ff-s;
@@ -470,32 +474,6 @@ ul.link {
     padding: 3px 3px 3px 3px;
   }
 }
-.selector {
-  a {
-    color: white;
-    text-decoration:none;
-  }
-  a:hover {
-    color: white;
-    text-decoration:none;
-  }
-  .col-sm-3 {
-    padding: 0px;
-    margin: 0px;
-  }
-  .col-xs-6 {
-    padding: 0px;
-    margin: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .row {
-    padding: 0px;
-    margin: 0px;
-  }
-}
-
-
 
 .dobutton {
   // background-color: $clr-selector-grey;

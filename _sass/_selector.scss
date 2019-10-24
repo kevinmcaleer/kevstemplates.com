@@ -1,0 +1,33 @@
+// Toolkit Selector
+.selector {
+  a {
+    color: white;
+    text-decoration:none;
+  }
+  a:hover {
+    color: white;
+    text-decoration:none;
+  }
+  .col-sm-3 {
+    padding: 0px;
+    margin: 0px;
+  }
+  .col-xs-6 {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .row {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .selector {
+    .col-sm-3 {
+      width: 33.3%;
+    }
+  }
+}

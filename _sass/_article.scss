@@ -1,0 +1,33 @@
+// Article
+.row {
+  margin-right: 0px;
+
+  .article {
+    height: 120px;
+    // background-color: green;
+    .subject {
+      vertical-align: middle;
+      color: white;
+      margin-left: 30px;
+      margin-right: 0px;
+      padding-right: 0px;
+      // background-color: red;
+
+    }
+    .description {
+      // background-color: yellow;
+      margin-left: 0px;
+      font-size: 11pt;
+    }
+    .container-fluid {
+      margin-right: 0px;
+    }
+  }
+}
+
+.no-margin {
+  margin: 0px !important;
+}
+.no-padding {
+  padding: 0px !important;
+}

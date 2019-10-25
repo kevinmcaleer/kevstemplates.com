@@ -31,3 +31,12 @@
 .no-padding {
   padding: 0px !important;
 }
+
+@media (max-width: 576px) {
+  .description {
+    h4 {
+      font-weight: bold;
+    font-size: 14pt;
+    }
+  }
+}

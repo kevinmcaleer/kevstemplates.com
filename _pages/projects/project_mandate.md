@@ -11,8 +11,10 @@ composition:
 derivation:
 dependencies:
 acceptance_criteria:
-download: project_mandate.docx
-download_text: Project Mandate Word Template
+downloads: 
+ - name: Project mandate
+   description: Project Mandate Word Template
+   file: project_mandate.docx
 links:
  - name: Startup
    link: lifecycle/startup

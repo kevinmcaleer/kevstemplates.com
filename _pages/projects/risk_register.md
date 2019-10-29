@@ -11,4 +11,5 @@ downloads:
    file: raid_log.xlsx
 themes: [Risk management, Issue management, Governance]
 ---
-The Risk Register contains a list of all known project risksm issues, dependencies, assumptions, decisions and actions.
+# Risk Register / RAID Log
+The Risk Register contains a list of all known project risks issues, dependencies, assumptions, decisions and actions.

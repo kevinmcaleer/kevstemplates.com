@@ -1,5 +1,5 @@
 ---
-layout: project_description
+layout: product_description
 name: Project Initiation Document
 section: Project
 topic: Governance

@@ -13,6 +13,7 @@ themes: [governance]
 - [Project Lifecycle](lifecycle)
 - [Project Mandate](project_mandate)
 - [Project Brief](project_brief)
+- [Project Initiation Document](project_intiation_document)
 - Project Product Description
 - Meeting Agenda
 - Event Management Checklist
@@ -31,7 +32,7 @@ themes: [governance]
 - End of Project Report
 - Handover Document
 - Meeting Minutes
-- Project Initiation Document
+
 - Stage Plan
 - Work Package
 - Post Implementation Review

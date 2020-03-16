@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: product_description
 section: Project
 name: Project Brief
 description: The Project Brief

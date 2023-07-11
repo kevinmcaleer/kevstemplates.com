@@ -11,7 +11,7 @@ layout: default
       <div class="card-header">Downloads</div>
       <div class="card-body">
         {% for file in page.downloads %}
-        {% octicon cloud-download %}<a href="/downloads/{{file.file}}"><h5 class="card-title">{{file.name}}</h5></a>
+        <a href="/downloads/{{file.file}}"><h5 class="card-title">{{file.name}}</h5></a>
         <p class="card-text">{{file.description}}</p>
         {% endfor %}
       </div>

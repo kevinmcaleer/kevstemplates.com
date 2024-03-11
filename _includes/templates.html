@@ -1,6 +1,7 @@
 {% assign templates = site.downloads %}
 <ul>
 {% for template in templates %}
+  {{template}}
 <li><a href="{{template.url}}"></a>{{template.name}}</a></li>
 {% endfor %}
 </ul>

@@ -1,6 +1,7 @@
 <ul>
 <li></li>
-{% for file in include.files %}
+{% assign files = include.files %}
+{% for file in files %}
 
   <a href="{{file}}">{{file}}>/a>
 {% endfor %}

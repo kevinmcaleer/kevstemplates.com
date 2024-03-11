@@ -60,6 +60,9 @@ collections:
   pages:
     output: true
     permalink: /:path
+  templates:
+    output: true
+    permalink: /:path
 
 sass:
   style: :compressed

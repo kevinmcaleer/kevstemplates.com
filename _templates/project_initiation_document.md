@@ -10,4 +10,4 @@ files:
 ## {{page.description}}
 ---
 
-{% include files=files %}
+{% include files.html files=files %}

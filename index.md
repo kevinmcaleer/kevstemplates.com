@@ -7,5 +7,5 @@ layout: default
 
 # Welcome to Kev's templates
 
-{% include selector.html %
+{% include selector.html %}
 {% include pages.html %}

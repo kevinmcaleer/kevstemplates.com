@@ -5,6 +5,7 @@ name: Project Lifecycle
 description: The Project Lifecycle
 tags: [project, lifecycle, model, framework]
 themes: [governance, lifecycle]
+color: teal-100
 ---
 
 # Project Lifecycle

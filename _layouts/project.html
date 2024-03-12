@@ -6,7 +6,18 @@ layout: default
     {% include project_nav.html %}
   </div>
 
-  <div class="content col-12 col-sm-12 col-lg-10 col-xl-8">
+  <div class="col-12 col-md-9 col-lg-10">
+    <div class="row no-margin no-padding article container-fluid bg-light vt mb-3">
+      <header class="stone-800"><h5>Project Toolkit</h5></header>
+      <div class="col-4 no-margin col-md-4 mt-3 subject">
+        <p class="text-muted dotitle ml-4">{{page.topic}}</p>
+        <div class="dobutton ml-4 {{page.color}}">{{page.name}}</div>
+      </div>
+      <div class="col-8 description mt-3">
+        <h4 class="text-uppercase">{{ page.name }}</h4>
+        <p class="text-muted">{{ page.description }}</p>
+      </div>
+    </div>
     {{ content }}
   </div>
 

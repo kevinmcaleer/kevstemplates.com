@@ -4,6 +4,7 @@ section: Project
 name: Project Closure
 tags: [closure, lifecycle]
 themes: [governance]
+color: teal-100
 ---
 
 # Project Closure

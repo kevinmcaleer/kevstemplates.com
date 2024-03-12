@@ -4,6 +4,7 @@ section: Project
 name: Project Planning
 tags: [planning, lifecycle]
 themes: [governance]
+color: teal-100
 ---
 
 # Project Planning

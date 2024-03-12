@@ -32,6 +32,7 @@ github_username:  kevinmcaleer
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-octicons
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,8 +54,14 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+<<<<<<< Updated upstream
 # gems:
 #   - jekyll-octicons
+=======
+gems:
+  - jekyll-feed
+  - jekyll-octicons
+>>>>>>> Stashed changes
 
 collections:
   pages:
@@ -64,6 +71,6 @@ collections:
     output: true
     permalink: /:path
 
-sass:
-  style: :compressed
-  sass_dir: _sass
+# sass:
+#   style: :compressed
+#   sass_dir: _sass

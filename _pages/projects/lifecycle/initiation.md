@@ -4,6 +4,7 @@ section: Project
 name: Project Initiation
 tags: [initiation, lifecycle]
 themes: [governance]
+color: teal-100
 ---
 
 # Project Initiation

@@ -4,6 +4,7 @@ section: Project
 name: Project Startup
 tags: [startup, lifecycle]
 themes: [governance]
+color: teal-100
 ---
 # Project Startup
 

@@ -4,6 +4,7 @@ section: Project
 name: Project Delivery
 tags: [planning, lifecycle]
 themes: [governance]
+color: teal-100
 ---
 
 # Project Delivery

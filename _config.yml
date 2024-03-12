@@ -54,15 +54,6 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-<<<<<<< Updated upstream
-# gems:
-#   - jekyll-octicons
-=======
-gems:
-  - jekyll-feed
-  - jekyll-octicons
->>>>>>> Stashed changes
-
 collections:
   pages:
     output: true

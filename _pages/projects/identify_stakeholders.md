@@ -2,6 +2,7 @@
 layout: project
 name: Identify Stakeholders
 section: Project
+process: initiation
 tags: [Stakeholders, Planning, Cost]
 themes: [Planning, Stakeholder Engagement]
 color: purple-700

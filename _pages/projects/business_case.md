@@ -2,6 +2,7 @@
 layout: project
 name: Business Case
 section: Project
+process: initiation
 ---
 
 # Business Case

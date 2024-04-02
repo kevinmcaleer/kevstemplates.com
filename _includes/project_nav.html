@@ -1,5 +1,8 @@
 
 {% assign projects = site.pages | where: "section","Project" %}
+
+{% include sidebar_project_parts.html %}
+
 <ul class="nav flex-column">
 {% for item in projects %}
 <li class="nav-item"><a class="nav-link {% if page.url == item.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a></li>

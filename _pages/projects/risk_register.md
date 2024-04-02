@@ -1,6 +1,7 @@
 ---
 layout: product_description
 section: Project
+process: initiation
 topic: Risk
 name: Risk Register
 description: Manage Risks, Issues, Actions, Dependencies, Decisions and Assumptions in a RAID log

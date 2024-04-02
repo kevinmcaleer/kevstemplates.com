@@ -3,6 +3,9 @@ layout: default
 ---
 <div class="row">
 
+  <div class="col-12 col-sm-12 col-lg-2 col-xl-2">
+    {% include project_nav.html %}
+  </div>
   <div class="content col-12 col-sm-8">
     {{ content }}
   </div>
@@ -11,7 +14,7 @@ layout: default
       <div class="card-header">Downloads</div>
       <div class="card-body">
         {% for file in page.downloads %}
-        {% octicon download %}<a href="/downloads/{{file.file}}"><h5 class="card-title">{{file.name}}</h5></a>
+        <a href="/downloads/{{file.file}}"><h5 class="card-title black"><i class="fa-solid fa-file-arrow-down"></i> {{file.name}}</h5></a>
         <p class="card-text">{{file.description}}</p>
         {% endfor %}
       </div>

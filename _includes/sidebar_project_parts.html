@@ -1,0 +1,26 @@
+{% assign pages = site.pages| where_exp: "item", "item.path contains '/projects/lifecycle'" %}
+<h5>Project</h5>
+<ul>
+{% for page in pages %}
+<li><a href="{{page.url}}">{{page.name}}</a></li>
+{% endfor %}
+</ul>
+
+{% assign pages = site.pages| where_exp: "item", "item.path contains '/projects'" %}
+<h5>Startup</h5>
+<ul>
+{% for page in pages %}
+{% if page.process == 'startup' %}
+<li><a href="{{page.url}}">{{page.name}}</a></li>
+{% endif%}
+{% endfor %}
+</ul>
+
+<h5>Initiation</h5>
+<ul>
+{% for page in pages %}
+{% if page.process == 'initiation' %}
+<li><a href="{{page.url}}">{{page.name}}</a></li>
+{% endif%}
+{% endfor %}
+</ul>

@@ -5,9 +5,12 @@ name: Portfolio Toolkit
 ---
 
 # Portfolio Toolkit
+
 {% include portfolio_toolkit.html %}
+
 ---
-- PMO Planning Process
+
+- [PMO Planning Process](pmo_planning_process)
 - Roles and Responsibilities
 - SRO and Programme Manager Role Description
 - Process of Change

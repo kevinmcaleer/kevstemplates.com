@@ -1,0 +1,10 @@
+- name: Start up
+  link: /projects/lifecycle/startup
+- name: Initiation
+  link: /projects/lifecycle/initiation
+- name: Planning
+  link: /projects/lifecycle/planning
+- name: Delivery
+  link: /projects/lifecycle/delivery
+- name: Closure
+  link: /projects/lifecycle/closure

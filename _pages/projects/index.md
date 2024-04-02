@@ -14,6 +14,7 @@ themes: [governance]
 - [Project Mandate](project_mandate)
 - [Project Brief](project_brief)
 - [Project Initiation Document](project_initiation_document)
+- [Requirements](requirements)
 - Project Product Description
 - Meeting Agenda
 - Event Management Checklist

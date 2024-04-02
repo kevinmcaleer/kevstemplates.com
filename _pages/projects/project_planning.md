@@ -5,6 +5,13 @@ section: Project
 tags: [Planning]
 themes: [Planning]
 ---
+
+# Requirements Elicitation
+
+Click here for [Requirements](requirements)
+
+---
+
 # Project Planning
 
 The seven successful steps of planning

@@ -13,4 +13,4 @@ color: teal-100
 
 At the beginning of Project Startup a [Project Mandate](/projects/project_mandate) is completed, capturing the basics of the project.
 
-Next a [Project Brief](project_brief) is completed, further expanding the detail provided in the Project Mandate.
+Next a [Project Brief](projects/project_brief) is completed, further expanding the detail provided in the Project Mandate.

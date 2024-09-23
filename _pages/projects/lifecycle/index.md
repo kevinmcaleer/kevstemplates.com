@@ -12,4 +12,4 @@ color: teal-100
 
 The basic project lifecycle follows 5 key stages:
 
-{% include startup.html %}
+{% include project_startup.html %}

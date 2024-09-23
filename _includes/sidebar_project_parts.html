@@ -11,7 +11,7 @@
 <ul>
 {% for page in pages %}
 {% if page.process == 'startup' %}
-<li><a href="{{page.url}}">{{page.name}}</a></li>
+<li class="navlink"><a class="navitem" href="{{page.url}}">{{page.name}}</a></li>
 {% endif%}
 {% endfor %}
 </ul>
@@ -23,4 +23,13 @@
 <li><a href="{{page.url}}">{{page.name}}</a></li>
 {% endif%}
 {% endfor %}
+</ul>
+
+<h5>Delivery</h5>
+<ul>
+{% for page in pages %}
+{% if page.process == 'delivery' %}
+<li><a href="{{page.url}}">{{page.name}}</a></li>
+{% endif %}
+{% endfor %}    
 </ul>

@@ -8,7 +8,7 @@ color: teal-100
 ---
 # Project Startup
 
-{% include startup.html %}
+{% include project_startup.html %}
 ---
 
 At the beginning of Project Startup a [Project Mandate](/projects/project_mandate) is completed, capturing the basics of the project.

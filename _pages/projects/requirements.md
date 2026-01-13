@@ -1,15 +1,17 @@
 ---
-title: Requirements
+layout: project
+name: Requirements
 section: Project
+process: planning
 topic: Requirements
-description: Manage Business and System Requirements
-tags: [Requirements]
-layout: product_description
+description: Capturing, managing, and tracing business and system requirements.
+tags: [Requirements, Business Analysis, Traceability]
 downloads:
  - name: Requirements Template
    description: Excel Requirements Template
    file: requirements_template.xlsx
-themes: [Delivery]
+themes: [Planning, Delivery]
+last_updated: 2026-01-13
 ---
 
 # Requirements

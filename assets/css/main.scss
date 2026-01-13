@@ -553,11 +553,11 @@ ul.link {
 
 
 ul.nav.flex-column li.nav-item a.nav-link {
-  margin: 2px;
+  margin: 1px;
   padding-left: 5px;
   padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   font-size: 11pt;
 }
 
@@ -583,7 +583,7 @@ ul.nav.flex-column li.nav-item a.nav-link {
 
     .nav-item .nav-link {
       color: #495057;
-      padding: 0.25rem 0.5rem;
+      padding: 0.10rem 0.25rem;
       font-size: 0.85rem;
       border-radius: 0.25rem;
 

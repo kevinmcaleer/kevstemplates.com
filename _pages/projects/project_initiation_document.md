@@ -3,6 +3,7 @@ layout: product_description
 name: Project Initiation Document
 section: Project
 topic: Governance
+process: initiation
 description: A key project control and document describing the project in detail from all aspects.
 tags: [Governance, Initiation, Project Controls]
 downloads:

@@ -1,15 +1,17 @@
 ---
-layout: product_description
+layout: project
+name: Resource & Cost Modelling
 section: Project
+process: planning
 topic: Planning
-name: PMO Planning Process
-description: Planning resources, delivery and interdependencies
-tags: [Planning, Resource, Cost, Modelling]
+description: Planning resources, delivery and interdependencies with cost forecasting.
+tags: [Planning, Resource, Cost, Modelling, Forecasting]
 downloads:
  - name: Resource and Cost Model
    description: Model project resource costs against actuals
    file: resource_and_cost_model.xlsx
 themes: [Resource management, Cost management, Financial, Planning]
+last_updated: 2026-01-13
 ---
 
 # Resource and Cost Modelling

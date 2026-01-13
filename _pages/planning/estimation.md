@@ -259,7 +259,7 @@ The most detailed and accurate approach, but also most time-consuming.
 ### Process
 
 <div class="mermaid">
-flowchart TD
+flowchart LR
     A[Decompose\ninto tasks] --> B[Estimate\neach task]
     B --> C[Add\ncontingency]
     C --> D[Sum\ntotals]

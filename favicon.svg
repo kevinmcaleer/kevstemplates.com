@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="#3F8F92">
+  <!-- Clipboard body -->
+  <rect x="4" y="5" width="24" height="25" rx="2"/>
+  <!-- Clipboard clip -->
+  <rect x="10" y="2" width="12" height="6" rx="1"/>
+  <!-- Clip hole -->
+  <circle cx="16" cy="5" r="2" fill="white"/>
+  <!-- Checklist lines -->
+  <rect x="8" y="12" width="16" height="2" rx="0.5" fill="white"/>
+  <rect x="8" y="17" width="14" height="2" rx="0.5" fill="white"/>
+  <rect x="8" y="22" width="12" height="2" rx="0.5" fill="white"/>
+</svg>

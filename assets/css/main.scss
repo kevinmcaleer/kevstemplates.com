@@ -11,6 +11,7 @@
 @import 'selector';  // the toolkit selector
 @import 'article';   // each article page with title
 @import 'markdown_toc';  // markdown table of contents
+@import 'sidebar';   // collapsible site navigation sidebar
 // @import 'bootstrap';
 
 html {
@@ -562,4 +563,17 @@ ul.nav.flex-column li.nav-item a.nav-link {
 
 .black {
   color: black !important;
+}
+
+// Sidebar layout adjustments
+// On desktop, offset the entire body content for the fixed sidebar
+body.has-sidebar {
+  @media (min-width: 992px) {
+    header,
+    .breadcrumbs,
+    .sitemap,
+    footer {
+      margin-left: 280px;
+    }
+  }
 }

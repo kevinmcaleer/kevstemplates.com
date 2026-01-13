@@ -1,0 +1,328 @@
+// Site Sidebar Styles
+// Collapsible navigation inspired by Microsoft TechNet
+// Structure: Tomes > Volumes > Books > Sections > Chapters > Pages
+
+$sidebar-width: 280px;
+$sidebar-collapsed-width: 50px;
+$sidebar-bg: #f8f9fa;
+$sidebar-border: #dee2e6;
+$sidebar-text: #495057;
+$sidebar-active-bg: $clr-royal-blue-100;
+$sidebar-active-text: white;
+$sidebar-hover-bg: #e9ecef;
+$sidebar-header-bg: $clr-blue;
+$sidebar-transition: 0.3s ease;
+
+.site-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: $sidebar-collapsed-width;
+  background: $sidebar-bg;
+  border-right: 1px solid $sidebar-border;
+  z-index: 1000;
+  transition: width $sidebar-transition;
+  overflow: hidden;
+
+  &.expanded {
+    width: $sidebar-width;
+
+    .sidebar-content {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .toggle-text {
+      opacity: 1;
+    }
+  }
+
+  // Desktop: always expanded
+  @media (min-width: 992px) {
+    width: $sidebar-width;
+
+    .sidebar-content {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .sidebar-toggle {
+      display: none;
+    }
+  }
+}
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background: $sidebar-header-bg;
+  color: white;
+
+  i {
+    font-size: 1.25rem;
+  }
+
+  .toggle-text {
+    margin-left: 10px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity $sidebar-transition;
+  }
+
+  &:hover {
+    background: darken($sidebar-header-bg, 10%);
+  }
+}
+
+.sidebar-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity $sidebar-transition, visibility $sidebar-transition;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @media (min-width: 992px) {
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+  }
+}
+
+.sidebar-header {
+  padding: 15px;
+  background: $sidebar-header-bg;
+  color: white;
+  border-bottom: 1px solid $sidebar-border;
+
+  h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+
+    i {
+      margin-right: 8px;
+    }
+  }
+}
+
+// Navigation Tree Structure
+.nav-tree {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Base nav-item styling
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  color: $sidebar-text;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background $sidebar-transition;
+
+  &:hover {
+    background: $sidebar-hover-bg;
+    text-decoration: none;
+    color: $sidebar-text;
+  }
+
+  &.active {
+    background: $sidebar-active-bg;
+    color: $sidebar-active-text;
+
+    .nav-icon,
+    .nav-icon-sm {
+      color: $sidebar-active-text;
+    }
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Icons
+.nav-icon {
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+  color: $clr-royal-blue-100;
+  font-size: 0.9rem;
+}
+
+.nav-icon-sm {
+  width: 16px;
+  text-align: center;
+  margin-right: 8px;
+  color: #6c757d;
+  font-size: 0.75rem;
+}
+
+.nav-text {
+  flex: 1;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nav-arrow {
+  font-size: 0.65rem;
+  transition: transform $sidebar-transition;
+  color: #adb5bd;
+
+  &.rotated {
+    transform: rotate(-180deg);
+  }
+}
+
+// Hierarchy Levels - Indentation and Styling
+.nav-tome {
+  border-bottom: 1px solid $sidebar-border;
+}
+
+.nav-tome-header {
+  font-weight: 600;
+  background: lighten($sidebar-bg, 2%);
+  border-left: 3px solid transparent;
+
+  &:hover {
+    border-left-color: $clr-royal-blue-100;
+  }
+
+  .nav-icon {
+    color: $clr-blue;
+  }
+}
+
+.nav-volumes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-volume-header {
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  background: $sidebar-bg;
+}
+
+.nav-books {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-book-header {
+  padding-left: 35px;
+  font-size: 0.85rem;
+}
+
+.nav-sections {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-section {
+  .nav-item {
+    padding-left: 50px;
+    font-size: 0.8rem;
+  }
+
+  .nav-section-header {
+    font-weight: 500;
+  }
+}
+
+.nav-chapters {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-chapter {
+  .nav-item {
+    padding-left: 65px;
+    font-size: 0.8rem;
+  }
+}
+
+.nav-page {
+  .nav-item {
+    font-size: 0.8rem;
+  }
+
+  // Indentation based on context
+  .nav-volumes > & > .nav-item {
+    padding-left: 25px;
+  }
+
+  .nav-books > & > .nav-item {
+    padding-left: 40px;
+  }
+
+  .nav-sections > & > .nav-item {
+    padding-left: 55px;
+  }
+
+  .nav-chapters > & > .nav-item {
+    padding-left: 70px;
+  }
+}
+
+// Collapse animations
+.collapse {
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}
+
+// Body offset for fixed sidebar
+body.has-sidebar {
+  @media (min-width: 992px) {
+    margin-left: $sidebar-width;
+  }
+}
+
+// Main content offset
+.main-content-with-sidebar {
+  @media (min-width: 992px) {
+    margin-left: $sidebar-width;
+  }
+}
+
+// Scrollbar styling for sidebar
+.sidebar-content {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ced4da;
+    border-radius: 3px;
+
+    &:hover {
+      background: #adb5bd;
+    }
+  }
+}

@@ -2,7 +2,7 @@
 layout: project
 section: Project
 name: Project Lifecycle
-description: The Project Lifecycle
+description: Understanding the 5 key stages of the project lifecycle - Startup, Initiation, Planning, Delivery, and Closure. Essential framework for project success.
 tags: [project, lifecycle, model, framework]
 themes: [governance, lifecycle]
 color: teal-100

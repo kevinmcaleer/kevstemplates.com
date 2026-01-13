@@ -1,14 +1,30 @@
 ---
 ---
 
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>{% if page.name %}{{ page.name }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
+  <meta name="keywords" content="project management, templates, PM toolkit, {% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
+  <meta name="author" content="Kevin McAleer">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="{% if page.name %}{{ page.name }} | {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kevstemplates.com{{ page.url | remove: '.html' }}">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css">
-  <title>{{ site.title }}</title>
+
   <script src="/assets/js/jquery-3.2.1.min.js"></script>
   <script src="/assets/js/popper.min.js"></script>
   <script src="{{ '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' }}"></script>

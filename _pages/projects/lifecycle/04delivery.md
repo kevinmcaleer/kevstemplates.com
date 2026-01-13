@@ -2,7 +2,8 @@
 layout: project
 section: Project
 name: Project Delivery
-tags: [planning, lifecycle]
+description: The execution stage where the project plan is implemented, work packages are delivered, and progress is tracked against the business case.
+tags: [delivery, lifecycle, execution, implementation]
 themes: [governance]
 color: teal-100
 ---

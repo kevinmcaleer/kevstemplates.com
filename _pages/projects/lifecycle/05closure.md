@@ -2,7 +2,8 @@
 layout: project
 section: Project
 name: Project Closure
-tags: [closure, lifecycle]
+description: The final stage where lessons learned are captured, the Project Closure Report is completed, and project resources are released.
+tags: [closure, lifecycle, lessons learned, handover]
 themes: [governance]
 color: teal-100
 ---

@@ -2,7 +2,8 @@
 layout: project
 section: Project
 name: Project Planning
-tags: [planning, lifecycle]
+description: The planning stage for requirements gathering, design, and detailed documentation. Structure your project for successful delivery.
+tags: [planning, lifecycle, requirements, design]
 themes: [governance]
 color: teal-100
 ---

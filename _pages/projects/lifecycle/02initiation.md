@@ -2,7 +2,8 @@
 layout: project
 section: Project
 name: Project Initiation
-tags: [initiation, lifecycle]
+description: The initiation stage where the Project Initiation Document (PID) is created, the project team is formed, and the project plan is drafted.
+tags: [initiation, lifecycle, PID, project team]
 themes: [governance]
 color: teal-100
 ---

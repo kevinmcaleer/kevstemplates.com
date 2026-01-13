@@ -2,7 +2,8 @@
 layout: project
 section: Project
 name: Project Startup
-tags: [startup, lifecycle]
+description: The first stage of the project lifecycle where the Project Mandate and Project Brief are created to capture initial project scope and objectives.
+tags: [startup, lifecycle, project mandate, project brief]
 themes: [governance]
 color: teal-100
 ---

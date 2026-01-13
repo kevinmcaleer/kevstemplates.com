@@ -2,7 +2,8 @@
 layout: project
 section: Project
 name: Project Toolkit
-tags: [project toolkit, templates]
+description: Complete project management toolkit with templates, lifecycle guidance, and best practices for successful project delivery.
+tags: [project toolkit, templates, project management, lifecycle]
 themes: [governance]
 ---
 # Projects Toolkit

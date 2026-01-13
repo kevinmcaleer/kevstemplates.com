@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand navbar-light bg-light mb-4 rounded">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link {% if page.url == '/planning/' %}active font-weight-bold{% endif %}" href="/planning/">
+          <i class="fas fa-home mr-1"></i>Overview
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {% if page.url == '/planning/estimation/' %}active font-weight-bold{% endif %}" href="/planning/estimation/">
+          <i class="fas fa-calculator mr-1"></i>Estimation
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {% if page.url == '/planning/wbs/' %}active font-weight-bold{% endif %}" href="/planning/wbs/">
+          <i class="fas fa-sitemap mr-1"></i>WBS
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {% if page.url == '/planning/critical-path/' %}active font-weight-bold{% endif %}" href="/planning/critical-path/">
+          <i class="fas fa-project-diagram mr-1"></i>Critical Path
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link {% if page.url == '/planning/gantt-charts/' %}active font-weight-bold{% endif %}" href="/planning/gantt-charts/">
+          <i class="fas fa-chart-gantt mr-1"></i>Gantt Charts
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

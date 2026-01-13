@@ -42,11 +42,13 @@ bundle exec jekyll serve --watch --livereload
 
 Mermaid is included in the default layout and renders automatically.
 
+**Flowchart Direction**: Prefer **Left-to-Right (LR)** flowcharts over Top-Down (TD). LR flowcharts fit better on the page and are easier to read.
+
 **Usage in Markdown:**
 
 ```markdown
 <div class="mermaid">
-flowchart TD
+flowchart LR
     A[Start] --> B{Decision}
     B -->|Yes| C[Action 1]
     B -->|No| D[Action 2]

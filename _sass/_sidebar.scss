@@ -12,12 +12,13 @@ $sidebar-active-text: white;
 $sidebar-hover-bg: #e9ecef;
 $sidebar-header-bg: $clr-blue;
 $sidebar-transition: 0.3s ease;
+$header-height: 56px;
 
 .site-sidebar {
   position: fixed;
-  top: 0;
+  top: $header-height;
   left: 0;
-  height: 100vh;
+  height: calc(100vh - #{$header-height});
   width: $sidebar-collapsed-width;
   background: $sidebar-bg;
   border-right: 1px solid $sidebar-border;
@@ -299,12 +300,7 @@ $sidebar-transition: 0.3s ease;
   }
 }
 
-// Body offset for fixed sidebar - pushes all content right of sidebar
-body.has-sidebar {
-  @media (min-width: 992px) {
-    margin-left: $sidebar-width;
-  }
-}
+// Body offset handled in main.scss to allow full-width header
 
 // Scrollbar styling for sidebar
 .sidebar-content {

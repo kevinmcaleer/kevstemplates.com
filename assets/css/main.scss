@@ -566,14 +566,26 @@ ul.nav.flex-column li.nav-item a.nav-link {
 }
 
 // Sidebar layout adjustments
-// On desktop, offset the entire body content for the fixed sidebar
+// Header spans full width above sidebar
+// Content below header is offset for sidebar
+$sidebar-width: 280px;
+$header-height: 56px;
+
 body.has-sidebar {
   @media (min-width: 992px) {
-    header,
+    // Header is full width, above sidebar
+    header {
+      position: relative;
+      z-index: 1100;
+      margin-left: 0;
+    }
+
+    // Content below header is offset for sidebar
     .breadcrumbs,
+    .main-content,
     .sitemap,
     footer {
-      margin-left: 280px;
+      margin-left: $sidebar-width;
     }
   }
 }

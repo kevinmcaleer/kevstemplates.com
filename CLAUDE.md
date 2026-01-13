@@ -14,6 +14,25 @@ This file contains guidelines and requirements for Claude Code when working on t
 - **Icons**: FontAwesome
 - **Diagrams**: Mermaid.js v10
 - **Search**: Lunr.js (client-side)
+- **Containerization**: Docker with docker-compose
+
+## Development Setup
+
+### Using Docker (Recommended)
+
+```bash
+cd stacks
+docker-compose up
+```
+
+This starts a development server at http://localhost:4000 with LiveReload on port 35729.
+
+### Local Jekyll
+
+```bash
+bundle install
+bundle exec jekyll serve --watch --livereload
+```
 
 ## Content Guidelines
 
@@ -57,6 +76,12 @@ section: Projects  # Projects, Programmes, Portfolio, Methodologies, Best Practi
 description: Brief description for SEO (max 160 chars)
 tags: [relevant, tags, here]
 last_updated: YYYY-MM-DD
+process: initiation  # Lifecycle stage: startup, initiation, planning, delivery, closure
+themes: [governance, lifecycle]
+color: teal-100  # Bootstrap color class
+downloads:  # Optional downloadable files
+  - file: filename.docx
+    name: Display Name
 ---
 ```
 
@@ -83,36 +108,101 @@ This ensures consistent table styling across the site.
 ## File Structure
 
 ```
-_pages/
-├── projects/          # Project management content
-│   └── lifecycle/     # Project lifecycle stages
-├── programmes/        # Programme management content
-├── portfolio/         # Portfolio management content
-├── methodologies/     # PM methodologies (PRINCE2, Agile, etc.)
-└── best_practice/     # Best practice toolkit
-
-_includes/             # Reusable HTML components
-_layouts/              # Page layouts
-_data/                 # YAML data files (navigation, etc.)
-assets/
-├── css/              # Stylesheets
-├── js/               # JavaScript
-└── img/              # Images
-downloads/            # Downloadable templates (DOCX, XLSX)
+.
+├── _config.yml          # Jekyll configuration
+├── _data/               # YAML data files
+│   ├── navigation.yml   # Top navigation
+│   ├── lifecycle.yml    # Project lifecycle stages
+│   └── site_navigation.yml  # Hierarchical sidebar navigation
+├── _includes/           # Reusable HTML components
+├── _layouts/            # Page templates (default, project, programme, portfolio, etc.)
+├── _pages/              # Content collections
+│   ├── projects/        # Project management templates
+│   │   └── lifecycle/   # Project lifecycle stages
+│   ├── programmes/      # Programme management content
+│   ├── portfolio/       # Portfolio management content
+│   ├── methodologies/   # PM methodologies (PRINCE2, Agile, etc.)
+│   └── best_practice/   # Best practice toolkit
+├── _sass/               # SCSS stylesheets
+├── _templates/          # Template definitions
+├── assets/              # Static assets (css, img, js)
+├── bootstrap/           # Bootstrap framework files
+├── downloads/           # Downloadable templates (DOCX, XLSX)
+└── stacks/              # Docker configuration
 ```
 
-## Colour Scheme
+## Content Architecture
+
+### Toolkit Hierarchy
+
+1. **Projects** - Project management lifecycle and templates
+2. **Programmes** - Programme-level management guidance
+3. **Portfolio** - Portfolio management and PMO planning
+4. **Best Practice** - Cross-cutting guidance (communication, assurance, training, etc.)
+
+### Colour Scheme
 
 Primary colour: Teal `#3F8F92`
 
 Colour classes available (from `_sass/_colors.scss`):
 - `teal-100` through `teal-900`
-- `fire-red-100` through `fire-red-900`
-- `tangerine-100` through `tangerine-900`
-- `stone-100` through `stone-900`
-- `banana-100` through `banana-900`
-- `purple-100` through `purple-900`
-- `royal-blue-100` through `royal-blue-900`
+- `fire-red-100` through `fire-red-900` (Risks and issues)
+- `tangerine-100` through `tangerine-900` (Knowledge and learning)
+- `stone-100` through `stone-900` (Neutral controls)
+- `banana-100` through `banana-900` (People and resources)
+- `purple-100` through `purple-900` (Planning and quality)
+- `royal-blue-100` through `royal-blue-900` (Finance)
+
+## Adding New Content
+
+### New Template Page
+
+1. Create a new `.md` file in the appropriate `_pages/` subdirectory
+2. Add front matter with required fields (layout, name, section)
+3. Write content in Markdown
+4. If downloadable files are needed, add them to `downloads/` and reference in front matter
+
+### New Downloadable Template
+
+1. Place the file (DOCX, XLSX, PPTX) in `downloads/`
+2. Reference in the page's front matter under `downloads:`
+
+### New Navigation Item
+
+Edit `_data/navigation.yml` for top nav or `_data/lifecycle.yml` for project lifecycle.
+
+### Update Site Sidebar Navigation
+
+The site has a collapsible sidebar navigation (`_includes/site_sidebar.html`) with a hierarchical structure inspired by Microsoft TechNet. Edit `_data/site_navigation.yml` to modify the sidebar structure:
+
+```yaml
+# Hierarchy: Tomes > Volumes > Books > Sections > Chapters > Pages
+- name: Tome Name
+  icon: fa-icon-name
+  link: /tome-link
+  volumes:
+    - name: Volume Name
+      icon: fa-icon-name
+      books:
+        - name: Book Name
+          icon: fa-icon-name
+          sections:
+            - name: Section Name
+              link: /section-link
+```
+
+The sidebar automatically expands to show the current page's location in the hierarchy.
+
+## Key Files
+
+- `_config.yml` - Site configuration and collections
+- `_layouts/default.html` - Base HTML template
+- `_layouts/project.html` - Project toolkit pages with sidebar
+- `_includes/project_toolkit.html` - Project tools button grid
+- `_includes/site_sidebar.html` - Collapsible site navigation sidebar
+- `_sass/_colors.scss` - Color palette definitions
+- `_sass/_sidebar.scss` - Sidebar styling
+- `_data/site_navigation.yml` - Hierarchical site navigation structure
 
 ## GitHub Issues
 
@@ -129,3 +219,10 @@ Always include co-author line:
 ```
 Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
 ```
+
+## Notes
+
+- Mermaid.js is loaded for diagram support - use fenced code blocks with `mermaid` language
+- All content should be compatible with Kramdown Markdown parser
+- Bootstrap 4.3.1 classes available throughout templates
+- Site uses responsive 12-column grid layout

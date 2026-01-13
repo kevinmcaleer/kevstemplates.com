@@ -11,6 +11,7 @@
 @import 'selector';  // the toolkit selector
 @import 'article';   // each article page with title
 @import 'markdown_toc';  // markdown table of contents
+@import 'sidebar';   // collapsible site navigation sidebar
 // @import 'bootstrap';
 
 html {
@@ -498,7 +499,7 @@ ul.link {
   border: 0px;
   font-size: 10pt;
   margin: 0px;
-  
+
   text-align: left;
 }
 
@@ -564,6 +565,19 @@ ul.nav.flex-column li.nav-item a.nav-link {
   color: black !important;
 }
 
+// Sidebar layout adjustments
+// On desktop, offset the entire body content for the fixed sidebar
+body.has-sidebar {
+  @media (min-width: 992px) {
+    header,
+    .breadcrumbs,
+    .sitemap,
+    footer {
+      margin-left: 280px;
+    }
+  }
+}
+
 .table-single {
   border-collapse: separate;
   border-spacing: 0;
@@ -571,7 +585,7 @@ ul.nav.flex-column li.nav-item a.nav-link {
   border-radius: 5px;
   overflow: hidden;
   background-color: transparent !important; // Make table background transparent
-  
+
   th {
     background-color: #F5F5F5 !important; // Light grey background for header
 
@@ -582,12 +596,12 @@ ul.nav.flex-column li.nav-item a.nav-link {
     border-bottom: 1px solid #DDD;
     background-color: transparent !important; // Make table background transparent
   }
-  
+
   // Remove right border from last column
   td:last-child, th:last-child {
     border-right: none;
   }
-  
+
   // Remove bottom border from last row (fixes the double line issue)
   tr:last-child td {
     border-bottom: none;

@@ -38,11 +38,12 @@
   <link rel="stylesheet" href="{{ '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'}}" type="text/css">
   <!-- <link rel="stylesheet" href="{{ '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap-theme.min.css'}}" type="text/css"> -->
 </head>
-<body>
+<body class="has-sidebar">
 <!-- {% include debug.html %} -->
+  {% include site_sidebar.html %}
   {% include header.html %}
   {% include breadcrumb.html %}
-  <div class="containe main-content">
+  <div class="containe main-content main-content-with-sidebar">
 
     {{ content }}
   </div>

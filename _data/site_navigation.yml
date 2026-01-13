@@ -1,0 +1,219 @@
+# Site Navigation - Hierarchical structure inspired by Microsoft TechNet
+# Structure: Tomes > Volumes > Books > Sections > Chapters > Pages
+
+- name: Projects
+  icon: fa-project-diagram
+  link: /projects
+  volumes:
+    - name: Project Lifecycle
+      icon: fa-sync-alt
+      link: /projects/lifecycle
+      books:
+        - name: Start Up
+          icon: fa-play-circle
+          link: /projects/lifecycle/startup
+          sections:
+            - name: Project Mandate
+              link: /projects/project_mandate
+            - name: Project Brief
+              link: /projects/project_brief
+        - name: Initiation
+          icon: fa-flag
+          link: /projects/lifecycle/initiation
+          sections:
+            - name: Project Initiation Document
+              link: /projects/project_initiation_document
+            - name: Business Case
+              link: /projects/business_case
+            - name: Identify Stakeholders
+              link: /projects/identify_stakeholders
+        - name: Planning
+          icon: fa-calendar-alt
+          link: /projects/lifecycle/planning
+          sections:
+            - name: Project Planning
+              link: /projects/project_planning
+            - name: Risk Register
+              link: /projects/risk_register
+            - name: Requirements
+              link: /projects/requirements
+            - name: Deliverables WBS PBS
+              link: /projects/deliverables_wbs_pbs
+            - name: Quality Planning
+              link: /projects/quality_planning
+            - name: Resource & Cost Modelling
+              link: /projects/resource_and_cost_modelling
+            - name: Financial Planning
+              link: /projects/financial_planning
+            - name: Comms Strategy
+              link: /projects/comms_strategy
+            - name: Delivery Approach
+              link: /projects/delivery_approach
+            - name: Test Approach
+              link: /projects/test_approach
+        - name: Delivery
+          icon: fa-cogs
+          link: /projects/lifecycle/delivery
+          sections:
+            - name: Project Reporting
+              link: /projects/project_reporting
+            - name: Project Change Control
+              link: /projects/project_change_control
+            - name: Project Healthcheck
+              link: /projects/project_healthcheck
+            - name: Financial Forecasting
+              link: /projects/financial_forecasting
+            - name: Business Change Management
+              link: /projects/business_change_management
+        - name: Closure
+          icon: fa-check-circle
+          link: /projects/lifecycle/closure
+          sections:
+            - name: Project Closure Report
+              link: /projects/project_closure_report
+            - name: Lessons Learned
+              link: /projects/lessons_learned
+    - name: Project Tools
+      icon: fa-tools
+      books:
+        - name: Planning Tools
+          icon: fa-tasks
+          sections:
+            - name: Plan on a Page
+              link: /projects/plan_on_a_page
+            - name: Bullet Journal
+              link: /projects/bullet_journal
+        - name: Resource Tools
+          icon: fa-users
+          sections:
+            - name: Project Resources OBS
+              link: /projects/project_resources_obs
+
+- name: Programmes
+  icon: fa-layer-group
+  link: /programmes
+  volumes:
+    - name: Programme Management
+      icon: fa-sitemap
+      books:
+        - name: Programme Lifecycle
+          icon: fa-sync-alt
+          link: /programmes/programme_lifecycle
+        - name: Governance
+          icon: fa-gavel
+          sections:
+            - name: Programme Governance
+              link: /programmes/programme_governance
+            - name: Programme Assurance
+              link: /programmes/programme_assurance
+            - name: Programme Healthcheck
+              link: /programmes/programme_healthcheck
+        - name: Strategy
+          icon: fa-chess
+          sections:
+            - name: Blueprint
+              link: /programmes/blueprint
+            - name: Stakeholder Management
+              link: /programmes/stakeholder_management
+        - name: Knowledge
+          icon: fa-book
+          sections:
+            - name: Knowledge Management
+              link: /programmes/knowledge_management
+            - name: Information Management
+              link: /programmes/information_management
+
+- name: Portfolio
+  icon: fa-briefcase
+  link: /portfolio
+  volumes:
+    - name: Portfolio Management
+      icon: fa-chart-pie
+      books:
+        - name: Portfolio Lifecycle
+          icon: fa-sync-alt
+          link: /portfolio/portfolio_lifecycle
+        - name: Portfolio Governance
+          icon: fa-gavel
+          sections:
+            - name: Portfolio Management
+              link: /portfolio/portfolio_management
+            - name: Portfolio Healthcheck
+              link: /portfolio/portfolio_healthcheck
+            - name: Portfolio Reporting
+              link: /portfolio/portfolio_reporting
+        - name: Portfolio Resources
+          icon: fa-users-cog
+          sections:
+            - name: Portfolio Resource Mgmt
+              link: /portfolio/portfolio_resource_mgmt
+            - name: Portfolio Risk Mgmt
+              link: /portfolio/portfolio_risk_mgmt
+        - name: PMO
+          icon: fa-building
+          sections:
+            - name: PMO Planning Process
+              link: /portfolio/pmo_planning_process
+            - name: Project Sizing Tool
+              link: /portfolio/project_sizing_tool
+
+- name: Best Practice
+  icon: fa-star
+  link: /best_practice
+  volumes:
+    - name: Communication
+      icon: fa-comments
+      books:
+        - name: Communication
+          icon: fa-bullhorn
+          sections:
+            - name: Communication
+              link: /best_practice/communication
+            - name: Meeting Management
+              link: /best_practice/meeting_management
+    - name: Governance
+      icon: fa-balance-scale
+      books:
+        - name: Assurance
+          icon: fa-clipboard-check
+          sections:
+            - name: Assurance
+              link: /best_practice/assurance
+    - name: People
+      icon: fa-user-friends
+      books:
+        - name: Organisation
+          icon: fa-sitemap
+          sections:
+            - name: Organisation Structure
+              link: /best_practice/org_structure
+            - name: Roles
+              link: /best_practice/roles
+            - name: Recruitment Interviews
+              link: /best_practice/recruitment_interviews
+            - name: Training
+              link: /best_practice/training
+        - name: Impact Assessment
+          icon: fa-user-check
+          sections:
+            - name: Org Impact Assessment
+              link: /best_practice/org_impact_assessment
+            - name: People Impact Assessment
+              link: /best_practice/people_impact_assessment
+    - name: Planning
+      icon: fa-clipboard-list
+      books:
+        - name: Scheduling
+          icon: fa-calendar
+          sections:
+            - name: Schedule
+              link: /best_practice/schedule
+        - name: Product Management
+          icon: fa-boxes
+          sections:
+            - name: Product Descriptions
+              link: /best_practice/product_descriptions
+            - name: PBS
+              link: /best_practice/pbs
+            - name: PFD
+              link: /best_practice/pfd

@@ -26,13 +26,8 @@ flowchart LR
     CPM --> SCH[Develop\nSchedule]
     SCH --> OPT[Optimise]
 
-    style SC fill:#e3f2fd
-    style WBS fill:#fff3e0
-    style EST fill:#e8f5e9
-    style SEQ fill:#fce4ec
-    style CPM fill:#f3e5f5
-    style SCH fill:#fff8e1
-    style OPT fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class SC,WBS,EST,SEQ,CPM,SCH,OPT blue
 </div>
 
 ---

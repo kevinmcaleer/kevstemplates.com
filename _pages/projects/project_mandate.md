@@ -88,3 +88,11 @@ Provide an indication of who will be filling the following project roles:
 Provide details of the customer(s), user(s) and any other known interested parties
 
 ---
+
+## Related Resources
+
+- [Business Case](/projects/business_case) - Detailed justification for the project
+- [Project Brief](/projects/project_brief) - More detailed project description
+- [Project Initiation Document](/projects/project_initiation_document) - Full PID
+- [Identify Stakeholders](/projects/identify_stakeholders) - Stakeholder identification process
+- [Project Charter](/projects/project_charter) - Authorising the project

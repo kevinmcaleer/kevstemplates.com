@@ -61,9 +61,8 @@ flowchart LR
     D -->|No| F[Discuss\nDifferences]
     F --> C
 
-    style A fill:#e3f2fd
-    style C fill:#fff3e0
-    style E fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F blue
 </div>
 
 ### The Process
@@ -265,8 +264,8 @@ flowchart LR
     C --> D[Sum\ntotals]
     D --> E[Validate\nagainst top-down]
 
-    style A fill:#e3f2fd
-    style E fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E blue
 </div>
 
 1. **Break down work** - Use WBS to identify all tasks

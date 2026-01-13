@@ -27,11 +27,8 @@ flowchart LR
     IM --> MO[Monitor]
     MO --> ID
 
-    style ID fill:#e3f2fd
-    style AS fill:#fff3e0
-    style PL fill:#e8f5e9
-    style IM fill:#fce4ec
-    style MO fill:#f3e5f5
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class ID,AS,PL,IM,MO blue
 </div>
 
 ---
@@ -161,4 +158,6 @@ Ensure stakeholders are aware of significant risks and the plans to address them
 - [Project Healthcheck](/projects/project_healthcheck) - Risk review checklist
 - [PRINCE2 Risk Theme](/methodologies/prince2#risk-theme) - PRINCE2 approach to risk
 - [Portfolio Risk Management](/portfolio/portfolio_risk_mgmt) - Enterprise-level risk
+- [Getting Started](/getting-started/) - New to project management?
+- [PM Glossary](/glossary/) - Key PM terminology
 

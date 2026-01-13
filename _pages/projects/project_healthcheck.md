@@ -37,6 +37,9 @@ flowchart LR
     E --> H[Budget]
     E --> I[Quality]
     E --> J[Stakeholder Satisfaction]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F,G,H,I,J blue
     E --> K[Risk Management]
     F --> L[Conducting the Health Check]
     G --> L

@@ -118,6 +118,9 @@ flowchart LR
     C --> D[Add<br/>Visuals]
     D --> E[Review &<br/>Refine]
     E --> F[Share &<br/>Update]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F blue
 </div>
 
 ### 1. Gather Information

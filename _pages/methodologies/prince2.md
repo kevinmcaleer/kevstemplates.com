@@ -32,9 +32,8 @@ flowchart TB
     end
     principles --- themes --- processes
 
-    style principles fill:#e3f2fd
-    style themes fill:#fff3e0
-    style processes fill:#e8f5e9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class P1,T1,PR1 blue
 </div>
 
 ---
@@ -162,13 +161,8 @@ flowchart TD
     SB --> CS
     SB --> CP[Closing a Project\nCP]
 
-    style SU fill:#e1f5fe
-    style DP fill:#fff3e0
-    style IP fill:#e8f5e9
-    style CS fill:#fce4ec
-    style MP fill:#f3e5f5
-    style SB fill:#fff8e1
-    style CP fill:#efebe9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class SU,DP,IP,CS,MP,SB,CP blue
 </div>
 
 ### Starting Up a Project (SU)

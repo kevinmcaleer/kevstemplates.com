@@ -145,6 +145,8 @@ Choosing the right project management methodology is crucial for project success
 
 ## Related Resources
 
+- [Certifications Guide](/certifications/) - PMP, PRINCE2, Agile certifications
+- [Getting Started](/getting-started/) - New to project management?
 - [Project Lifecycle](/projects/lifecycle) - How methodologies fit within project stages
 - [Project Toolkit](/projects) - Templates and tools for any methodology
-- [Toolkit Selector](/selector) - Find resources by category
+- [PM Glossary](/glossary/) - Key PM terminology

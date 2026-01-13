@@ -62,6 +62,9 @@ flowchart LR
     B --> C[Analyse &<br/>Model]
     C --> D[Validate &<br/>Prioritise]
     D --> E[Manage &<br/>Communicate]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E blue
 </div>
 
 ---

@@ -16,6 +16,22 @@ Click here for [Requirements](requirements)
 
 The seven successful steps of planning
 
+<div class="mermaid">
+---
+title: Planning Steps
+---
+ flowchart LR
+    A[Design] --> B[Analysis]
+    B --> C[Dependencies]
+    C --> D[Estimation]
+    D --> E[Scheduling]
+    E --> F[Risks and issues]
+    F --> G[Communicate the plan]
+    
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F,G blue
+</div>
+
 1. [Design](#design)
 1. [Analysis](#analysis)
 1. [Dependencies](#dependencies)
@@ -25,8 +41,6 @@ The seven successful steps of planning
 1. [Communicate the plan](#communicate-the-plan)
 
 ---
-
-Sure! Here are examples of each item for the seven successful steps of planning:
 
 ## Design
 

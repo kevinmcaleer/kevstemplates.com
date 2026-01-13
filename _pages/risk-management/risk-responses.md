@@ -33,8 +33,8 @@ flowchart TB
     O --> SH[Share]
     O --> AC2[Accept]
 
-    style T fill:#ffcdd2
-    style O fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class R,T,O,AV,MI,TR,AC1,EX,EN,SH,AC2 blue
 </div>
 
 ---
@@ -98,8 +98,8 @@ flowchart LR
     D --> E[Track Progress]
     E --> F[Reassess Risk]
 
-    style A fill:#e3f2fd
-    style F fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F blue
 </div>
 
 ---

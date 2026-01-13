@@ -629,23 +629,32 @@ body.has-sidebar {
   }
 }
 
+.table {
+  border-width: 1px !important;
+}
+
 .table-single {
   border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid #DDD; // Thicker border for visibility
+  border: 1px solid #DDD;
   border-radius: 5px;
   overflow: hidden;
-  background-color: transparent !important; // Make table background transparent
+  background-color: transparent !important;
+
+  th, td {
+    border-top: none !important; // Override Bootstrap's default border-top
+    padding: 0.5rem 0.75rem; // Consistent padding
+  }
 
   th {
-    background-color: #F5F5F5 !important; // Light grey background for header
-
+    background-color: #F5F5F5 !important;
+    border-bottom: 1px solid #DDD;
   }
 
   td {
-    border-right: 1px solid #DDD; // Thicker internal borders
+    border-right: 1px solid #DDD;
     border-bottom: 1px solid #DDD;
-    background-color: transparent !important; // Make table background transparent
+    background-color: transparent !important;
   }
 
   // Remove right border from last column
@@ -663,4 +672,118 @@ body.has-sidebar {
     width: auto;
     display: inline-table; // Makes table shrink to content
   }
+}
+
+// =============================================================================
+// ANTHROPIC-STYLE TYPOGRAPHY
+// Modern, clean title styling inspired by anthropic.com
+// =============================================================================
+
+// Heading styles - tight tracking, clean weights
+h1, h2, h3, h4, h5, h6 {
+  font-family: $ff-s;
+  color: #1a1a1a;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+// Main page title (h1)
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+// Section headings (h2)
+h2 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+// Subsection headings (h3)
+h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// Minor headings (h4, h5, h6)
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+// Project page specific title styling
+.main-content {
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+
+    // First h1 after content start - hero title
+    &:first-child {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin-bottom: 1rem;
+    }
+  }
+
+  // Subtle styling for h2 section dividers
+  h2 {
+    color: #2a2a2a;
+
+    &::after {
+      display: none; // Remove any default pseudo-elements
+    }
+  }
+}
+
+// Article header title styling (in project layout)
+.article {
+  .description {
+    h4 {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      text-transform: none;
+      color: #1a1a1a;
+    }
+  }
+}
+
+// Lead paragraph styling (first paragraph after h1)
+.main-content > p:first-of-type,
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #444;
+  font-weight: 400;
 }

@@ -146,9 +146,8 @@ flowchart LR
         H1[Urgent Action]
     end
 
-    style Low fill:#c8e6c9
-    style Med fill:#fff3e0
-    style High fill:#ffcdd2
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class L1,M1,H1 blue
 </div>
 
 | Score Range | Risk Level | Management Approach |

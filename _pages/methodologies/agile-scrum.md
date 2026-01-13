@@ -63,13 +63,8 @@ flowchart LR
     end
     SR --> INC[Potentially\nShippable\nIncrement]
 
-    style PB fill:#e3f2fd
-    style SP fill:#fff3e0
-    style SB fill:#e8f5e9
-    style DS fill:#fce4ec
-    style SR fill:#f3e5f5
-    style RT fill:#fff8e1
-    style INC fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class PB,SP,SB,DS,SR,RT,INC blue
 </div>
 
 ---

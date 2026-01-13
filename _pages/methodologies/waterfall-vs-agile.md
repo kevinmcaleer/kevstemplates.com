@@ -43,12 +43,8 @@ flowchart LR
     TST --> DEP[Deploy]
     DEP --> MNT[Maintain]
 
-    style REQ fill:#e3f2fd
-    style DES fill:#fff3e0
-    style BLD fill:#e8f5e9
-    style TST fill:#fce4ec
-    style DEP fill:#f3e5f5
-    style MNT fill:#fff8e1
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class REQ,DES,BLD,TST,DEP,MNT blue
 </div>
 
 ### Characteristics
@@ -94,9 +90,8 @@ flowchart LR
     S1 --> S2 --> S3
     S3 -.->|Iterate| S1
 
-    style S1 fill:#e3f2fd
-    style S2 fill:#e8f5e9
-    style S3 fill:#fff3e0
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class W1,W2,W3 blue
 </div>
 
 ### Characteristics
@@ -245,13 +240,8 @@ flowchart TD
     CUST -->|Yes| AGI[AGILE]
     CUST -->|No| HYB2[HYBRID or\nWATERFALL]
 
-    style REQ fill:#fff3e0
-    style CHG fill:#e3f2fd
-    style CUST fill:#e3f2fd
-    style HYB1 fill:#fff8e1
-    style WAT fill:#e3f2fd
-    style AGI fill:#c8e6c9
-    style HYB2 fill:#fff8e1
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class REQ,CHG,CUST,HYB1,WAT,AGI,HYB2 blue
 </div>
 
 ---

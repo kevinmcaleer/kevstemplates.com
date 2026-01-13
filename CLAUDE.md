@@ -44,7 +44,7 @@ Mermaid is included in the default layout and renders automatically.
 
 **Flowchart Direction**: Prefer **Left-to-Right (LR)** flowcharts over Top-Down (TD). LR flowcharts fit better on the page and are easier to read.
 
-**Usage in Markdown:**
+**Flowchart Styling**: Apply the blue class to all nodes for consistent styling:
 
 ```markdown
 <div class="mermaid">
@@ -54,8 +54,12 @@ flowchart LR
     B -->|No| D[Action 2]
     C --> E[End]
     D --> E
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E blue
 </div>
 ```
+
+**Note**: List all node IDs in the `class` statement to apply the blue styling.
 
 **Supported diagram types:**
 - `flowchart` / `graph` - Flow diagrams

@@ -49,6 +49,9 @@ flowchart LR
     C1 --> S1[Sub-component 1.1]
     C1 --> S2[Sub-component 1.2]
     C2 --> S3[Sub-component 2.1]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class P,C1,C2,C3,S1,S2,S3 blue
 </div>
 
 ### Creating a PBS
@@ -91,6 +94,9 @@ flowchart LR
     D2 --> WP3[Work Package 2.1]
     PM --> WP4[Planning]
     PM --> WP5[Reporting]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class P,D1,D2,PM,WP1,WP2,WP3,WP4,WP5 blue
 </div>
 
 ### The 100% Rule
@@ -145,6 +151,9 @@ flowchart LR
     C --> D[Define Work<br/>Packages]
     D --> E[Assign<br/>Owners]
     E --> F[Estimate &<br/>Schedule]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F blue
 </div>
 
 1. **Start with scope statement** - What are the project objectives?

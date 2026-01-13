@@ -44,3 +44,13 @@ The purpose of the Project Daily Log is to provide a clear and concise overview 
 5. **Review and Analysis**: Periodically review the daily log to identify trends, assess progress, and extract valuable insights for project evaluation and improvement.
 
 The Project Daily Log serves as a vital project management tool, promoting effective communication, accountability, and transparency. By capturing a detailed account of daily activities, it facilitates efficient project monitoring, decision-making, and the successful delivery of projects.
+
+---
+
+## Related Resources
+
+- [Meeting Minutes](/projects/meeting_minutes) - Recording meeting outcomes
+- [Action Tracker](/projects/action_tracker) - Tracking actions and tasks
+- [Decision Log](/projects/decision_log) - Recording key decisions
+- [Project Reporting](/projects/project_reporting) - Status reporting
+- [Lessons Learned](/projects/lessons_learned) - Capturing project insights

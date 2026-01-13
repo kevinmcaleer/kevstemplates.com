@@ -4,6 +4,10 @@ name: Risk Assessment Matrix
 section: Risk Management
 description: Guide to using risk assessment matrices (risk heat maps) for visualising and prioritising project risks based on probability and impact.
 tags: [risk matrix, heat map, risk assessment, probability, impact, prioritisation]
+downloads:
+ - name: Risk Assessment Matrix Template
+   description: Excel template with 5x5 and 3x3 risk matrices
+   file: risk_assessment_matrix.xlsx
 last_updated: 2026-01-13
 ---
 

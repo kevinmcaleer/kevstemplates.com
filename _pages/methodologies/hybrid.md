@@ -68,9 +68,8 @@ flowchart LR
     end
     W1 --> A --> W2
 
-    style W1 fill:#e3f2fd
-    style A fill:#c8e6c9
-    style W2 fill:#e3f2fd
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class D1,D2,D3 blue
 </div>
 
 **When to use:**
@@ -93,8 +92,8 @@ flowchart TB
     end
     gov --- del
 
-    style gov fill:#e3f2fd
-    style del fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class G1,D1 blue
 </div>
 
 **Key concepts:**
@@ -117,8 +116,8 @@ flowchart TB
         end
     end
 
-    style outer fill:#fff3e0
-    style inner fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class G1,A1 blue
 </div>
 
 **When to use:**

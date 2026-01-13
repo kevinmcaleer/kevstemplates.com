@@ -43,3 +43,13 @@ last_updated: 2026-01-13
 - Project Request for Change
 - Project Status Report
 - Mid-Level plan
+
+---
+
+## Related Resources
+
+- [Getting Started Guide](/getting-started/) - New to project management?
+- [PM Glossary](/glossary/) - A-Z PM terminology reference
+- [Methodologies](/methodologies/) - Compare PM approaches
+- [Certifications](/certifications/) - Professional credentials
+- [Risk Management](/risk-management/) - Managing project risk

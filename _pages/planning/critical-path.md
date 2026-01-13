@@ -282,9 +282,8 @@ flowchart TD
     I -->|No| K[Compress Schedule]
     K --> D
 
-    style A fill:#e3f2fd
-    style H fill:#fff3e0
-    style J fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F,G,H,I,J,K blue
 </div>
 
 ---

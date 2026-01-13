@@ -83,10 +83,8 @@ flowchart LR
     A[Assumption] -->|Proves False| I
     I -->|Resolution needed| D[Decision]
 
-    style R fill:#fff3e0
-    style A fill:#e3f2fd
-    style I fill:#ffcdd2
-    style D fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class R,A,I,D blue
 </div>
 
 ### When to Use RAID vs Separate Logs

@@ -49,10 +49,8 @@ flowchart TD
     D3 --> WP6[Work Package 3.1]
     D3 --> WP7[Work Package 3.2]
 
-    style P fill:#e3f2fd
-    style D1 fill:#fff3e0
-    style D2 fill:#fff3e0
-    style D3 fill:#fff3e0
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class P,D1,D2,D3,WP1,WP2,WP3,WP4,WP5,WP6,WP7 blue
 </div>
 
 ### Terminology
@@ -227,10 +225,8 @@ flowchart TD
 
     C2 --> SC3[Sub-component 2.1]
 
-    style P fill:#c8e6c9
-    style C1 fill:#e8f5e9
-    style C2 fill:#e8f5e9
-    style C3 fill:#e8f5e9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class P,C1,C2,C3,SC1,SC2,SC3 blue
 </div>
 
 ### PBS vs WBS

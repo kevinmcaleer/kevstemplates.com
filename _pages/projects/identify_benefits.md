@@ -45,6 +45,9 @@ flowchart LR
     B --> C[Assign<br/>Owners]
     C --> D[Plan<br/>Realisation]
     D --> E[Track &<br/>Report]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E blue
 </div>
 
 ---

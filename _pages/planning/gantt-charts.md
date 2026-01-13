@@ -76,8 +76,8 @@ flowchart LR
     D --> E[Assign<br/>Resources]
     E --> F[Set<br/>Baseline]
 
-    style A fill:#e3f2fd
-    style F fill:#c8e6c9
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F blue
 </div>
 
 ### 1. List All Tasks

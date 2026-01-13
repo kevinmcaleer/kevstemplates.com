@@ -62,6 +62,9 @@ flowchart LR
     C --> D[Cutover]
     D --> E[Hypercare]
     E --> F[BAU]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F blue
 </div>
 
 ---

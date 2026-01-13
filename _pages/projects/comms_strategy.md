@@ -73,3 +73,10 @@ Communications strategies should be revisited periodically to ensure they remain
 - **When any major change in the project scope, team, or timeline occurs.**
 
 ---
+
+## Related Resources
+
+- [Communication Plan](/projects/communication_plan) - Detailed communication planning
+- [Identify Stakeholders](/projects/identify_stakeholders) - Stakeholder identification
+- [Stakeholder Register](/projects/stakeholder_register) - Stakeholder tracking
+- [Project Reporting](/projects/project_reporting) - Status reporting

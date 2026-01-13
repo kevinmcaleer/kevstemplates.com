@@ -44,6 +44,9 @@ flowchart LR
 
     Predictive --- Blended
     Blended --- Adaptive
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class W,A,S,K,H blue
 </div>
 
 ### Predictive (Waterfall)
@@ -136,6 +139,9 @@ flowchart LR
     A -->|No| C[Agile]
     B -->|Yes| D[Waterfall]
     B -->|No| E[Hybrid]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E blue
 </div>
 
 ---

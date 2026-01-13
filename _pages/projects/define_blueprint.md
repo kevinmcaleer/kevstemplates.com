@@ -46,6 +46,9 @@ flowchart LR
     B --> C[Design<br/>Target State]
     C --> D[Identify<br/>Gaps]
     D --> E[Plan<br/>Transition]
+
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E blue
 </div>
 
 ---

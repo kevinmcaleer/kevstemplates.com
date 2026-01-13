@@ -561,6 +561,45 @@ ul.nav.flex-column li.nav-item a.nav-link {
   font-size: 11pt;
 }
 
+// Project sidebar navigation styling
+.project-sidebar-nav {
+  .nav-section-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $clr-teal-100;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    padding-left: 5px;
+    border-left: 3px solid $clr-teal-100;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .nav.flex-column {
+    margin-bottom: 0.5rem;
+
+    .nav-item .nav-link {
+      color: #495057;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.85rem;
+      border-radius: 0.25rem;
+
+      &:hover {
+        background-color: rgba($clr-teal-100, 0.1);
+        color: $clr-teal-100;
+      }
+
+      &.active {
+        background-color: $clr-teal-100;
+        color: white;
+      }
+    }
+  }
+}
+
 .black {
   color: black !important;
 }

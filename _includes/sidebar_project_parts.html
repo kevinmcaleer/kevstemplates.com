@@ -1,35 +1,74 @@
-{% assign pages = site.pages| where_exp: "item", "item.path contains '/projects/lifecycle'" %}
-<h5>Project</h5>
-<ul>
-{% for page in pages %}
-<li><a href="{{page.url}}">{{page.name}}</a></li>
-{% endfor %}
-</ul>
+{% assign lifecycle_pages = site.pages | where_exp: "item", "item.path contains '/projects/lifecycle'" %}
+{% assign project_pages = site.pages | where_exp: "item", "item.path contains '/projects'" %}
 
-{% assign pages = site.pages| where_exp: "item", "item.path contains '/projects'" %}
-<h5>Startup</h5>
-<ul>
-{% for page in pages %}
-{% if page.process == 'startup' %}
-<li class="navlink"><a class="navitem" href="{{page.url}}">{{page.name}}</a></li>
-{% endif%}
-{% endfor %}
-</ul>
+<nav class="project-sidebar-nav">
+  <!-- Lifecycle Section -->
+  <h6 class="nav-section-title">Lifecycle</h6>
+  <ul class="nav flex-column">
+    {% for item in lifecycle_pages %}
+    <li class="nav-item">
+      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 
-<h5>Initiation</h5>
-<ul>
-{% for page in pages %}
-{% if page.process == 'initiation' %}
-<li><a href="{{page.url}}">{{page.name}}</a></li>
-{% endif%}
-{% endfor %}
-</ul>
+  <!-- Startup Section -->
+  <h6 class="nav-section-title">Startup</h6>
+  <ul class="nav flex-column">
+    {% for item in project_pages %}
+    {% if item.process == 'startup' %}
+    <li class="nav-item">
+      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
 
-<h5>Delivery</h5>
-<ul>
-{% for page in pages %}
-{% if page.process == 'delivery' %}
-<li><a href="{{page.url}}">{{page.name}}</a></li>
-{% endif %}
-{% endfor %}    
-</ul>
+  <!-- Initiation Section -->
+  <h6 class="nav-section-title">Initiation</h6>
+  <ul class="nav flex-column">
+    {% for item in project_pages %}
+    {% if item.process == 'initiation' %}
+    <li class="nav-item">
+      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <!-- Planning Section -->
+  <h6 class="nav-section-title">Planning</h6>
+  <ul class="nav flex-column">
+    {% for item in project_pages %}
+    {% if item.process == 'planning' %}
+    <li class="nav-item">
+      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <!-- Delivery Section -->
+  <h6 class="nav-section-title">Delivery</h6>
+  <ul class="nav flex-column">
+    {% for item in project_pages %}
+    {% if item.process == 'delivery' %}
+    <li class="nav-item">
+      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <!-- Closure Section -->
+  <h6 class="nav-section-title">Closure</h6>
+  <ul class="nav flex-column">
+    {% for item in project_pages %}
+    {% if item.process == 'closure' %}
+    <li class="nav-item">
+      <a class="nav-link {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

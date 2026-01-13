@@ -110,63 +110,65 @@ $header-height: 56px;
   }
 }
 
-// Navigation Tree Structure
-.nav-tree {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-// Base nav-item styling
-.nav-item {
-  display: flex;
-  align-items: center;
-  padding: 8px 12px;
-  color: $sidebar-text;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background $sidebar-transition;
-
-  &:hover {
-    background: $sidebar-hover-bg;
-    text-decoration: none;
-    color: $sidebar-text;
+// Navigation Tree Structure - scoped to sidebar only
+.site-sidebar {
+  .nav-tree {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  &.active {
-    background: $sidebar-active-bg;
-    color: $sidebar-active-text;
+  // Base nav-item styling (sidebar only)
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    color: $sidebar-text;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background $sidebar-transition;
 
-    .nav-icon,
-    .nav-icon-sm {
+    &:hover {
+      background: $sidebar-hover-bg;
+      text-decoration: none;
+      color: $sidebar-text;
+    }
+
+    &.active {
+      background: $sidebar-active-bg;
       color: $sidebar-active-text;
+
+      .nav-icon,
+      .nav-icon-sm {
+        color: $sidebar-active-text;
+      }
     }
   }
-}
 
-.nav-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-
-  &:hover {
+  .nav-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
-}
 
-// Icons
-.nav-icon {
-  width: 20px;
-  text-align: center;
-  margin-right: 10px;
-  color: $clr-royal-blue-100;
-  font-size: 0.9rem;
-}
+  // Icons
+  .nav-icon {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+    color: $clr-royal-blue-100;
+    font-size: 0.9rem;
+  }
 
-// Highlight parent items of active page
-.parent-active {
-  background: rgba($clr-royal-blue-100, 0.1);
-  border-left: 3px solid $clr-royal-blue-100;
+  // Highlight parent items of active page
+  .parent-active {
+    background: rgba($clr-royal-blue-100, 0.1);
+    border-left: 3px solid $clr-royal-blue-100;
+  }
 }
 
 .nav-icon-sm {

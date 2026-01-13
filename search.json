@@ -1,0 +1,18 @@
+---
+layout: null
+---
+[
+  {% assign pages_list = site.pages | concat: site.templates %}
+  {% for page in pages_list %}
+  {% if page.name and page.url %}
+  {
+    "title": {{ page.name | jsonify }},
+    "description": {{ page.description | default: "" | jsonify }},
+    "content": {{ page.content | strip_html | truncatewords: 200 | jsonify }},
+    "url": {{ page.url | jsonify }},
+    "tags": {{ page.tags | default: "" | jsonify }},
+    "section": {{ page.section | default: "" | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endif %}
+  {% endfor %}
+]

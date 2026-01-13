@@ -19,6 +19,7 @@ Choosing the right project management methodology is crucial for project success
 | **Agile/Scrum** | Software, evolving requirements | High | Iterative | Sprints |
 | **Waterfall** | Fixed scope, clear requirements | Low | Sequential | Phased |
 | **Hybrid** | Mixed environments | Medium | Adaptive | Flexible |
+{:class="table table-single table-narrow"}
 
 ---
 

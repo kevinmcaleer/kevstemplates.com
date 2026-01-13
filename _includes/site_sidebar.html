@@ -1,6 +1,5 @@
 <!-- Collapsible Site Navigation Sidebar -->
-<!-- Inspired by Microsoft TechNet hierarchical navigation -->
-<!-- Structure: Tomes > Volumes > Books > Sections > Chapters > Pages -->
+<!-- Simplified with book/folder/document icons -->
 
 <nav class="site-sidebar" id="siteSidebar">
   <div class="sidebar-toggle" id="sidebarToggle">
@@ -15,51 +14,69 @@
 
     <ul class="nav-tree">
       {% for tome in site.data.site_navigation %}
+      {% assign tome_active = false %}
+      {% if page.url contains tome.link %}{% assign tome_active = true %}{% endif %}
+
       <li class="nav-tome">
-        <div class="nav-item nav-tome-header" data-toggle="collapse" data-target="#tome-{{ forloop.index }}">
-          <i class="fas {{ tome.icon }} nav-icon"></i>
+        <div class="nav-item nav-tome-header {% if tome_active %}parent-active{% endif %}" data-toggle="collapse" data-target="#tome-{{ forloop.index }}">
+          <i class="fas fa-book nav-icon"></i>
           <span class="nav-text">{{ tome.name }}</span>
-          <i class="fas fa-chevron-down nav-arrow"></i>
+          <i class="fas fa-chevron-down nav-arrow {% if tome_active %}rotated{% endif %}"></i>
         </div>
 
-        <ul class="nav-volumes collapse {% if page.url contains tome.link %}show{% endif %}" id="tome-{{ forloop.index }}">
+        <ul class="nav-volumes collapse {% if tome_active %}show{% endif %}" id="tome-{{ forloop.index }}">
           {% if tome.link %}
           <li class="nav-page">
             <a href="{{ tome.link }}" class="nav-item nav-link {% if page.url == tome.link %}active{% endif %}">
-              <i class="fas fa-home nav-icon-sm"></i>
+              <i class="fas fa-file-alt nav-icon-sm"></i>
               <span>{{ tome.name }} Home</span>
             </a>
           </li>
           {% endif %}
 
           {% for volume in tome.volumes %}
+          {% assign volume_active = false %}
+          {% if volume.link and page.url contains volume.link %}{% assign volume_active = true %}{% endif %}
+          {% for book in volume.books %}
+            {% if book.link and page.url contains book.link %}{% assign volume_active = true %}{% endif %}
+            {% for section in book.sections %}
+              {% if section.link == page.url %}{% assign volume_active = true %}{% endif %}
+            {% endfor %}
+          {% endfor %}
+
           <li class="nav-volume">
-            <div class="nav-item nav-volume-header" data-toggle="collapse" data-target="#volume-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-              <i class="fas {{ volume.icon }} nav-icon"></i>
+            <div class="nav-item nav-volume-header {% if volume_active %}parent-active{% endif %}" data-toggle="collapse" data-target="#volume-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+              <i class="fas fa-folder nav-icon"></i>
               <span class="nav-text">{{ volume.name }}</span>
-              <i class="fas fa-chevron-down nav-arrow"></i>
+              <i class="fas fa-chevron-down nav-arrow {% if volume_active %}rotated{% endif %}"></i>
             </div>
 
-            <ul class="nav-books collapse {% if volume.link and page.url contains volume.link %}show{% endif %}" id="volume-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+            <ul class="nav-books collapse {% if volume_active %}show{% endif %}" id="volume-{{ forloop.parentloop.index }}-{{ forloop.index }}">
               {% if volume.link %}
               <li class="nav-page">
                 <a href="{{ volume.link }}" class="nav-item nav-link {% if page.url == volume.link %}active{% endif %}">
-                  <i class="fas fa-folder-open nav-icon-sm"></i>
+                  <i class="fas fa-file-alt nav-icon-sm"></i>
                   <span>{{ volume.name }} Overview</span>
                 </a>
               </li>
               {% endif %}
 
               {% for book in volume.books %}
+              {% assign book_active = false %}
+              {% if book.link and page.url contains book.link %}{% assign book_active = true %}{% endif %}
+              {% for section in book.sections %}
+                {% if section.link == page.url %}{% assign book_active = true %}{% endif %}
+              {% endfor %}
+
               <li class="nav-book">
                 {% if book.sections %}
-                <div class="nav-item nav-book-header" data-toggle="collapse" data-target="#book-{{ forloop.parentloop.parentloop.index }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-                  <i class="fas {{ book.icon }} nav-icon"></i>
+                <div class="nav-item nav-book-header {% if book_active %}parent-active{% endif %}" data-toggle="collapse" data-target="#book-{{ forloop.parentloop.parentloop.index }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                  <i class="fas fa-folder nav-icon"></i>
                   <span class="nav-text">{{ book.name }}</span>
-                  <i class="fas fa-chevron-down nav-arrow"></i>
+                  <i class="fas fa-chevron-down nav-arrow {% if book_active %}rotated{% endif %}"></i>
                 </div>
 
-                <ul class="nav-sections collapse" id="book-{{ forloop.parentloop.parentloop.index }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                <ul class="nav-sections collapse {% if book_active %}show{% endif %}" id="book-{{ forloop.parentloop.parentloop.index }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">
                   {% if book.link %}
                   <li class="nav-page">
                     <a href="{{ book.link }}" class="nav-item nav-link {% if page.url == book.link %}active{% endif %}">
@@ -71,43 +88,16 @@
 
                   {% for section in book.sections %}
                   <li class="nav-section">
-                    {% if section.chapters %}
-                    <div class="nav-item nav-section-header" data-toggle="collapse" data-target="#section-{{ forloop.parentloop.parentloop.parentloop.index }}-{{ forloop.parentloop.parentloop.index }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-                      <span class="nav-text">{{ section.name }}</span>
-                      <i class="fas fa-chevron-down nav-arrow"></i>
-                    </div>
-
-                    <ul class="nav-chapters collapse" id="section-{{ forloop.parentloop.parentloop.parentloop.index }}-{{ forloop.parentloop.parentloop.index }}-{{ forloop.parentloop.index }}-{{ forloop.index }}">
-                      {% if section.link %}
-                      <li class="nav-page">
-                        <a href="{{ section.link }}" class="nav-item nav-link {% if page.url == section.link %}active{% endif %}">
-                          <i class="fas fa-file nav-icon-sm"></i>
-                          <span>{{ section.name }}</span>
-                        </a>
-                      </li>
-                      {% endif %}
-
-                      {% for chapter in section.chapters %}
-                      <li class="nav-chapter">
-                        <a href="{{ chapter.link }}" class="nav-item nav-link {% if page.url == chapter.link %}active{% endif %}">
-                          <i class="fas fa-file nav-icon-sm"></i>
-                          <span>{{ chapter.name }}</span>
-                        </a>
-                      </li>
-                      {% endfor %}
-                    </ul>
-                    {% else %}
                     <a href="{{ section.link }}" class="nav-item nav-link {% if page.url == section.link %}active{% endif %}">
-                      <i class="fas fa-file nav-icon-sm"></i>
+                      <i class="fas fa-file-alt nav-icon-sm"></i>
                       <span>{{ section.name }}</span>
                     </a>
-                    {% endif %}
                   </li>
                   {% endfor %}
                 </ul>
                 {% else %}
                 <a href="{{ book.link }}" class="nav-item nav-link {% if page.url == book.link %}active{% endif %}">
-                  <i class="fas {{ book.icon }} nav-icon"></i>
+                  <i class="fas fa-file-alt nav-icon"></i>
                   <span>{{ book.name }}</span>
                 </a>
                 {% endif %}
@@ -132,40 +122,34 @@ document.addEventListener('DOMContentLoaded', function() {
   if (sidebarToggle) {
     sidebarToggle.addEventListener('click', function() {
       sidebar.classList.toggle('expanded');
-    });
-  }
-
-  // Auto-expand parents of active item
-  const activeItem = document.querySelector('.site-sidebar .nav-link.active');
-  if (activeItem) {
-    let parent = activeItem.closest('.collapse');
-    while (parent) {
-      parent.classList.add('show');
-      parent = parent.parentElement.closest('.collapse');
-    }
-  }
-
-  // Toggle arrow rotation on collapse
-  document.querySelectorAll('[data-toggle="collapse"]').forEach(function(toggle) {
-    toggle.addEventListener('click', function() {
-      const arrow = this.querySelector('.nav-arrow');
-      if (arrow) {
-        arrow.classList.toggle('rotated');
-      }
-    });
-  });
-
-  // Remember sidebar state in localStorage
-  const sidebarState = localStorage.getItem('sidebarExpanded');
-  if (sidebarState === 'true') {
-    sidebar.classList.add('expanded');
-  }
-
-  // Save state on toggle
-  if (sidebarToggle) {
-    sidebarToggle.addEventListener('click', function() {
       localStorage.setItem('sidebarExpanded', sidebar.classList.contains('expanded'));
     });
   }
+
+  // Remember sidebar state in localStorage (mobile only)
+  const sidebarState = localStorage.getItem('sidebarExpanded');
+  if (sidebarState === 'true' && window.innerWidth < 992) {
+    sidebar.classList.add('expanded');
+  }
+
+  // Toggle arrow rotation on collapse click
+  document.querySelectorAll('[data-toggle="collapse"]').forEach(function(toggle) {
+    toggle.addEventListener('click', function(e) {
+      // Prevent navigation when clicking expand/collapse
+      e.preventDefault();
+      e.stopPropagation();
+
+      const arrow = this.querySelector('.nav-arrow');
+      const targetId = this.getAttribute('data-target');
+      const target = document.querySelector(targetId);
+
+      if (target) {
+        target.classList.toggle('show');
+        if (arrow) {
+          arrow.classList.toggle('rotated');
+        }
+      }
+    });
+  });
 });
 </script>

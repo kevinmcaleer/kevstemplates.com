@@ -217,3 +217,65 @@
               link: /best_practice/pbs
             - name: PFD
               link: /best_practice/pfd
+
+- name: Planning
+  icon: fa-book
+  link: /planning
+  volumes:
+    - name: Planning Techniques
+      icon: fa-folder
+      books:
+        - name: Estimation
+          icon: fa-folder
+          link: /planning/estimation
+        - name: Work Breakdown Structure
+          icon: fa-folder
+          link: /planning/wbs
+        - name: Critical Path Method
+          icon: fa-folder
+          link: /planning/critical-path
+        - name: Gantt Charts
+          icon: fa-folder
+          link: /planning/gantt-charts
+
+- name: Risk Management
+  icon: fa-book
+  link: /risk-management
+  volumes:
+    - name: Risk Processes
+      icon: fa-folder
+      books:
+        - name: Risk Assessment
+          icon: fa-folder
+          sections:
+            - name: Risk Matrix
+              link: /risk-management/risk-matrix
+            - name: Probability & Impact
+              link: /risk-management/probability-impact
+        - name: Risk Response
+          icon: fa-folder
+          sections:
+            - name: Response Strategies
+              link: /risk-management/risk-responses
+            - name: Best Practices
+              link: /risk-management/best-practices
+
+- name: Methodologies
+  icon: fa-book
+  link: /methodologies
+  volumes:
+    - name: Project Methodologies
+      icon: fa-folder
+      books:
+        - name: Agile & Scrum
+          icon: fa-folder
+          link: /methodologies/agile-scrum
+        - name: Waterfall vs Agile
+          icon: fa-folder
+          link: /methodologies/waterfall-vs-agile
+        - name: Hybrid Approaches
+          icon: fa-folder
+          link: /methodologies/hybrid
+        - name: PRINCE2
+          icon: fa-folder
+          link: /methodologies/prince2

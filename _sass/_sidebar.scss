@@ -162,6 +162,12 @@ $sidebar-transition: 0.3s ease;
   font-size: 0.9rem;
 }
 
+// Highlight parent items of active page
+.parent-active {
+  background: rgba($clr-royal-blue-100, 0.1);
+  border-left: 3px solid $clr-royal-blue-100;
+}
+
 .nav-icon-sm {
   width: 16px;
   text-align: center;

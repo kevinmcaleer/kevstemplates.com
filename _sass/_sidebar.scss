@@ -299,15 +299,8 @@ $sidebar-transition: 0.3s ease;
   }
 }
 
-// Body offset for fixed sidebar
+// Body offset for fixed sidebar - pushes all content right of sidebar
 body.has-sidebar {
-  @media (min-width: 992px) {
-    margin-left: $sidebar-width;
-  }
-}
-
-// Main content offset
-.main-content-with-sidebar {
   @media (min-width: 992px) {
     margin-left: $sidebar-width;
   }

@@ -6,5 +6,9 @@
   link: /programmes
 - name: Portfolio
   link: /portfolio
+- name: Methodologies
+  link: /methodologies
+- name: Risk Management
+  link: /risk-management
 - name: Selector
   link: /selector

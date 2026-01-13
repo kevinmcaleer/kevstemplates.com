@@ -1,14 +1,37 @@
 ---
 ---
 
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>{% if page.name %}{{ page.name }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
+  <meta name="keywords" content="project management, templates, PM toolkit, {% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
+  <meta name="author" content="Kevin McAleer">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="{% if page.name %}{{ page.name }} | {% endif %}{{ site.title }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kevstemplates.com{{ page.url | remove: '.html' }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#3F8F92">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" }}" type="text/css">
-  <title>{{ site.title }}</title>
+
   <script src="/assets/js/jquery-3.2.1.min.js"></script>
   <script src="/assets/js/popper.min.js"></script>
   <script src="{{ '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' }}"></script>
@@ -30,7 +53,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/93d94d6349.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@8.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+<!-- Mermaid.js for diagrams -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'default',
+    securityLevel: 'loose',
+    flowchart: { useMaxWidth: true, htmlLabels: true }
+  });
+</script>
 
 </html>

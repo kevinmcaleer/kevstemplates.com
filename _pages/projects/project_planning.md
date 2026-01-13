@@ -66,6 +66,12 @@ Create a timeline or schedule for your project, setting deadlines for each task 
 
 Identify potential risks, uncertainties, and issues that may impact your project's success. For instance, in an event planning project, you might identify the risk of bad weather affecting an outdoor event or issues with vendor availability.
 
+Key risk management activities during planning:
+- Identify risks through brainstorming, checklists, and lessons learned
+- Assess probability and impact using a [risk matrix](/risk-management/risk-matrix)
+- Plan responses: avoid, mitigate, transfer, or accept
+- Assign risk owners and document in the [risk register](/projects/risk_register)
+
 ---
 
 ## Communicate the plan
@@ -75,3 +81,13 @@ Once the planning is complete, communicate the project plan to relevant stakehol
 ---
 
 Remember, these steps may vary depending on the nature and complexity of your project. Adapt the steps to suit your specific project requirements and industry best practices.
+
+---
+
+## Related Resources
+
+- [Risk Management Overview](/risk-management) - Complete guide to managing project risks
+- [Risk Assessment Matrix](/risk-management/risk-matrix) - Score and prioritise risks
+- [Risk Response Strategies](/risk-management/risk-responses) - How to respond to identified risks
+- [Risk Register / RAID Log](/projects/risk_register) - Track and manage risks
+- [Requirements](/projects/requirements) - Requirements elicitation guide

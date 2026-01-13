@@ -1,0 +1,10 @@
+<div class="last-updated text-muted small mt-4 pt-3 border-top">
+  <i class="fas fa-clock mr-1"></i>
+  {% if page.last_updated %}
+    Last updated: {{ page.last_updated | date: "%d %B %Y" }}
+  {% elsif page.date %}
+    Last updated: {{ page.date | date: "%d %B %Y" }}
+  {% else %}
+    <span class="text-muted">Content regularly reviewed</span>
+  {% endif %}
+</div>

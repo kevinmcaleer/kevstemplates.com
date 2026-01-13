@@ -66,3 +66,13 @@ A Project Brief can take a number of formats, including:
 - The project approach h as been selected which maximizes the change of achieving overall success for the project
 - The project objectives, project approach and strategies are consistent with the organisation's corporate social responsibility directive
 - The project objectives are Specific, Measurable, Achievable, Realistic and Time-bound (SMART)
+
+---
+
+## Related Resources
+
+- [Risk Management Overview](/risk-management) - Guide to managing project risks
+- [Risk Assessment Matrix](/risk-management/risk-matrix) - Score and prioritise risks
+- [Business Case](/projects/business_case) - Developing the business case
+- [Project Initiation Document](/projects/project_initiation_document) - PID template
+- [PRINCE2 Fundamentals](/methodologies/prince2) - PRINCE2 methodology guide

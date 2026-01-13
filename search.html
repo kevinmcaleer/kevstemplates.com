@@ -1,0 +1,159 @@
+---
+layout: page
+name: Search
+description: Search kevstemplates.com for project management templates, guides, and resources.
+permalink: /search/
+---
+
+<div class="container">
+  <h1>Search</h1>
+  <p class="text-muted">Find templates, guides, and resources across the site.</p>
+
+  <div class="search-wrapper mb-4">
+    <div class="input-group input-group-lg">
+      <input type="text" id="search-input" class="form-control" placeholder="Search for templates, topics, or keywords..." autofocus>
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button" id="search-btn">
+          <i class="fas fa-search"></i> Search
+        </button>
+      </div>
+    </div>
+    <small class="form-text text-muted mt-2">Try searching for: project mandate, risk, lifecycle, stakeholder</small>
+  </div>
+
+  <div id="search-status" class="mb-3" style="display: none;">
+    <span class="badge badge-secondary" id="results-count"></span>
+  </div>
+
+  <div id="search-results"></div>
+
+  <div id="no-results" class="alert alert-info" style="display: none;">
+    <i class="fas fa-info-circle mr-2"></i>
+    No results found. Try different keywords or browse the <a href="/selector">toolkit selector</a>.
+  </div>
+</div>
+
+<!-- Lunr.js -->
+<script src="https://unpkg.com/lunr/lunr.js"></script>
+
+<script>
+(function() {
+  let searchIndex = null;
+  let searchData = null;
+
+  // Load search data
+  fetch('/search.json')
+    .then(response => response.json())
+    .then(data => {
+      searchData = data;
+      // Build Lunr index
+      searchIndex = lunr(function() {
+        this.ref('url');
+        this.field('title', { boost: 10 });
+        this.field('description', { boost: 5 });
+        this.field('tags', { boost: 8 });
+        this.field('section', { boost: 3 });
+        this.field('content');
+
+        data.forEach(doc => {
+          if (doc.title) {
+            this.add(doc);
+          }
+        });
+      });
+
+      // Check for query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('q');
+      if (query) {
+        document.getElementById('search-input').value = query;
+        performSearch(query);
+      }
+    })
+    .catch(err => console.error('Error loading search index:', err));
+
+  function performSearch(query) {
+    if (!searchIndex || !query.trim()) {
+      document.getElementById('search-results').innerHTML = '';
+      document.getElementById('search-status').style.display = 'none';
+      document.getElementById('no-results').style.display = 'none';
+      return;
+    }
+
+    // Search with fuzzy matching
+    let results;
+    try {
+      results = searchIndex.search(query + '~1 ' + query + '*');
+    } catch (e) {
+      // Fallback for special characters
+      results = searchIndex.search(query);
+    }
+
+    const resultsContainer = document.getElementById('search-results');
+    const statusContainer = document.getElementById('search-status');
+    const noResults = document.getElementById('no-results');
+    const resultsCount = document.getElementById('results-count');
+
+    if (results.length === 0) {
+      resultsContainer.innerHTML = '';
+      statusContainer.style.display = 'none';
+      noResults.style.display = 'block';
+      return;
+    }
+
+    noResults.style.display = 'none';
+    statusContainer.style.display = 'block';
+    resultsCount.textContent = results.length + ' result' + (results.length !== 1 ? 's' : '') + ' found';
+
+    let html = '<div class="list-group">';
+
+    results.forEach(result => {
+      const doc = searchData.find(d => d.url === result.ref);
+      if (doc) {
+        const section = doc.section ? `<span class="badge badge-primary mr-2">${doc.section}</span>` : '';
+        const description = doc.description || doc.content.substring(0, 150) + '...';
+
+        html += `
+          <a href="${doc.url}" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between align-items-start">
+              <h5 class="mb-1">${doc.title}</h5>
+              ${section}
+            </div>
+            <p class="mb-1 text-muted">${description}</p>
+            <small class="text-primary">${doc.url}</small>
+          </a>
+        `;
+      }
+    });
+
+    html += '</div>';
+    resultsContainer.innerHTML = html;
+
+    // Update URL
+    const newUrl = window.location.pathname + '?q=' + encodeURIComponent(query);
+    history.replaceState(null, '', newUrl);
+  }
+
+  // Event listeners
+  document.getElementById('search-input').addEventListener('keyup', function(e) {
+    if (e.key === 'Enter') {
+      performSearch(this.value);
+    }
+  });
+
+  document.getElementById('search-btn').addEventListener('click', function() {
+    performSearch(document.getElementById('search-input').value);
+  });
+
+  // Live search after 300ms delay
+  let searchTimeout;
+  document.getElementById('search-input').addEventListener('input', function() {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      if (this.value.length >= 2) {
+        performSearch(this.value);
+      }
+    }, 300);
+  });
+})();
+</script>

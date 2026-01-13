@@ -106,3 +106,14 @@ Quality criteria
 * It is clear who will administer each control 
 * The project objectives, approach and strategies are consistent with the organisations corporate social responsibility directive, and the project controls are adequate to ensure that the project remains compliant with such a directive
 * Consideration has been given to the format of the Project Initiation Document. For small projects a single document is appropriate. For Large projects it is more appropriate for the Project Initiation Documentation to be a collection of stand-alone documents. The volatility of each element in the Project Initiation Documentation should be used to assess whether it should be stand-alone, e.g. elements that are likely to change frequently are best separated out.
+
+---
+
+## Related Resources
+
+- [Risk Management Overview](/risk-management) - Complete risk management guidance
+- [Risk Management Strategy](/risk-management/best-practices) - Best practices for risk documentation
+- [Risk Assessment Matrix](/risk-management/risk-matrix) - Score and prioritise project risks
+- [Risk Register / RAID Log](/projects/risk_register) - Track risks and issues
+- [Business Case](/projects/business_case) - Business case template and guide
+- [PRINCE2 Fundamentals](/methodologies/prince2) - PRINCE2 methodology guide

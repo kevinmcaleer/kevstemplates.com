@@ -7,6 +7,8 @@ tags: [methodologies, PRINCE2, Agile, Scrum, Waterfall, hybrid, project manageme
 last_updated: 2026-01-13
 ---
 
+{% include methodologies_nav.html %}
+
 # Project Management Methodologies
 
 Choosing the right project management methodology is crucial for project success. This guide compares the most widely used approaches to help you select the best fit for your projects.
@@ -137,6 +139,7 @@ Choosing the right project management methodology is crucial for project success
 | Agile/Scrum | Scrum.org, Scrum Alliance | PSM I/II, CSM, SAFe |
 | General PM | PMI | PMP, CAPM |
 | Hybrid | Axelos | PRINCE2 Agile |
+{:class="table table-single table-narrow"}
 
 ---
 

@@ -50,3 +50,13 @@ A business case is a comprehensive document that outlines the justification, ana
 5. Align with Organizational Goals: Ensure the proposed initiative aligns with the organization's strategic objectives, mission, and values.
 
 A well-developed business case provides decision-makers with the necessary information and analysis to make informed choices regarding investments, resource allocation, and project prioritization. It serves as a roadmap for successful project implementation and helps organizations achieve their strategic objectives while maximizing value and minimizing risks.
+
+---
+
+## Related Resources
+
+- [Risk Management Overview](/risk-management) - Comprehensive guide to project risk management
+- [Risk Assessment Matrix](/risk-management/risk-matrix) - How to score and prioritise risks for the business case
+- [Risk Response Strategies](/risk-management/risk-responses) - Approaches for risk mitigation
+- [Project Initiation Document](/projects/project_initiation_document) - PID template and guide
+- [Stakeholder Identification](/projects/identify_stakeholders) - Stakeholder analysis guidance

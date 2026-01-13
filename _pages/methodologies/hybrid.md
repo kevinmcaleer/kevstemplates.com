@@ -7,6 +7,8 @@ tags: [hybrid, PRINCE2 Agile, methodology, traditional, Agile, tailoring]
 last_updated: 2026-01-13
 ---
 
+{% include methodologies_nav.html %}
+
 # Hybrid Approaches
 
 Hybrid methodologies combine elements of traditional (predictive) and Agile (adaptive) approaches. This pragmatic approach recognises that no single methodology fits all situations.
@@ -53,13 +55,23 @@ Hybrid methodologies combine elements of traditional (predictive) and Agile (ada
 
 Traditional phases with Agile delivery in the middle.
 
-```
-┌─────────────┐   ┌─────────────────────────┐   ┌─────────────┐
-│  Waterfall  │   │      Agile/Scrum        │   │  Waterfall  │
-│  Discovery  │ → │      Development        │ → │   Deploy    │
-│   & Design  │   │   (Multiple Sprints)    │   │  & Release  │
-└─────────────┘   └─────────────────────────┘   └─────────────┘
-```
+<div class="mermaid">
+flowchart LR
+    subgraph W1[Waterfall]
+        D1[Discovery\n& Design]
+    end
+    subgraph A[Agile/Scrum]
+        D2[Development\nMultiple Sprints]
+    end
+    subgraph W2[Waterfall]
+        D3[Deploy\n& Release]
+    end
+    W1 --> A --> W2
+
+    style W1 fill:#e3f2fd
+    style A fill:#c8e6c9
+    style W2 fill:#e3f2fd
+</div>
 
 **When to use:**
 - Fixed contract with defined scope
@@ -71,15 +83,19 @@ Traditional phases with Agile delivery in the middle.
 
 Official hybrid combining PRINCE2 governance with Agile delivery.
 
-```
-┌───────────────────────────────────────────────┐
-│              PRINCE2 Governance               │
-│  (Business Case, Stage Gates, Tolerances)    │
-├───────────────────────────────────────────────┤
-│              Agile Delivery                   │
-│  (Scrum, Kanban, Lean within stages)         │
-└───────────────────────────────────────────────┘
-```
+<div class="mermaid">
+flowchart TB
+    subgraph gov["PRINCE2 Governance"]
+        G1["Business Case, Stage Gates, Tolerances"]
+    end
+    subgraph del["Agile Delivery"]
+        D1["Scrum, Kanban, Lean within stages"]
+    end
+    gov --- del
+
+    style gov fill:#e3f2fd
+    style del fill:#c8e6c9
+</div>
 
 **Key concepts:**
 - Fix time and cost, flex scope
@@ -91,15 +107,19 @@ Official hybrid combining PRINCE2 governance with Agile delivery.
 
 Agile at the core with traditional controls layered on.
 
-```
-       Governance Layer (Reporting, Risk, Compliance)
-    ┌─────────────────────────────────────────────┐
-    │  ┌─────────────────────────────────────┐   │
-    │  │        Agile Delivery               │   │
-    │  │   (Sprint cycles, self-organising)  │   │
-    │  └─────────────────────────────────────┘   │
-    └─────────────────────────────────────────────┘
-```
+<div class="mermaid">
+flowchart TB
+    subgraph outer["Governance Layer"]
+        direction TB
+        G1["Reporting, Risk, Compliance"]
+        subgraph inner["Agile Delivery"]
+            A1["Sprint cycles, self-organising"]
+        end
+    end
+
+    style outer fill:#fff3e0
+    style inner fill:#c8e6c9
+</div>
 
 **When to use:**
 - Agile team in traditional organisation
@@ -119,6 +139,7 @@ Different approaches for different project elements.
 | Testing | Agile | Continuous, automated |
 | Deployment | Waterfall | Controlled, scheduled |
 | Infrastructure | Waterfall | Long lead times |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -137,6 +158,7 @@ Assess your project's suitability for Agile on a scale:
 | Customer involvement | Limited | Embedded |
 | Ease of communication | Formal | Informal |
 | Acceptance of Agile | Resistant | Embracing |
+{:class="table table-single table-narrow"}
 
 ### Tailoring PRINCE2 for Agile
 
@@ -149,6 +171,7 @@ Assess your project's suitability for Agile on a scale:
 | Quality | Definition of Done, continuous testing |
 | Plans | Release plans + sprint backlogs |
 | Progress | Burn charts, velocity, visual boards |
+{:class="table table-single table-narrow"}
 
 ### MoSCoW and PRINCE2 Agile
 
@@ -160,6 +183,7 @@ Prioritisation is critical in PRINCE2 Agile:
 | **S**hould have | Important but not vital | ~20% |
 | **C**ould have | Desirable if time permits | ~20% |
 | **W**on't have (this time) | Out of scope for now | 0% |
+{:class="table table-single table-narrow"}
 
 > The "Should" and "Could" items provide the contingency. If things go wrong, these can be dropped.
 
@@ -184,6 +208,7 @@ Consider:
 | Agile-experienced teams | Agile + governance overlay |
 | Mixed project types | Pattern-based selection |
 | Transitioning organisation | Water-Scrum-Fall |
+{:class="table table-single table-narrow"}
 
 ### Step 3: Define Boundaries
 
@@ -213,6 +238,7 @@ Record your decisions:
 | Governance overhead | Automate where possible, right-size documentation |
 | Inconsistent processes | Playbooks, templates, coaching |
 | Stakeholder confusion | Clear communication plan, education sessions |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -242,6 +268,7 @@ Blend traditional and Agile metrics:
 | Budget at stage end | On track | - |
 | Features delivered | - | 85% Must, 60% Should |
 | Gate recommendation | Proceed | - |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -254,6 +281,7 @@ Blend traditional and Agile metrics:
 | **PMI-ACP** | Agile practices (supports hybrid) |
 | **Disciplined Agile (DA)** | Toolkit-based hybrid approach |
 | **SAFe** | Scaled Agile (enterprise hybrid) |
+{:class="table table-single table-narrow"}
 
 ---
 

@@ -69,3 +69,13 @@ An End Project Report can take a number of formats, including:
 * At the end of the project, all issues should either be closed or become the subject of a follow-on action recommendation
 * Any available useful documentation or evidence should accompany  the follow-on recommendation(s)
 * Any appointed Project Assurance roles should agree with the report
+
+---
+
+## Related Resources
+
+- [Risk Management Overview](/risk-management) - Managing risks throughout the project
+- [Risk Register Best Practices](/risk-management/best-practices) - Closing out the risk register
+- [Risk Register / RAID Log](/projects/risk_register) - Track and close risks
+- [Lessons Learned](/projects/lessons_learned) - Capturing lessons for future projects
+- [PRINCE2 Fundamentals](/methodologies/prince2) - PRINCE2 methodology guide

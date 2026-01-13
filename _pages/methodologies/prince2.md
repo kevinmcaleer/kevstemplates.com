@@ -7,6 +7,8 @@ tags: [PRINCE2, methodology, governance, principles, themes, processes]
 last_updated: 2026-01-13
 ---
 
+{% include methodologies_nav.html %}
+
 # PRINCE2 Fundamentals
 
 **PRINCE2** (Projects IN Controlled Environments) is a structured project management methodology widely used across industries worldwide. Originally developed by the UK government, it provides a flexible framework that can be tailored to any project size.
@@ -17,18 +19,23 @@ last_updated: 2026-01-13
 
 PRINCE2 is built on three integrated elements:
 
-```
-┌─────────────────────────────────────────┐
-│           7 PRINCIPLES                   │
-│    (Guiding obligations)                │
-├─────────────────────────────────────────┤
-│           7 THEMES                       │
-│    (Aspects to manage throughout)       │
-├─────────────────────────────────────────┤
-│           7 PROCESSES                    │
-│    (Steps from start to finish)         │
-└─────────────────────────────────────────┘
-```
+<div class="mermaid">
+flowchart TB
+    subgraph principles["7 PRINCIPLES"]
+        P1["Guiding obligations"]
+    end
+    subgraph themes["7 THEMES"]
+        T1["Aspects to manage throughout"]
+    end
+    subgraph processes["7 PROCESSES"]
+        PR1["Steps from start to finish"]
+    end
+    principles --- themes --- processes
+
+    style principles fill:#e3f2fd
+    style themes fill:#fff3e0
+    style processes fill:#e8f5e9
+</div>
 
 ---
 
@@ -93,6 +100,7 @@ Themes are aspects of project management that must be addressed continuously thr
 | **Risk** | Identify and manage uncertainty | What if...? |
 | **Change** | Control changes to baseline | What's the impact? |
 | **Progress** | Monitor and compare | Where are we now? |
+{:class="table table-single table-narrow"}
 
 ### Business Case Theme
 - Documents justification for the project
@@ -142,44 +150,26 @@ Themes are aspects of project management that must be addressed continuously thr
 
 Processes provide the steps for managing a project from start to finish.
 
-```
-                    ┌──────────────────────┐
-                    │  Starting Up a       │
-                    │  Project (SU)        │
-                    └──────────┬───────────┘
-                               │
-                    ┌──────────▼───────────┐
-                    │  Directing a         │◄─────────────────┐
-                    │  Project (DP)        │                  │
-                    └──────────┬───────────┘                  │
-                               │                              │
-                    ┌──────────▼───────────┐                  │
-                    │  Initiating a        │                  │
-                    │  Project (IP)        │                  │
-                    └──────────┬───────────┘                  │
-                               │                              │
-         ┌─────────────────────┼─────────────────────┐       │
-         │                     │                     │       │
-         │          ┌──────────▼───────────┐        │       │
-         │          │  Controlling a       │        │       │
-         │          │  Stage (CS)          │        │       │
-         │          └──────────┬───────────┘        │       │
-         │                     │                    │       │
-         │          ┌──────────▼───────────┐        │       │
-         │          │  Managing Product    │        │       │
-         │          │  Delivery (MP)       │        │       │
-         │          └──────────────────────┘        │       │
-         │                                          │       │
-         │          ┌──────────────────────┐        │       │
-         └─────────►│  Managing a Stage    │────────┘       │
-                    │  Boundary (SB)       │────────────────┘
-                    └──────────────────────┘
-                               │
-                    ┌──────────▼───────────┐
-                    │  Closing a           │
-                    │  Project (CP)        │
-                    └──────────────────────┘
-```
+<div class="mermaid">
+flowchart TD
+    SU[Starting Up a Project\nSU] --> DP[Directing a Project\nDP]
+    DP --> IP[Initiating a Project\nIP]
+    IP --> CS[Controlling a Stage\nCS]
+    CS --> MP[Managing Product Delivery\nMP]
+    MP --> CS
+    CS --> SB[Managing a Stage Boundary\nSB]
+    SB --> DP
+    SB --> CS
+    SB --> CP[Closing a Project\nCP]
+
+    style SU fill:#e1f5fe
+    style DP fill:#fff3e0
+    style IP fill:#e8f5e9
+    style CS fill:#fce4ec
+    style MP fill:#f3e5f5
+    style SB fill:#fff8e1
+    style CP fill:#efebe9
+</div>
 
 ### Starting Up a Project (SU)
 - Appoint Executive and Project Manager
@@ -247,6 +237,7 @@ Processes provide the steps for managing a project from start to finish.
 | End Stage Report | SB | Stage summary |
 | End Project Report | CP | Project summary |
 | Lessons Report | CP | Lessons for future |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -258,6 +249,7 @@ Processes provide the steps for managing a project from start to finish.
 | **Practitioner** | Apply method to scenarios | Foundation |
 | **Agile Foundation** | Understand PRINCE2 Agile | None |
 | **Agile Practitioner** | Apply PRINCE2 Agile | Foundation or Agile Foundation |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -267,3 +259,6 @@ Processes provide the steps for managing a project from start to finish.
 - [Project Lifecycle](/projects/lifecycle) - How PRINCE2 maps to lifecycle stages
 - [Project Initiation Document](/projects/project_initiation_document) - PID template
 - [Hybrid Approaches](/methodologies/hybrid) - PRINCE2 Agile
+- [Risk Management Overview](/risk-management) - Comprehensive risk management guide
+- [Risk Assessment Matrix](/risk-management/risk-matrix) - Risk scoring and prioritisation
+- [Risk Response Strategies](/risk-management/risk-responses) - Avoid, Mitigate, Transfer, Accept

@@ -7,6 +7,8 @@ tags: [Agile, Scrum, sprints, user stories, backlog, retrospective, standup]
 last_updated: 2026-01-13
 ---
 
+{% include methodologies_nav.html %}
+
 # Agile & Scrum Guide
 
 **Agile** is a mindset and set of values for delivering value iteratively and incrementally. **Scrum** is the most popular framework for implementing Agile principles in practice.
@@ -23,6 +25,7 @@ Agile is founded on four core values:
 | **Working software** | Comprehensive documentation |
 | **Customer collaboration** | Contract negotiation |
 | **Responding to change** | Following a plan |
+{:class="table table-single table-narrow"}
 
 > *"While there is value in the items on the right, we value the items on the left more."*
 
@@ -47,27 +50,27 @@ Agile is founded on four core values:
 
 ## Scrum Framework Overview
 
-```
-  Product         Sprint          Sprint        Potentially
-  Backlog    →    Planning   →    Backlog   →   Shippable
-     │                               │          Increment
-     │                               │              ▲
-     │                               ▼              │
-     │                         ┌─────────┐         │
-     │                         │  Daily  │         │
-     └────────────────────────►│  Scrum  │─────────┘
-                               └─────────┘
-                                    │
-                               ┌────▼────┐
-                               │  Sprint │
-                               │  Review │
-                               └────┬────┘
-                                    │
-                               ┌────▼────┐
-                               │  Sprint │
-                               │  Retro  │
-                               └─────────┘
-```
+<div class="mermaid">
+flowchart LR
+    subgraph Sprint["Sprint Cycle"]
+        PB[Product\nBacklog] --> SP[Sprint\nPlanning]
+        SP --> SB[Sprint\nBacklog]
+        SB --> DS[Daily\nScrum]
+        DS --> |Work| DS
+        DS --> SR[Sprint\nReview]
+        SR --> RT[Sprint\nRetro]
+        RT --> |Next Sprint| SP
+    end
+    SR --> INC[Potentially\nShippable\nIncrement]
+
+    style PB fill:#e3f2fd
+    style SP fill:#fff3e0
+    style SB fill:#e8f5e9
+    style DS fill:#fce4ec
+    style SR fill:#f3e5f5
+    style RT fill:#fff8e1
+    style INC fill:#c8e6c9
+</div>
 
 ---
 
@@ -114,6 +117,7 @@ Agile is founded on four core values:
 |-------|----------|
 | **What** | What can be delivered this Sprint? |
 | **How** | How will the work be accomplished? |
+{:class="table table-single table-narrow"}
 
 ### Daily Scrum (Standup)
 - **Duration**: 15 minutes maximum
@@ -207,6 +211,7 @@ Good user stories are:
 | **E** | Estimable | Can be sized |
 | **S** | Small | Fits in a Sprint |
 | **T** | Testable | Clear acceptance criteria |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -263,6 +268,7 @@ A shared understanding of what "complete" means. Example:
 | 3 | 24 |
 | 4 | 22 |
 | **Average** | **21.25** |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -275,6 +281,7 @@ A shared understanding of what "complete" means. Example:
 | **Burnup** | Work completed over time | Release planning |
 | **Cycle Time** | Time from start to done | Process efficiency |
 | **Lead Time** | Time from request to delivery | Customer perspective |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -288,6 +295,7 @@ A shared understanding of what "complete" means. Example:
 | CSPO | Scrum Alliance | Product Owner |
 | SAFe | Scaled Agile | Enterprise |
 | PMI-ACP | PMI | General Agile |
+{:class="table table-single table-narrow"}
 
 ---
 

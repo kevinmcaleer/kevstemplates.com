@@ -7,6 +7,8 @@ tags: [Waterfall, Agile, comparison, methodology, sequential, iterative]
 last_updated: 2026-01-13
 ---
 
+{% include methodologies_nav.html %}
+
 # Waterfall vs Agile
 
 Two fundamentally different approaches to project management. Understanding their differences helps you choose the right methodology—or combination—for your project.
@@ -25,6 +27,7 @@ Two fundamentally different approaches to project management. Understanding thei
 | **Customer involvement** | Beginning and end | Continuous |
 | **Documentation** | Heavy | Light, just enough |
 | **Testing** | After development | Throughout |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -32,36 +35,21 @@ Two fundamentally different approaches to project management. Understanding thei
 
 ### The Sequential Phases
 
-```
-┌────────────┐
-│Requirements│
-└─────┬──────┘
-      │
-      ▼
-┌────────────┐
-│   Design   │
-└─────┬──────┘
-      │
-      ▼
-┌────────────┐
-│   Build    │
-└─────┬──────┘
-      │
-      ▼
-┌────────────┐
-│   Test     │
-└─────┬──────┘
-      │
-      ▼
-┌────────────┐
-│   Deploy   │
-└─────┬──────┘
-      │
-      ▼
-┌────────────┐
-│  Maintain  │
-└────────────┘
-```
+<div class="mermaid">
+flowchart LR
+    REQ[Requirements] --> DES[Design]
+    DES --> BLD[Build]
+    BLD --> TST[Test]
+    TST --> DEP[Deploy]
+    DEP --> MNT[Maintain]
+
+    style REQ fill:#e3f2fd
+    style DES fill:#fff3e0
+    style BLD fill:#e8f5e9
+    style TST fill:#fce4ec
+    style DEP fill:#f3e5f5
+    style MNT fill:#fff8e1
+</div>
 
 ### Characteristics
 - Each phase must complete before the next begins
@@ -92,21 +80,24 @@ Two fundamentally different approaches to project management. Understanding thei
 
 ### The Iterative Cycles
 
-```
-    ┌─────────────────────────────────────┐
-    │                                     │
-    ▼                                     │
-┌────────┐   ┌────────┐   ┌────────┐     │
-│ Sprint │ → │ Sprint │ → │ Sprint │ ────┘
-│   1    │   │   2    │   │   3    │
-└────────┘   └────────┘   └────────┘
-    │            │            │
-    ▼            ▼            ▼
-┌────────┐   ┌────────┐   ┌────────┐
-│Working │   │Working │   │Working │
-│Product │   │Product │   │Product │
-└────────┘   └────────┘   └────────┘
-```
+<div class="mermaid">
+flowchart LR
+    subgraph S1[Sprint 1]
+        W1[Working\nProduct]
+    end
+    subgraph S2[Sprint 2]
+        W2[Working\nProduct]
+    end
+    subgraph S3[Sprint 3]
+        W3[Working\nProduct]
+    end
+    S1 --> S2 --> S3
+    S3 -.->|Iterate| S1
+
+    style S1 fill:#e3f2fd
+    style S2 fill:#e8f5e9
+    style S3 fill:#fff3e0
+</div>
 
 ### Characteristics
 - Work delivered in short iterations (sprints)
@@ -144,6 +135,7 @@ Two fundamentally different approaches to project management. Understanding thei
 | Fixed scope, variable time/cost | Fixed time/cost, variable scope |
 | Change control process | Embrace change |
 | Baseline established early | Backlog refined continuously |
+{:class="table table-single table-narrow"}
 
 ### Team Structure
 
@@ -154,6 +146,7 @@ Two fundamentally different approaches to project management. Understanding thei
 | Project Manager directs | Scrum Master facilitates |
 | Work assigned to individuals | Team commits to work |
 | Phase-based handoffs | Continuous collaboration |
+{:class="table table-single table-narrow"}
 
 ### Customer Relationship
 
@@ -164,6 +157,7 @@ Two fundamentally different approaches to project management. Understanding thei
 | Sees product at end | Sees working product each sprint |
 | Formal change requests | Ongoing conversation |
 | Contract-focused | Partnership-focused |
+{:class="table table-single table-narrow"}
 
 ### Risk Management
 
@@ -174,6 +168,7 @@ Two fundamentally different approaches to project management. Understanding thei
 | Issues surface late | Issues surface early |
 | Big-bang integration risk | Continuous integration |
 | Late testing finds defects | Early testing prevents defects |
+{:class="table table-single table-narrow"}
 
 ---
 
@@ -240,26 +235,24 @@ Two fundamentally different approaches to project management. Understanding thei
 
 Use this framework to help decide:
 
-```
-                    Requirements
-                    well-defined?
-                         │
-              ┌──────────┴──────────┐
-              │                     │
-             Yes                    No
-              │                     │
-              ▼                     ▼
-        Change likely?        Customer available
-              │                frequently?
-       ┌──────┴──────┐             │
-       │             │      ┌──────┴──────┐
-      Yes            No     │             │
-       │             │     Yes            No
-       │             │      │             │
-       ▼             ▼      ▼             ▼
-    HYBRID      WATERFALL  AGILE      HYBRID or
-                                     WATERFALL
-```
+<div class="mermaid">
+flowchart TD
+    REQ{Requirements\nwell-defined?}
+    REQ -->|Yes| CHG{Change\nlikely?}
+    REQ -->|No| CUST{Customer available\nfrequently?}
+    CHG -->|Yes| HYB1[HYBRID]
+    CHG -->|No| WAT[WATERFALL]
+    CUST -->|Yes| AGI[AGILE]
+    CUST -->|No| HYB2[HYBRID or\nWATERFALL]
+
+    style REQ fill:#fff3e0
+    style CHG fill:#e3f2fd
+    style CUST fill:#e3f2fd
+    style HYB1 fill:#fff8e1
+    style WAT fill:#e3f2fd
+    style AGI fill:#c8e6c9
+    style HYB2 fill:#fff8e1
+</div>
 
 ---
 
@@ -273,6 +266,7 @@ Many organisations blend both approaches:
 | Waterfall for hardware + Agile for software | Embedded systems development |
 | Waterfall planning + Agile execution | Fixed contract with iterative delivery |
 | Agile discovery + Waterfall build | Requirements phase Agile, construction Waterfall |
+{:class="table table-single table-narrow"}
 
 Learn more: [Hybrid Approaches](/methodologies/hybrid)
 

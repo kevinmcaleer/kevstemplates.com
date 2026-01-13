@@ -567,7 +567,7 @@ ul.nav.flex-column li.nav-item a.nav-link {
 .table-single {
   border-collapse: separate;
   border-spacing: 0;
-  border: 1px solid $clr-lightgrey; // Thicker border for visibility
+  border: 1px solid #DDD; // Thicker border for visibility
   border-radius: 5px;
   overflow: hidden;
   background-color: transparent !important; // Make table background transparent

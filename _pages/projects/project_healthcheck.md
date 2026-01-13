@@ -91,3 +91,12 @@ flowchart LR
 ## Conclusion
 
 Conducting regular Project Health Checks is vital for maintaining project alignment with its objectives and ensuring successful outcomes. By systematically assessing project components, project managers can make informed decisions, optimize resources, and enhance stakeholder satisfaction. Remember, the goal of the Health Check is not just to identify problems but to foster a culture of continuous improvement and excellence in project management.
+
+---
+
+## Related Resources
+
+- [Risk Management Overview](/risk-management) - Comprehensive risk management guidance
+- [Risk Assessment Matrix](/risk-management/risk-matrix) - How to evaluate and prioritise risks
+- [Risk Register / RAID Log](/projects/risk_register) - Track risks and issues
+- [Project Planning](/projects/project_planning) - Seven steps to successful planning

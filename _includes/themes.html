@@ -6,9 +6,9 @@
   {% endfor %}
 {% endfor %}
 
-{% assign themes = theme_array | uniq %}
+{% assign themes = theme_array | uniq | sort_natural %}
 <ul class="nav flex-column">
 {% for theme in themes %}
-  <li class="nav-item"><a class="nav-link" href="/themes#{{theme}}">{{ theme }}</a></li>
+  <li class="nav-item"><a class="nav-link" href="/themes/#{{ theme | slugify }}">{{ theme | capitalize }}</a></li>
 {% endfor %}
 </ul>

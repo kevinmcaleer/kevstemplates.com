@@ -1,7 +1,33 @@
-{% assign templates = site.downloads %}
-<ul>
-{% for template in templates %}
-  {{template}}
-<li><a href="{{template.url}}"></a>{{template.name}}</a></li>
+<h1>Downloadable Templates</h1>
+<p>Browse all downloadable templates and resources from across the site.</p>
+
+<div class="row">
+{% assign pages_with_downloads = site.pages | where_exp: "page", "page.downloads.size > 0" | sort: "section" %}
+{% assign current_section = "" %}
+{% for page in pages_with_downloads %}
+  {% if page.section != current_section %}
+    {% assign current_section = page.section %}
+    </div>
+    <div class="row mt-4">
+    <div class="col-12">
+      <h2>{{ current_section }}</h2>
+    </div>
+  {% endif %}
+  {% for download in page.downloads %}
+    <div class="col-12 col-md-6 col-lg-4 mb-3">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">{{ download.name }}</h5>
+          <p class="card-text text-muted small">{{ download.description }}</p>
+          <p class="card-text small">From: <a href="{{ page.url }}">{{ page.name }}</a></p>
+        </div>
+        <div class="card-footer bg-transparent">
+          <a href="/downloads/{{ download.file }}" class="btn btn-primary btn-sm">
+            <i class="bi bi-download"></i> Download
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 {% endfor %}
-</ul>
+</div>

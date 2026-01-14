@@ -1,10 +1,10 @@
-- name: Start up
-  link: /projects/lifecycle/startup
+- name: Startup
+  link: /projects/lifecycle/01startup
 - name: Initiation
-  link: /projects/lifecycle/initiation
+  link: /projects/lifecycle/02initiation
 - name: Planning
-  link: /projects/lifecycle/planning
+  link: /projects/lifecycle/03planning
 - name: Delivery
-  link: /projects/lifecycle/delivery
+  link: /projects/lifecycle/04delivery
 - name: Closure
-  link: /projects/lifecycle/closure
+  link: /projects/lifecycle/05closure

@@ -1,9 +1,9 @@
 <div class="lifecycle">
   <ul class="nav nav-fill">
-    <li class="nav-item"><a href="/projects/lifecycle/01startup" class="nav-link {%if page.title == 'Startup' %}active{% endif %}">Startup</a></li>
-    <li class="nav-item"><a href="/projects/lifecycle/02initiation" class="nav-link {%if page.title == 'Initiation' %}active{% endif %}">Initiation</a></li>
-    <li class="nav-item"><a href="/projects/lifecycle/03planning" class="nav-link {%if page.title == 'Planning' %}active{% endif %}">Planning</a></li>
-    <li class="nav-item"><a href="/projects/lifecycle/04delivery" class="nav-link {%if page.title == 'Delivery' %}active{% endif %}">Delivery</a></li>
-    <li class="nav-item"><a href="/projects/lifecycle/05closure" class="nav-link {%if page.title == 'Closure' %}active{% endif %}">Closure</a></li>
+    {% for stage in site.data.lifecycle %}
+    <li class="nav-item">
+      <a href="{{ stage.link }}" class="nav-link {% if page.title == stage.name %}active{% endif %}">{{ stage.name }}</a>
+    </li>
+    {% endfor %}
   </ul>
 </div>

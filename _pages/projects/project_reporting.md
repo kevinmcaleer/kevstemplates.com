@@ -245,7 +245,7 @@ MILESTONE STATUS
 | UAT Complete           | 20 Jan     | On Track|
 | Training Complete      | 27 Jan     | On Track|
 | Go-Live                | 1 April    | On Track|
-{:class="table table-single table-narrow"}
+
 
 TOP RISKS & ISSUES
 1. [RISK] Resource availability during February

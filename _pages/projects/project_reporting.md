@@ -232,17 +232,20 @@ PROGRESS THIS WEEK
 • Secured sign-off on data migration approach
 
 PLANNED NEXT WEEK
+
 • Begin UAT for Phase 2 functionality
 • Complete accessibility remediation
 • Conduct pilot training session
 • Finalise go-live communication plan
 
 MILESTONE STATUS
+
 | Milestone              | Planned    | Status  |
 |------------------------|------------|---------|
 | UAT Complete           | 20 Jan     | On Track|
 | Training Complete      | 27 Jan     | On Track|
 | Go-Live                | 1 April    | On Track|
+{:class="table table-single table-narrow"}
 
 TOP RISKS & ISSUES
 1. [RISK] Resource availability during February
@@ -389,23 +392,23 @@ Visual dashboard format for quick status communication.
 │  PROJECT DASHBOARD - [Name] - [Date]                │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
-│  OVERALL    SCHEDULE    BUDGET      SCOPE          │
-│    🟢          🟡         🟢          🟢            │
+│  OVERALL    SCHEDULE    BUDGET      SCOPE           │
+│    🟢          🟡         🟢          🟢             │
 │                                                     │
 ├─────────────────────────────────────────────────────┤
 │  PROGRESS                                           │
-│  ████████████████████░░░░░░░░░░  65%               │
+│  ████████████████████░░░░░░░░░░  65%                │
 │                                                     │
 ├─────────────────────────────────────────────────────┤
 │  MILESTONES                                         │
 │  ✓ Requirements    ✓ Design    ● Build    ○ Test   │
-│  [Complete]       [Complete]  [Current]  [Pending] │
+│  [Complete]       [Complete]  [Current]  [Pending]  │
 │                                                     │
 ├─────────────────────────────────────────────────────┤
-│  TOP RISKS              │  OPEN ISSUES             │
-│  • Resource capacity    │  • Integration delay     │
-│  • Vendor dependency    │  • Test environment      │
-│  • Timeline pressure    │                          │
+│  TOP RISKS              │  OPEN ISSUES              │
+│  • Resource capacity    │  • Integration delay      │
+│  • Vendor dependency    │  • Test environment       │
+│  • Timeline pressure    │                           │
 └─────────────────────────────────────────────────────┘
 ```
 

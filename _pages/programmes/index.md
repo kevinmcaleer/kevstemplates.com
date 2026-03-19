@@ -10,25 +10,12 @@ last_updated: 2026-01-13
 
 {% include programme_toolkit.html %}
 ---
-- Programme Mandate
-- Programme Initiation Document
-- Business Change Manual
-- Change and Innovation template
-- Process of change
-- Writing a Stakeholder Engagement Plan
-- Benefits Realisation Management
-- ROI Tool
-- Process Improvement Workflow
-- Organisational Structure
-- Planning
-- Programme Blueprint
-- Programme Business Case
-- Programme Closure Report
-- Programme Plan
-- Communications Strategy
-- RACI Matrix
-- RAID Log
-- Service Definition Document
-- Stakeholder Management & Communications Plan
-- Terms of Reference
-- QUAD Report
+
+- [Programme Lifecycle](/programmes/programme_lifecycle) - Programme stages and tranches
+- [Programme Governance](/programmes/programme_governance) - Governance framework and controls
+- [Programme Assurance](/programmes/programme_assurance) - Assurance activities and reviews
+- [Programme Healthcheck](/programmes/programme_healthcheck) - Health assessment tool
+- [Blueprint](/programmes/blueprint) - Future state definition and design
+- [Stakeholder Management](/programmes/stakeholder_management) - Stakeholder engagement and communications
+- [Knowledge Management](/programmes/knowledge_management) - Capturing and sharing knowledge
+- [Information Management](/programmes/information_management) - Information management standards

@@ -402,6 +402,6 @@ Stage gates provide formal decision points to assess programme health and approv
 - [Programme Lifecycle](/programmes/programme_lifecycle) - Programme stages
 - [Programme Assurance](/programmes/programme_assurance) - Assurance activities
 - [Programme Healthcheck](/programmes/programme_healthcheck) - Health assessment
-- [Project Governance](/projects/project_governance) - Project-level governance
+- [Blueprint](/programmes/blueprint) - Future state definition
 - [Stakeholder Management](/programmes/stakeholder_management) - Stakeholder engagement
 

@@ -13,9 +13,13 @@ last_updated: 2026-01-13
 
 ---
 
-- [PMO Planning Process](pmo_planning_process)
-- Roles and Responsibilities
-- SRO and Programme Manager Role Description
-- Process of Change
-- [Project Sizing Tool](project_sizing_tool)
-- Folder and Filing Structure
+- [Portfolio Management](/portfolio/portfolio_management) - Strategic portfolio oversight
+- [Portfolio Lifecycle](/portfolio/portfolio_lifecycle) - End-to-end portfolio lifecycle
+- [Portfolio Healthcheck](/portfolio/portfolio_healthcheck) - Portfolio health assessment
+- [Portfolio Reporting](/portfolio/portfolio_reporting) - Reporting and dashboards
+- [Portfolio Risk Management](/portfolio/portfolio_risk_mgmt) - Portfolio-level risk management
+- [Portfolio Resource Management](/portfolio/portfolio_resource_mgmt) - Resource and capacity planning
+- [Demand Management](/portfolio/portfolio_demand_mgmt) - Investment intake and pipeline
+- [PMO Strategy](/portfolio/pmo_strategy) - PMO operating model and maturity
+- [PMO Planning Process](/portfolio/pmo_planning_process) - Planning frameworks and processes
+- [Project Sizing Tool](/portfolio/project_sizing_tool) - Tailoring governance to project size

@@ -390,6 +390,6 @@ flowchart LR
 
 - [Portfolio Management](/portfolio/portfolio_management) - Portfolio oversight
 - [PMO Planning Process](/portfolio/pmo_planning_process) - Planning processes
-- [Resource Planning](/projects/resource_planning) - Project-level planning
+- [Resource and Cost Modelling](/projects/resource_and_cost_modelling) - Project-level resource planning
 - [Portfolio Healthcheck](/portfolio/portfolio_healthcheck) - Health assessment
 

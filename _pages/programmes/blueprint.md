@@ -432,8 +432,9 @@ Changes to the Blueprint should be controlled:
 
 ## Related Resources
 
-- [Benefits Realisation](/programmes/benefits_realisation) - Connecting to benefits
 - [Programme Lifecycle](/programmes/programme_lifecycle) - Programme stages
+- [Programme Governance](/programmes/programme_governance) - Governance framework
 - [Business Case](/projects/business_case) - Investment justification
 - [Stakeholder Management](/programmes/stakeholder_management) - Stakeholder engagement
+- [Portfolio Management](/portfolio/portfolio_management) - Portfolio oversight
 

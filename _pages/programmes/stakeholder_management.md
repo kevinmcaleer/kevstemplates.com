@@ -358,6 +358,7 @@ flowchart TD
 
 - [Communication Plan](/projects/communication_plan) - Communication planning
 - [Identify Stakeholders](/projects/identify_stakeholders) - Stakeholder identification
-- [Change Management](/programmes/change_management) - Managing change
 - [Programme Governance](/programmes/programme_governance) - Governance framework
+- [Programme Healthcheck](/programmes/programme_healthcheck) - Health assessment
+- [Blueprint](/programmes/blueprint) - Future state definition
 

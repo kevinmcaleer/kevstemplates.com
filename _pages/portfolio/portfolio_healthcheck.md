@@ -444,6 +444,14 @@ Priority Actions:
 
 ---
 
+## Download
+
+<a href="/downloads/portfolio_healthcheck.xlsx" class="btn btn-orange mb-3"><i class="fa-solid fa-file-arrow-down"></i> Portfolio Healthcheck Tool (Excel)</a>
+
+Automated scoring tool with RAG ratings and recommended next steps for each dimension.
+
+---
+
 ## Related Resources
 
 - [Portfolio Management](/portfolio/portfolio_management) - Portfolio oversight

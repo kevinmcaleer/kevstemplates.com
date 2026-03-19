@@ -176,14 +176,16 @@
           sections:
             - name: Communication
               link: /best_practice/communication
-            - name: Meeting Management
-              link: /best_practice/meeting_management
     - name: Governance
       icon: fa-balance-scale
       books:
-        - name: Assurance
+        - name: Governance
           icon: fa-clipboard-check
           sections:
+            - name: Meeting Management
+              link: /best_practice/meeting_management
+            - name: Organisational Structure
+              link: /best_practice/org_structure
             - name: Assurance
               link: /best_practice/assurance
     - name: People
@@ -215,6 +217,10 @@
           sections:
             - name: Schedule
               link: /best_practice/schedule
+            - name: Milestone Management
+              link: /best_practice/milestone_management
+            - name: Planning and Estimating
+              link: /best_practice/planning_estimating
         - name: Product Management
           icon: fa-boxes
           sections:
@@ -224,6 +230,28 @@
               link: /best_practice/pbs
             - name: PFD
               link: /best_practice/pfd
+    - name: Information
+      icon: fa-folder-open
+      books:
+        - name: Information Management
+          icon: fa-file-alt
+          sections:
+            - name: Document Management
+              link: /best_practice/document_management
+            - name: Version Management
+              link: /best_practice/version_management
+            - name: Configuration Management
+              link: /best_practice/configuration_management
+    - name: Process
+      icon: fa-cogs
+      books:
+        - name: Analysis
+          icon: fa-search
+          sections:
+            - name: Business Analysis
+              link: /best_practice/business_analysis
+            - name: Requirements Elicitation
+              link: /best_practice/requirements_elicitation
 
 - name: Planning
   icon: fa-book

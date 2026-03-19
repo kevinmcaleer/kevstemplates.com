@@ -149,11 +149,18 @@
               link: /portfolio/portfolio_resource_mgmt
             - name: Portfolio Risk Mgmt
               link: /portfolio/portfolio_risk_mgmt
+        - name: Demand & Planning
+          icon: fa-stream
+          sections:
+            - name: Demand Management
+              link: /portfolio/portfolio_demand_mgmt
+            - name: PMO Planning Process
+              link: /portfolio/pmo_planning_process
         - name: PMO
           icon: fa-building
           sections:
-            - name: PMO Planning Process
-              link: /portfolio/pmo_planning_process
+            - name: PMO Strategy
+              link: /portfolio/pmo_strategy
             - name: Project Sizing Tool
               link: /portfolio/project_sizing_tool
 

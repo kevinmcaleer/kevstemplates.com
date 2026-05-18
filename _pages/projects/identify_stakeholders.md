@@ -94,6 +94,20 @@ flowchart LR
 | **Product Launch** | Marketing, sales, customers, supply chain, legal |
 {:class="table table-single table-narrow"}
 
+### Key Project Roles
+
+Some stakeholders are not just interested parties — they hold formal accountability for the project. These roles should be identified and confirmed at startup:
+
+| Role | Purpose |
+|------|---------|
+| **[Project Sponsor](/projects/project_sponsor)** | Senior champion who secures funding and owns benefits |
+| **[Executive](/projects/executive)** | Chairs the Project Board; accountable for project success |
+| **[Senior User](/projects/senior_user)** | Represents users on the Board; signs off fit for purpose |
+| **[Senior Supplier](/projects/senior_supplier)** | Represents delivery on the Board; commits supplier resources |
+{:class="table table-single table-narrow"}
+
+See [Project Roles](/projects/project_roles) for a full overview of how these roles work together.
+
 ---
 
 ## Stakeholder Analysis
@@ -392,6 +406,11 @@ flowchart TD
 
 ## Related Resources
 
+- [Project Roles](/projects/project_roles) - Overview of formal project roles
+- [Project Sponsor](/projects/project_sponsor) - The senior champion
+- [Executive](/projects/executive) - The Project Board chair
+- [Senior User](/projects/senior_user) - User representative on the Board
+- [Senior Supplier](/projects/senior_supplier) - Supplier representative on the Board
 - [Stakeholder Register](/projects/stakeholder_register) - Track and manage stakeholders
 - [Communication Plan](/projects/communication_plan) - Plan stakeholder communications
 - [Comms Strategy](/projects/comms_strategy) - Communications strategy overview

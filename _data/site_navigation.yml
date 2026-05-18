@@ -88,6 +88,19 @@
           sections:
             - name: Project Resources OBS
               link: /projects/project_resources_obs
+        - name: Project Roles
+          icon: fa-user-tie
+          sections:
+            - name: Project Roles Overview
+              link: /projects/project_roles
+            - name: Project Sponsor
+              link: /projects/project_sponsor
+            - name: Executive
+              link: /projects/executive
+            - name: Senior User
+              link: /projects/senior_user
+            - name: Senior Supplier
+              link: /projects/senior_supplier
 
 - name: Programmes
   icon: fa-layer-group

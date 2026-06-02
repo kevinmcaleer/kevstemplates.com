@@ -10,5 +10,7 @@ tags: [project management, templates, PM toolkit, free downloads]
 
 # Welcome to Kev's templates
 
+{{page.description}}
+
 {% include selector.html %}
 {% include pages.html %}

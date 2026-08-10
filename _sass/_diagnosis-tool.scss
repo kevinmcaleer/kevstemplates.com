@@ -4,7 +4,8 @@
 #bct-tool,
 #sbp-tool,
 #cop-tool,
-#crt-tool {
+#crt-tool,
+#ff-tool {
   margin-top: 1.5rem;
 
   .bct-toolbar {
@@ -111,6 +112,31 @@
     font-size: 0.75rem;
     color: #767676;
   }
+
+  // Force field: clickable prompts for common restraints
+  .bct-prompts {
+    background: #f8fafc;
+    border-radius: 4px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 1rem;
+
+    .bct-help { margin-bottom: 0.6rem; }
+  }
+
+  .bct-prompt {
+    margin: 0 0.35rem 0.35rem 0;
+    font-size: 0.8rem;
+    text-align: left;
+    white-space: normal;
+
+    &.is-used {
+      opacity: 0.45;
+      text-decoration: line-through;
+    }
+  }
+
+  // The restraining table carries the ask columns and needs the room
+  .bct-wide { min-width: 60rem; }
 }
 
 // --- generated output ------------------------------------------------------
@@ -319,6 +345,89 @@
   .bct-band-warn    { border-left-color: #d97706; background: #fffbeb; }
   .bct-band-bad     { border-left-color: #dc2626; background: #fef2f2; }
 
+  // Force field: the balance scale and the sponsor-ask cards
+  .bct-ff-scale {
+    margin: 0.75rem 0 0.9rem;
+  }
+
+  .bct-ff-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .bct-ff-label {
+    flex: 0 0 6rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #767676;
+  }
+
+  .bct-ff-track {
+    flex: 1 1 auto;
+    height: 0.85rem;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .bct-ff-bar {
+    display: block;
+    height: 100%;
+
+    &.is-driving { background: $clr-teal-100; }
+    &.is-restraining { background: #dc2626; }
+  }
+
+  .bct-ff-num {
+    flex: 0 0 2.5rem;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .bct-restraint {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-left: 4px solid #dc2626;
+    border-radius: 0 4px 4px 0;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .bct-restraint-head {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .bct-rank {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #dc2626;
+    color: #fff;
+    font-size: 0.8rem;
+    margin-right: 0.35rem;
+  }
+
+  .bct-restraint-dl {
+    display: grid;
+    grid-template-columns: minmax(9rem, 14rem) 1fr;
+    gap: 0.2rem 0.75rem;
+    margin: 0;
+    font-size: 0.9rem;
+
+    dt { font-weight: 600; color: #555; }
+    dd { margin: 0; }
+  }
+
+  .bct-missing { color: #b45309; }
+
   .bct-agenda {
     font-size: 0.9rem;
 
@@ -362,7 +471,8 @@
   #bct-tool button,
   #sbp-tool button,
   #cop-tool button,
-  #crt-tool button {
+  #crt-tool button,
+  #ff-tool button {
     display: none !important;
   }
 
@@ -374,7 +484,8 @@
   #bct-tool .bct-tool-section,
   #sbp-tool .bct-tool-section,
   #cop-tool .bct-tool-section,
-  #crt-tool .bct-tool-section {
+  #crt-tool .bct-tool-section,
+  #ff-tool .bct-tool-section {
     page-break-inside: avoid;
     border: 1px solid #ccc;
   }
@@ -387,7 +498,9 @@
   #cop-tool input,
   #cop-tool select,
   #crt-tool input,
-  #crt-tool select {
+  #crt-tool select,
+  #ff-tool input,
+  #ff-tool select {
     border: none;
     border-bottom: 1px solid #ccc;
     -webkit-appearance: none;

@@ -16,6 +16,7 @@ Everything stays in your browser. Nothing is uploaded, and your answers are save
 <div id="sbp-tool">
 <div class="bct-toolbar">
 <span class="bct-toolbar-note">Saves to this device as you type</span>
+<label class="btn btn-sm btn-outline-primary mb-0" for="sbp-import-forcefield">Pre-fill from a force field analysis<input type="file" id="sbp-import-forcefield" accept="application/json,.json" hidden></label>
 <button type="button" class="btn btn-sm btn-primary" id="sbp-save">Save progress</button>
 <button type="button" class="btn btn-sm btn-outline-secondary" id="sbp-json">Download a copy</button>
 <label class="btn btn-sm btn-outline-secondary mb-0" for="sbp-import">Load a saved copy<input type="file" id="sbp-import" accept="application/json,.json" hidden></label>

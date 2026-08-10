@@ -425,6 +425,41 @@
     return p;
   }
 
+  // Pre-fill from a saved Force Field Analysis. Its strongest restraint is
+  // exactly what ask 1 asks for — a barrier only the sponsor can remove.
+  function fromForceField(data) {
+    if (!data || !data.restraining) { return false; }
+    var restraints = data.restraining.filter(function (x) { return x.force; })
+      .sort(function (a, b) {
+        return (parseInt(b.strength, 10) || 0) - (parseInt(a.strength, 10) || 0);
+      });
+    if (!restraints.length) { return false; }
+
+    function set(k, v) {
+      var el = tool.q('[data-f="' + k + '"]');
+      if (el && v && !el.value) { el.value = v; }
+    }
+    set('change_name', (data.fields || {}).change_name);
+    set('ask1', restraints[0].remove || ('Remove: ' + restraints[0].force));
+    set('ask1_by', restraints[0].asked);
+    set('evidence', 'Restraining forces outweigh drivers — strongest is “' + restraints[0].force + '”.');
+
+    // Any restraint with a named decider is a decision to request.
+    var decisions = restraints.filter(function (x) { return x.decides; }).slice(0, 3);
+    if (decisions.length) {
+      tool.fillRows('sbp-decisions', TABLES['sbp-decisions'].cols, decisions.map(function (x) {
+        return {
+          decision: x.remove || ('Remove: ' + x.force),
+          by: x.asked,
+          consequence: 'Restraint remains at strength ' + (x.strength || '?') + '/5'
+        };
+      }));
+    }
+
+    tool.save();
+    return true;
+  }
+
   // --- wiring --------------------------------------------------------------
 
   function analysis() {
@@ -460,6 +495,17 @@
     '#sbp-import': function (e) {
       tool.importJson(e.target.files && e.target.files[0], function (data) { tool.restore(data); run(); });
     },
+    '#sbp-import-forcefield': function (e) {
+      var input = e.target;
+      tool.importJson(input.files && input.files[0], function (data) {
+        if (!fromForceField(data)) {
+          window.alert('That does not look like a saved Force Field Analysis with any restraining forces in it.');
+          return;
+        }
+        run();
+      });
+      input.value = '';
+    },
     '#sbp-print': function () { run(); window.print(); },
     '#sbp-clear': function () {
       tool.clear(function () {
@@ -492,6 +538,7 @@
     collect: tool.collect,
     analyse: analyse,
     run: run,
+    fromForceField: fromForceField,
     markdown: function () { var a = analysis(); return markdown(a.d, a.r); },
     doc: function () { var a = analysis(); return docHtml(a.d, a.r); },
     deck: buildDeck

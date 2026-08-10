@@ -97,7 +97,7 @@ The models — and a note on when each one is the wrong tool.
 Find out what's actually going on before you design anything.
 
 - **[Barrier Analysis — COM-B Interview Guide](/behavioural-change/barrier-analysis-com-b-interview-guide/)**
-- **[Behavioural Diagnosis Canvas](/behavioural-change/behavioural-diagnosis-canvas/)**
+- **[Behavioural Diagnosis Canvas](/behavioural-change/behavioural-diagnosis-canvas/)** — also available as an [interactive tool](/behavioural-change/diagnosis-tool/) that generates your next steps
 - **[Change Readiness Assessment](/behavioural-change/change-readiness-assessment/)**
 - **[Force Field Analysis](/behavioural-change/force-field-analysis/)**
 - **[Resistance Decoder](/behavioural-change/resistance-decoder/)**

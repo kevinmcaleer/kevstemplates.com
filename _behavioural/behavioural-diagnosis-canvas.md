@@ -12,6 +12,12 @@ The master one-pager. Fill this in before anything else. If you can't complete i
 
 ⏱️ 60 minutes alone for a first draft, then 90 minutes with the core group.
 
+<div class="bct-callout bct-tip" markdown="1">
+**Prefer to fill it in on screen?**
+
+The [interactive version of this canvas](/behavioural-change/diagnosis-tool/) works the same nine sections, then reads your COM-B scores to name your primary barrier, tells you which intervention functions can work against it, and hands you an ordered set of next steps — plus a Word document, an Obsidian note, or a PDF. It runs entirely in your browser and saves as you type.
+</div>
+
 ---
 
 ## 1 · The change, in one sentence

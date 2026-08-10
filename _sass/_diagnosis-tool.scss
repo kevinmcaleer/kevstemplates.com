@@ -1,0 +1,244 @@
+// Behavioural Diagnosis Canvas — interactive tool
+// Used only by /behavioural-change/diagnosis-tool/
+
+#bct-tool {
+  margin-top: 1.5rem;
+
+  .bct-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .bct-saved {
+    font-size: 0.8rem;
+    color: #767676;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    &.is-on { opacity: 1; }
+  }
+
+  .bct-tool-section {
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 1.1rem 1.25rem 1.25rem;
+    margin-bottom: 1.25rem;
+    background: #fff;
+
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  .bct-help {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.85rem;
+  }
+
+  .bct-help-warn {
+    border-left: 3px solid #d97706;
+    padding-left: 0.75rem;
+    margin-top: 0.85rem;
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .bct-grid {
+    th {
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-top: none;
+      vertical-align: bottom;
+    }
+
+    td { vertical-align: middle; }
+
+    .bct-narrow { width: 7.5rem; }
+  }
+
+  .bct-generate-bar {
+    text-align: center;
+    margin: 1.75rem 0;
+  }
+}
+
+// --- generated output ------------------------------------------------------
+
+.bct-output {
+  border: 2px solid $clr-teal-100;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background: #fbfdfd;
+
+  .bct-result-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+
+    h3 { margin: 0; font-size: 1.25rem; }
+  }
+
+  .bct-complete {
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #767676;
+  }
+
+  h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #444;
+  }
+
+  .bct-kicker {
+    margin: 0 0 0.15rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #767676;
+  }
+
+  .bct-primary {
+    background: #f0fdfa;
+    border-left: 4px solid $clr-teal-100;
+    border-radius: 0 6px 6px 0;
+    padding: 0.9rem 1.1rem;
+  }
+
+  .bct-barrier {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 0.35rem;
+    color: #1a1a1a;
+  }
+
+  .bct-score {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #fff;
+    background: $clr-teal-100;
+    border-radius: 3px;
+    padding: 0.1rem 0.4rem;
+    vertical-align: middle;
+  }
+
+  .bct-reads {
+    margin: 0 0 0.9rem;
+    color: #444;
+  }
+
+  .bct-functions { margin: 0; }
+
+  .bct-fn {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid $clr-teal-100;
+    color: #17605f;
+    border-radius: 3px;
+    font-size: 0.85rem;
+    padding: 0.15rem 0.5rem;
+    margin: 0 0.35rem 0.35rem 0;
+  }
+
+  .bct-coercion {
+    margin: 0.6rem 0 0;
+    font-size: 0.85rem;
+    color: #8a5200;
+  }
+
+  .bct-flag {
+    border-left: 4px solid #cbd5e1;
+    background: #f8fafc;
+    border-radius: 0 4px 4px 0;
+    padding: 0.7rem 0.9rem;
+    margin-bottom: 0.7rem;
+
+    strong { display: block; margin-bottom: 0.2rem; }
+    p { margin: 0 0 0.2rem; font-size: 0.92rem; }
+    p:last-child { margin-bottom: 0; }
+  }
+
+  .bct-flag-danger  { border-left-color: #dc2626; background: #fef2f2; }
+  .bct-flag-warn    { border-left-color: #d97706; background: #fffbeb; }
+  .bct-flag-info    { border-left-color: #64748b; background: #f8fafc; }
+
+  .bct-steps {
+    padding-left: 1.25rem;
+
+    li { margin-bottom: 0.45rem; }
+  }
+}
+
+.bct-exports {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1.5rem;
+
+  h4 { margin-top: 0; font-size: 1rem; }
+}
+
+.bct-export-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+// --- print -----------------------------------------------------------------
+
+@media print {
+  header,
+  footer,
+  .sitemap,
+  .breadcrumbs,
+  .bct-toolbar,
+  .bct-generate-bar,
+  .bct-exports,
+  #bct-tool button {
+    display: none !important;
+  }
+
+  .bct-output {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  #bct-tool .bct-tool-section {
+    page-break-inside: avoid;
+    border: 1px solid #ccc;
+  }
+
+  // Values in form fields must survive the print rendering.
+  #bct-tool input,
+  #bct-tool select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}

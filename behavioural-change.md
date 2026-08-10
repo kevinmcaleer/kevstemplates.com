@@ -109,7 +109,7 @@ Find out what's actually going on before you design anything.
 Turn a diagnosis into designed interventions.
 
 - **[Champion Network Playbook](/behavioural-change/champion-network-playbook/)**
-- **[Change on a Page](/behavioural-change/change-on-a-page/)**
+- **[Change on a Page](/behavioural-change/change-on-a-page/)** — also an [interactive one-pager builder](/behavioural-change/change-on-a-page-tool/)
 - **[Comms and Narrative Plan](/behavioural-change/comms-and-narrative-plan/)**
 - **[Intervention Design Worksheet](/behavioural-change/intervention-design-worksheet/)**
 - **[Measurement Plan — Leading and Lagging](/behavioural-change/measurement-plan-leading-and-lagging/)**
@@ -141,7 +141,7 @@ Sponsorship, executive failure modes, and challenging upward.
 - **[Challenging Upward — Scripts](/behavioural-change/challenging-upward-scripts/)**
 - **[Executive Failure Modes](/behavioural-change/executive-failure-modes/)**
 - **[Leader Behaviour Contract](/behavioural-change/leader-behaviour-contract/)**
-- **[Sponsor Briefing Pack](/behavioural-change/sponsor-briefing-pack/)**
+- **[Sponsor Briefing Pack](/behavioural-change/sponsor-briefing-pack/)** — also an [interactive briefing builder](/behavioural-change/sponsor-briefing-tool/) with Word and PowerPoint output
 - **[The One-Page Board Narrative](/behavioural-change/the-one-page-board-narrative/)**
 
 ### Templates

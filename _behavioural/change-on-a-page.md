@@ -12,6 +12,12 @@ The artefact you will use most. One side of A4. If it doesn't fit, you haven't d
 
 Copy everything below the line into a new note per initiative.
 
+<div class="bct-callout bct-tip" markdown="1">
+**Or build it on screen**
+
+The [interactive version](/behavioural-change/change-on-a-page-tool/) fills the same one-pager and checks the two tables people skip — what stops, and what you need decided — before you circulate it. It can also pre-fill itself from a saved [Behavioural Diagnosis Canvas](/behavioural-change/diagnosis-tool/), so the behaviours and primary barrier carry straight across.
+</div>
+
 ---
 
 # `[Initiative name]` — Change on a Page

@@ -1,7 +1,9 @@
-// Behavioural Diagnosis Canvas — interactive tool
-// Used only by /behavioural-change/diagnosis-tool/
+// Behavioural Change Toolkit — interactive tools
+// Shared by the diagnosis canvas, sponsor briefing pack and change on a page.
 
-#bct-tool {
+#bct-tool,
+#sbp-tool,
+#cop-tool {
   margin-top: 1.5rem;
 
   .bct-toolbar {
@@ -72,6 +74,28 @@
   .bct-generate-bar {
     text-align: center;
     margin: 1.75rem 0;
+  }
+
+  .bct-hint {
+    font-size: 0.8rem;
+    color: #767676;
+    font-style: italic;
+    margin: -0.35rem 0 0.85rem;
+  }
+
+  .bct-mins {
+    float: right;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #767676;
+  }
+
+  .bct-ongoing {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #767676;
   }
 }
 
@@ -191,6 +215,62 @@
 
     li { margin-bottom: 0.45rem; }
   }
+
+  // The rendered one-page artefacts (sponsor brief, change on a page)
+  .bct-brief,
+  .bct-onepager {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+
+    h5 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: $clr-teal-100;
+      margin-top: 1.1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    table { font-size: 0.85rem; }
+    th { font-size: 0.75rem; text-transform: uppercase; color: #767676; }
+  }
+
+  .bct-brief-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  .bct-why {
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-left: 3px solid $clr-teal-100;
+    padding-left: 0.75rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .bct-by { color: #767676; font-size: 0.85rem; }
+
+  .bct-empty {
+    color: #b45309;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .bct-agenda {
+    font-size: 0.9rem;
+
+    .bct-agenda-time {
+      width: 4.5rem;
+      font-weight: 600;
+      color: $clr-teal-100;
+      white-space: nowrap;
+    }
+
+    .bct-agenda-note { color: #555; font-size: 0.85rem; }
+  }
 }
 
 .bct-exports {
@@ -219,7 +299,9 @@
   .bct-toolbar,
   .bct-generate-bar,
   .bct-exports,
-  #bct-tool button {
+  #bct-tool button,
+  #sbp-tool button,
+  #cop-tool button {
     display: none !important;
   }
 
@@ -228,14 +310,20 @@
     page-break-inside: avoid;
   }
 
-  #bct-tool .bct-tool-section {
+  #bct-tool .bct-tool-section,
+  #sbp-tool .bct-tool-section,
+  #cop-tool .bct-tool-section {
     page-break-inside: avoid;
     border: 1px solid #ccc;
   }
 
   // Values in form fields must survive the print rendering.
   #bct-tool input,
-  #bct-tool select {
+  #bct-tool select,
+  #sbp-tool input,
+  #sbp-tool select,
+  #cop-tool input,
+  #cop-tool select {
     border: none;
     border-bottom: 1px solid #ccc;
     -webkit-appearance: none;

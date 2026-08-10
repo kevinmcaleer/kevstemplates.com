@@ -61,6 +61,16 @@ collections:
   templates:
     output: true
     permalink: /:path
+  behavioural:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "behavioural"
+    values:
+      layout: "behavioural"
+      toolkit: "Behavioural Change Toolkit"
 
 # sass:
 #   style: :compressed

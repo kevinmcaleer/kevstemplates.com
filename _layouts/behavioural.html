@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="row">
+
+  <div class="content col-12 col-sm-12 behavioural-page">
+
+    {% unless page.url == '/behavioural-change/' %}
+    <p class="bct-meta">
+      <a href="/behavioural-change/">Behavioural Change Toolkit</a>
+      {% if page.section %} &middot; {{ page.section }}{% endif %}
+    </p>
+    {% endunless %}
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.use_when %}
+    <p class="bct-use-when">{{ page.use_when }}</p>
+    {% endif %}
+
+    {{ content }}
+
+    {% unless page.url == '/behavioural-change/' %}
+    <p class="mt-4">
+      <a href="/behavioural-change/">&larr; Back to the Behavioural Change Toolkit</a>
+    </p>
+    {% endunless %}
+
+    {% include last_updated.html %}
+  </div>
+
+</div>

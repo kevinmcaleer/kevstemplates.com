@@ -19,3 +19,4 @@ last_updated: 2026-01-13
 - [Stakeholder Management](/programmes/stakeholder_management) - Stakeholder engagement and communications
 - [Knowledge Management](/programmes/knowledge_management) - Capturing and sharing knowledge
 - [Information Management](/programmes/information_management) - Information management standards
+- [Behavioural Change Toolkit](/behavioural-change/) - 46 tools for diagnosing and landing behaviour change

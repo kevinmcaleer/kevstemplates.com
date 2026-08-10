@@ -221,9 +221,9 @@ The sidebar automatically expands to show the current page's location in the hie
 
 Include "Closes #XX" in commit messages to auto-close issues.
 
-Always include co-author line:
+Always include a co-author line naming the current model version:
 ```
-Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+Co-Authored-By: Claude <current model version> <noreply@anthropic.com>
 ```
 
 ## Notes

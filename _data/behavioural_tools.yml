@@ -16,6 +16,9 @@
       link: /behavioural-change/diagnosis-tool/
       reference: /behavioural-change/behavioural-diagnosis-canvas/
       gives: your target behaviours and primary barrier
+      # Shown as the suggested starting point to anyone on another tool.
+      start: true
+      start_note: it feeds most of the others
 
     - name: Change Readiness Assessment
       short: Change Readiness

@@ -7,6 +7,15 @@ it marks the current tool and shows what can pre-fill it.
 {%- endcomment -%}
 <nav class="bct-toolnav" aria-label="Interactive tools">
   <p class="bct-toolnav-intro">Interactive tools <span>— enter wherever your problem is</span></p>
+  {%- assign start_tool = false -%}
+  {%- for section in site.data.behavioural_tools -%}
+    {%- for tool in section.tools -%}
+      {%- if tool.start %}{% assign start_tool = tool %}{% endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- if start_tool and page.url != start_tool.link %}
+  <p class="bct-toolnav-start">New to this? Start with the <a href="{{ start_tool.link }}">{{ start_tool.name }}</a>{% if start_tool.start_note %} — {{ start_tool.start_note }}{% endif %}.</p>
+  {%- endif %}
   <div class="bct-toolnav-groups">
     {%- for section in site.data.behavioural_tools %}
     <div class="bct-toolnav-group">

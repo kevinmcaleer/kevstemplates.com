@@ -159,6 +159,12 @@
   span { text-transform: none; letter-spacing: 0; }
 }
 
+.bct-toolnav-start {
+  font-size: 0.85rem;
+  color: #333;
+  margin: -0.25rem 0 0.7rem;
+}
+
 .bct-toolnav-groups {
   display: flex;
   flex-wrap: wrap;

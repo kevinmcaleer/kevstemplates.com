@@ -15,6 +15,10 @@ Everything stays in your browser. Nothing is uploaded, and your answers are save
 
 <div id="bct-tool">
 <div class="bct-toolbar">
+<span class="bct-toolbar-note">Saves to this device as you type</span>
+<button type="button" class="btn btn-sm btn-primary" id="bct-save">Save progress</button>
+<button type="button" class="btn btn-sm btn-outline-secondary" id="bct-json">Download a copy</button>
+<label class="btn btn-sm btn-outline-secondary mb-0" for="bct-import">Load a saved copy<input type="file" id="bct-import" accept="application/json,.json" hidden></label>
 <button type="button" class="btn btn-sm btn-outline-secondary" id="bct-clear">Clear canvas</button>
 <span id="bct-saved" class="bct-saved" aria-live="polite"></span>
 </div>
@@ -131,8 +135,6 @@ Everything stays in your browser. Nothing is uploaded, and your answers are save
 <button type="button" class="btn btn-outline-primary" id="bct-word">Download as Word</button>
 <button type="button" class="btn btn-outline-primary" id="bct-markdown">Download as Markdown</button>
 <button type="button" class="btn btn-outline-secondary" id="bct-print">Print / save as PDF</button>
-<button type="button" class="btn btn-outline-secondary" id="bct-json">Save a copy (JSON)</button>
-<label class="btn btn-outline-secondary mb-0" for="bct-import">Load a saved copy<input type="file" id="bct-import" accept="application/json,.json" hidden></label>
 </div>
 <p class="bct-help">The Markdown export uses <code>[[wiki links]]</code>, so it drops straight into the <a href="/downloads/behavioural-change-toolkit.zip">Obsidian vault</a> alongside the other notes.</p>
 </div>

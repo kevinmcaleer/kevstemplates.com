@@ -227,6 +227,17 @@
     // --- flags ---
     var f = out.flags;
 
+    if (out.barriers.length >= 3) {
+      f.push({
+        level: 'warn',
+        title: 'The scan is not discriminating between barriers',
+        body: out.barriers.length + ' components are tied at ' + out.lowest + '/5, which puts ' +
+          out.functions.length + ' of the nine intervention functions on your shortlist — that is not a shortlist. ' +
+          'Re-score with one specific behaviour and one specific group in mind; a real diagnosis nearly always separates.',
+        link: ['Barrier Analysis — COM-B Interview Guide', '/behavioural-change/barrier-analysis-com-b-interview-guide/']
+      });
+    }
+
     if (s.length < COMB.length) {
       f.push({
         level: 'warn',
@@ -432,9 +443,12 @@
              ' <span class="bct-score">' + r.lowest + '/5</span></p>');
       h.push('<p class="bct-reads">' + esc(r.barriers[0].def.reads) + '</p>');
       h.push('<p class="bct-kicker">Intervention functions that can work</p>');
+      // Joined with a space, not '' — the chips are visually separated by CSS,
+      // but without whitespace in the DOM the text content runs together when
+      // copied, read aloud, or rendered without styles.
       h.push('<p class="bct-functions">' + r.functions.map(function (fn) {
         return '<span class="bct-fn">' + esc(fn) + '</span>';
-      }).join('') + '</p>');
+      }).join(' ') + '</p>');
       if (r.functions.indexOf('Coercion') > -1) {
         h.push('<p class="bct-coercion">Coercion appears on this list. It works, fast, and it is almost always the wrong first move — reserve it for genuine safety or regulatory non-negotiables, and only after you have made the right behaviour easy.</p>');
       }
@@ -705,6 +719,17 @@
   });
 
   q('#bct-generate').addEventListener('click', run);
+
+  q('#bct-save').addEventListener('click', function () {
+    save();
+    var el = q('#bct-saved');
+    if (el) {
+      el.textContent = 'Saved to this device — it will be here when you come back';
+      el.classList.add('is-on');
+      clearTimeout(savedTimer);
+      savedTimer = setTimeout(function () { el.classList.remove('is-on'); }, 4000);
+    }
+  });
 
   q('#bct-word').addEventListener('click', function () {
     var d = collect(), r = diagnose(d);

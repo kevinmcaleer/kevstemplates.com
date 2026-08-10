@@ -460,6 +460,53 @@
     return true;
   }
 
+  // Pre-fill from a saved Change Readiness Assessment. A low section A is
+  // itself the sponsorship ask, and the weak statements say which part.
+  var READINESS_ASKS = {
+    a1: 'Confirm a single named senior sponsor rather than a committee',
+    a2: 'Agree the sentence you will use, in your own words, without notes',
+    a3: 'Do one visible thing this month',
+    a4: 'Align your peers — name who is not with us and fix it',
+    a5: 'Confirm you will still be in post, or hand over deliberately'
+  };
+
+  function fromReadiness(data) {
+    if (!data || !data.scores) { return false; }
+    var scores = data.scores;
+    var raw = 0, answered = 0;
+    ['a1', 'a2', 'a3', 'a4', 'a5'].forEach(function (k) {
+      var v = parseInt(scores[k], 10);
+      if (!isNaN(v)) { raw += v; answered++; }
+    });
+    if (!answered) { return false; }
+
+    function set(k, v) {
+      var el = tool.q('[data-f="' + k + '"]');
+      if (el && v && !el.value) { el.value = v; }
+    }
+    set('change_name', (data.fields || {}).change_name);
+
+    // Weakest sponsorship statements become the asks, worst first.
+    var weak = ['a1', 'a2', 'a3', 'a4', 'a5']
+      .map(function (k) { return { k: k, v: parseInt(scores[k], 10) }; })
+      .filter(function (x) { return !isNaN(x.v) && x.v <= 3; })
+      .sort(function (a, b) { return a.v - b.v; });
+
+    if (weak.length) { set('ask1', READINESS_ASKS[weak[0].k]); }
+    if (weak.length > 1) { set('ask2', READINESS_ASKS[weak[1].k]); }
+    if (weak.length > 2) { set('ask3', READINESS_ASKS[weak[2].k]); }
+
+    set('evidence', 'Change readiness scored sponsorship at ' + raw + '/25' +
+      (raw * 3 < 15 ? ' — under the threshold where sponsorship is the first thing to fix.' : '.'));
+
+    // A2 is the fluency question, asked and answered.
+    var a2 = parseInt(scores.a2, 10);
+    if (!isNaN(a2)) { set('fluent', a2 >= 4 ? 'Yes' : 'No'); }
+
+    tool.save();
+    return true;
+  }
+
   // --- wiring --------------------------------------------------------------
 
   function analysis() {
@@ -495,14 +542,12 @@
     '#sbp-import': function (e) {
       tool.importJson(e.target.files && e.target.files[0], function (data) { tool.restore(data); run(); });
     },
-    '#sbp-import-forcefield': function (e) {
+    '#sbp-import-chain': function (e) {
       var input = e.target;
       tool.importJson(input.files && input.files[0], function (data) {
-        if (!fromForceField(data)) {
-          window.alert('That does not look like a saved Force Field Analysis with any restraining forces in it.');
-          return;
-        }
-        run();
+        // Accept either upstream tool — tell them apart by shape.
+        if (fromForceField(data) || fromReadiness(data)) { run(); return; }
+        window.alert('That does not look like a saved Force Field Analysis or Change Readiness Assessment.');
       });
       input.value = '';
     },
@@ -539,6 +584,7 @@
     analyse: analyse,
     run: run,
     fromForceField: fromForceField,
+    fromReadiness: fromReadiness,
     markdown: function () { var a = analysis(); return markdown(a.d, a.r); },
     doc: function () { var a = analysis(); return docHtml(a.d, a.r); },
     deck: buildDeck

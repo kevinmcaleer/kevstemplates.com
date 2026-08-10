@@ -200,6 +200,50 @@
     return true;
   }
 
+  // Pre-fill from a saved Sponsor Briefing Pack. The three commitments are
+  // literally the Sponsor row of "Who does what".
+  function fromSponsor(data) {
+    if (!data || !data.fields || data.fields.ask1 === undefined) { return false; }
+    var f = data.fields;
+    var commitments = [f.ask1, f.ask2, f.ask3].filter(Boolean);
+    if (!commitments.length && !f.sponsor_name) { return false; }
+
+    function set(k, v) {
+      var el = tool.q('[data-f="' + k + '"]');
+      if (el && v && !el.value) { el.value = v; }
+    }
+    set('initiative', f.change_name);
+    set('sponsor', f.sponsor_name);
+    set('why_sentence', f.one_sentence);
+    set('why_not', f.why_not);
+
+    if (commitments.length) {
+      var rows = tool.qa('#cop-roles tr');
+      for (var i = 0; i < rows.length; i++) {
+        var role = rows[i].querySelector('[data-col="role"]');
+        if (role && /sponsor/i.test(role.value)) {
+          var name = rows[i].querySelector('[data-col="name"]');
+          var com = rows[i].querySelector('[data-col="commitments"]');
+          if (name && !name.value) { name.value = f.sponsor_name || ''; }
+          if (com && !com.value) {
+            com.value = commitments.map(function (c, n) { return (n + 1) + '. ' + c; }).join(' ');
+          }
+          break;
+        }
+      }
+    }
+
+    // Decisions requested of the sponsor are decisions needed from leadership.
+    if (data.decisions && data.decisions.length) {
+      tool.fillRows('cop-decisions', TABLES['cop-decisions'].cols, data.decisions.map(function (x) {
+        return { decision: x.decision, by: x.by, who: f.sponsor_name, consequence: x.consequence };
+      }));
+    }
+
+    tool.save();
+    return true;
+  }
+
   // --- rendering -----------------------------------------------------------
 
   function render(d, r) {
@@ -435,14 +479,12 @@
     '#cop-import': function (e) {
       tool.importJson(e.target.files && e.target.files[0], function (data) { tool.restore(data); run(); });
     },
-    '#cop-import-diagnosis': function (e) {
+    '#cop-import-chain': function (e) {
       var input = e.target;
       tool.importJson(input.files && input.files[0], function (data) {
-        if (!fromDiagnosis(data)) {
-          window.alert('That does not look like a saved Behavioural Diagnosis Canvas.');
-          return;
-        }
-        run();
+        // Accept either upstream tool — tell them apart by shape.
+        if (fromDiagnosis(data) || fromSponsor(data)) { run(); return; }
+        window.alert('That does not look like a saved Behavioural Diagnosis Canvas or Sponsor Briefing Pack.');
       });
       input.value = '';
     },
@@ -462,6 +504,7 @@
     analyse: analyse,
     run: run,
     fromDiagnosis: fromDiagnosis,
+    fromSponsor: fromSponsor,
     markdown: function () { var a = analysis(); return markdown(a.d, a.r); },
     doc: function () { var a = analysis(); return docHtml(a.d, a.r); }
   };

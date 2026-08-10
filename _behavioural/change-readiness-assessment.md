@@ -8,15 +8,14 @@ order: 3
 kind: "worksheet"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Score it on screen and it does the weighting, applies the stop signals, and tells you which section to lead with — the part that decides whether a bad score gets heard or argued with.</p>
+<a class="btn btn-primary" href="/behavioural-change/readiness-tool/">Score this interactively &rarr;</a>
+</div>
 Score honestly. A low score isn't a reason not to proceed — it's a list of what to fix first, and a defensible piece of evidence when you need to tell a leader the date is wrong.
 
 Score each 1 (not at all) to 5 (fully true).
 
-<div class="bct-callout bct-tip" markdown="1">
-**Score it on screen**
-
-The [interactive version](/behavioural-change/readiness-tool/) does the weighting and the thresholds for you, applies the stop signals, and tells you how to present the result — including which section to lead with, which is the part that decides whether a bad score gets heard or argued with.
-</div>
 
 ---
 

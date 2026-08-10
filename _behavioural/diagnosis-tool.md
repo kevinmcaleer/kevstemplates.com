@@ -13,6 +13,8 @@ Work through the [Behavioural Diagnosis Canvas](/behavioural-change/behavioural-
 
 Everything stays in your browser. Nothing is uploaded, and your answers are saved to this device as you type.
 
+{% include bct_tool_nav.html %}
+
 <div id="bct-tool">
 <div class="bct-toolbar">
 <span class="bct-toolbar-note">Saves to this device as you type</span>

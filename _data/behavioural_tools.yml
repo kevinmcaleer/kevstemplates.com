@@ -1,0 +1,58 @@
+# The interactive tools in the Behavioural Change Toolkit.
+#
+# Grouped by what they are for, deliberately not numbered: the toolkit's own
+# advice is that people legitimately enter partway through — someone opens the
+# Force Field on a Tuesday because a sponsor went quiet, not because they have
+# worked through steps one to four.
+#
+# `prefills_from` drives the chaining hint shown on each tool page. Keep it in
+# step with the fromX() importers in the tool scripts.
+
+- group: Diagnose
+  blurb: Work out what is actually going on before designing anything
+  tools:
+    - name: Behavioural Diagnosis Canvas
+      short: Diagnosis Canvas
+      link: /behavioural-change/diagnosis-tool/
+      reference: /behavioural-change/behavioural-diagnosis-canvas/
+      gives: your target behaviours and primary barrier
+
+    - name: Change Readiness Assessment
+      short: Change Readiness
+      link: /behavioural-change/readiness-tool/
+      reference: /behavioural-change/change-readiness-assessment/
+      gives: a defensible score and the stop signals
+
+    - name: Force Field Analysis
+      short: Force Field
+      link: /behavioural-change/force-field-tool/
+      reference: /behavioural-change/force-field-analysis/
+      gives: the restraints to remove, ranked
+
+- group: Plan
+  blurb: Turn the diagnosis into an artefact people can act on
+  tools:
+    - name: Change on a Page
+      short: Change on a Page
+      link: /behavioural-change/change-on-a-page-tool/
+      reference: /behavioural-change/change-on-a-page/
+      gives: the one-pager you take to every meeting
+      prefills_from:
+        - name: Behavioural Diagnosis Canvas
+          link: /behavioural-change/diagnosis-tool/
+        - name: Sponsor Briefing Pack
+          link: /behavioural-change/sponsor-briefing-tool/
+
+- group: Advise
+  blurb: Make the ask to the person who can remove the barrier
+  tools:
+    - name: Sponsor Briefing Pack
+      short: Sponsor Briefing
+      link: /behavioural-change/sponsor-briefing-tool/
+      reference: /behavioural-change/sponsor-briefing-pack/
+      gives: the one-page brief, run sheet and slides
+      prefills_from:
+        - name: Force Field Analysis
+          link: /behavioural-change/force-field-tool/
+        - name: Change Readiness Assessment
+          link: /behavioural-change/readiness-tool/

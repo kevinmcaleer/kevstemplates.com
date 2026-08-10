@@ -8,15 +8,14 @@ order: 7
 kind: "playbook"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Turns your three asks into the one-page brief, a timed run sheet and a six-slide deck — and tells you when an ask is too vague for a sponsor to say yes to.</p>
+<a class="btn btn-primary" href="/behavioural-change/sponsor-briefing-tool/">Prepare this interactively &rarr;</a>
+</div>
 **Active, visible sponsorship is repeatedly identified as the single largest contributor to change success.** Not steering group attendance — visible, specific, sustained action.
 
 Most sponsors want to do this and don't know what it means in practice. Nobody has ever told them. Your job is to make the ask concrete enough to say yes to.
 
-<div class="bct-callout bct-tip" markdown="1">
-**Preparing for the meeting?**
-
-The [interactive version](/behavioural-change/sponsor-briefing-tool/) turns your three asks into the one-page brief you hand over, a timed run sheet, and a six-slide deck if you need one — and it will tell you when an ask is too vague for a sponsor to say yes to. Word, PowerPoint, Markdown or PDF, all generated in your browser.
-</div>
 
 ---
 

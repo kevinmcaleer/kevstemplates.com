@@ -8,6 +8,10 @@ order: 3
 kind: "worksheet"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Totals both sides, tells you when the change will not happen at current settings, and turns your strongest restraints into a specific sponsor ask.</p>
+<a class="btn btn-primary" href="/behavioural-change/force-field-tool/">Weigh the forces interactively &rarr;</a>
+</div>
 Kurt Lewin's tool, and still the fastest way to get a group to see the whole picture in twenty minutes.
 
 **The core insight, and the reason it's worth doing:**
@@ -16,11 +20,6 @@ Kurt Lewin's tool, and still the fastest way to get a group to see the whole pic
 
 Organisations instinctively add pressure — more comms, more targets, more escalation. Adding drivers to a system that is also restrained produces tension, stress and eventual snap-back. Removing the restraint lets the behaviour flow. This one idea reframes most stuck change programmes.
 
-<div class="bct-callout bct-tip" markdown="1">
-**Work it on screen**
-
-The [interactive version](/behavioural-change/force-field-tool/) totals both sides, tells you when the change will not happen at current settings, and turns your strongest restraints into a specific sponsor ask — with the owner, the decider and the date that make it decidable. It can hand that straight to the [Sponsor Briefing Pack](/behavioural-change/sponsor-briefing-tool/).
-</div>
 
 ---
 

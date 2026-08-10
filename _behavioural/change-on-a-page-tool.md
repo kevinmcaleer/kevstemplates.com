@@ -11,14 +11,16 @@ toolkit: "Behavioural Change Toolkit"
 ---
 Build the [Change on a Page](/behavioural-change/change-on-a-page/) one-pager on screen. It checks the two tables people skip — what stops, and what you need decided — and tells you before you circulate it rather than after.
 
-If you have already saved a [Behavioural Diagnosis Canvas](/behavioural-change/diagnosis-tool/), load it below and the behaviours, primary barrier, sponsor and risks carry straight across.
+If you have already saved a [Behavioural Diagnosis Canvas](/behavioural-change/diagnosis-tool/) or a [Sponsor Briefing Pack](/behavioural-change/sponsor-briefing-tool/), load it below — the behaviours, primary barrier and risks come from the first, and the sponsor's three commitments and requested decisions from the second.
 
 Everything stays in your browser. Nothing is uploaded, and your answers are saved to this device as you type.
+
+{% include bct_tool_nav.html %}
 
 <div id="cop-tool">
 <div class="bct-toolbar">
 <span class="bct-toolbar-note">Saves to this device as you type</span>
-<label class="btn btn-sm btn-outline-primary mb-0" for="cop-import-diagnosis">Pre-fill from a saved diagnosis<input type="file" id="cop-import-diagnosis" accept="application/json,.json" hidden></label>
+<label class="btn btn-sm btn-outline-primary mb-0" for="cop-import-chain">Pre-fill from diagnosis or sponsor brief<input type="file" id="cop-import-chain" accept="application/json,.json" hidden></label>
 <button type="button" class="btn btn-sm btn-primary" id="cop-save">Save progress</button>
 <button type="button" class="btn btn-sm btn-outline-secondary" id="cop-json">Download a copy</button>
 <label class="btn btn-sm btn-outline-secondary mb-0" for="cop-import">Load a saved copy<input type="file" id="cop-import" accept="application/json,.json" hidden></label>

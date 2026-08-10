@@ -139,6 +139,102 @@
   .bct-wide { min-width: 60rem; }
 }
 
+// --- navigation across the tools -------------------------------------------
+
+.bct-toolnav {
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #f8fafc;
+  padding: 0.85rem 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.bct-toolnav-intro {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #767676;
+  margin-bottom: 0.6rem;
+
+  span { text-transform: none; letter-spacing: 0; }
+}
+
+.bct-toolnav-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.75rem;
+}
+
+.bct-toolnav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.bct-toolnav-heading {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $clr-teal-100;
+  margin: 0 0 0.15rem;
+}
+
+.bct-toolnav-item {
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: none;
+  padding: 0.1rem 0;
+
+  &:hover { color: $clr-orange; text-decoration: none; }
+
+  &.is-current {
+    font-weight: 600;
+    color: #1a1a1a;
+    border-left: 3px solid $clr-teal-100;
+    padding-left: 0.5rem;
+    margin-left: -0.5rem;
+  }
+}
+
+.bct-toolnav-meta {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 0.75rem 0 0;
+  padding-top: 0.6rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.bct-toolnav-ref { margin-left: 0.35rem; white-space: nowrap; }
+
+// A worksheet's link to its interactive counterpart, at the top of the page
+.bct-open-tool {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  border: 1px solid $clr-teal-100;
+  border-left-width: 4px;
+  border-radius: 0 6px 6px 0;
+  background: #f0fdfa;
+  padding: 0.85rem 1.1rem;
+  margin: 1.25rem 0 1.5rem;
+
+  p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+    flex: 1 1 18rem;
+  }
+
+  .btn { white-space: nowrap; }
+}
+
+@media print {
+  .bct-toolnav,
+  .bct-open-tool { display: none !important; }
+}
+
 // --- generated output ------------------------------------------------------
 
 .bct-output {

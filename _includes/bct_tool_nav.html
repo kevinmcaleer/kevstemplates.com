@@ -1,0 +1,41 @@
+{%- comment -%}
+Navigation across the Behavioural Change Toolkit's interactive tools.
+
+Grouped by purpose rather than numbered — see the note in
+_data/behavioural_tools.yml for why. Include at the top of each tool page;
+it marks the current tool and shows what can pre-fill it.
+{%- endcomment -%}
+<nav class="bct-toolnav" aria-label="Interactive tools">
+  <p class="bct-toolnav-intro">Interactive tools <span>— enter wherever your problem is</span></p>
+  <div class="bct-toolnav-groups">
+    {%- for section in site.data.behavioural_tools %}
+    <div class="bct-toolnav-group">
+      <p class="bct-toolnav-heading">{{ section.group }}</p>
+      {%- for tool in section.tools %}
+      {%- if page.url == tool.link %}
+      <span class="bct-toolnav-item is-current" aria-current="page">{{ tool.short }}</span>
+      {%- else %}
+      <a class="bct-toolnav-item" href="{{ tool.link }}">{{ tool.short }}</a>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+    {%- endfor %}
+  </div>
+  {%- for section in site.data.behavioural_tools %}
+  {%- for tool in section.tools %}
+  {%- if page.url == tool.link %}
+  <p class="bct-toolnav-meta">
+    Gives you {{ tool.gives }}.
+    {%- if tool.prefills_from %}
+    Can pre-fill from
+    {%- for src in tool.prefills_from %}
+    <a href="{{ src.link }}">{{ src.name }}</a>{% unless forloop.last %} or{% endunless %}
+    {%- endfor -%}
+    .
+    {%- endif %}
+    <a class="bct-toolnav-ref" href="{{ tool.reference }}">Read the guidance &rarr;</a>
+  </p>
+  {%- endif %}
+  {%- endfor %}
+  {%- endfor %}
+</nav>

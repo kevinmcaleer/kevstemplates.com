@@ -11,6 +11,11 @@
   .col-sm-3 {
     padding: 0px;
     margin: 0px;
+    // The .col-xs-6 wrappers are Bootstrap 3 classes and carry no width in
+    // Bootstrap 4, so they size to their content and .col-sm-3 resolves to
+    // 25% of that. With four tile columns this happens to land on $do_width;
+    // with fewer, the fixed-width buttons overflow into the next column.
+    min-width: $do_width;
   }
   .col-xs-6 {
     padding: 0px;

@@ -34,13 +34,31 @@ Buy-in is an attitude — slow, invisible, hard to move. Behaviour is observable
 
 ## The five moves, in order
 
-```
-1. DIAGNOSE   →  What behaviour, by whom, and what's actually blocking it?
-2. TARGET     →  Pick the vital few behaviours. Reject the rest out loud.
-3. DESIGN     →  Match interventions to the real barrier, not the assumed one.
-4. DELIVER    →  Run it small, learn, then scale. Managers do the heavy lifting.
-5. SUSTAIN    →  Assume drift. Design for the moment attention leaves.
-```
+<div class="mermaid">
+flowchart LR
+    A[1. Diagnose] --> B[2. Target]
+    B --> C[3. Design]
+    C --> D[4. Deliver]
+    D --> E[5. Sustain]
+    click A "/behavioural-change/behavioural-diagnosis-canvas/" "Behavioural Diagnosis Canvas"
+    click B "/behavioural-change/target-behaviour-definition/" "Target Behaviour Definition"
+    click C "/behavioural-change/intervention-design-worksheet/" "Intervention Design Worksheet"
+    click D "/behavioural-change/pilot-design-and-experiment-card/" "Pilot Design and Experiment Card"
+    click E "/behavioural-change/embedding-and-reinforcement/" "Embedding and Reinforcement"
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E blue
+</div>
+
+Each step links to the tool that starts it.
+
+| Move | What it means | Start with |
+|---|---|---|
+| **1. Diagnose** | What behaviour, by whom, and what's actually blocking it? | [Behavioural Diagnosis Canvas](/behavioural-change/behavioural-diagnosis-canvas/) |
+| **2. Target** | Pick the vital few behaviours. Reject the rest out loud. | [Target Behaviour Definition](/behavioural-change/target-behaviour-definition/) |
+| **3. Design** | Match interventions to the real barrier, not the assumed one. | [Intervention Design Worksheet](/behavioural-change/intervention-design-worksheet/) |
+| **4. Deliver** | Run it small, learn, then scale. Managers do the heavy lifting. | [Pilot Design and Experiment Card](/behavioural-change/pilot-design-and-experiment-card/) |
+| **5. Sustain** | Assume drift. Design for the moment attention leaves. | [Embedding and Reinforcement](/behavioural-change/embedding-and-reinforcement/) |
+{:class="table table-single table-narrow"}
 
 Most failed change skips 1 and 3, and does a great deal of 4.
 

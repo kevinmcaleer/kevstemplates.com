@@ -74,7 +74,7 @@ The whole toolkit is also an [Obsidian vault](/downloads/behavioural-change-tool
 
 Orientation, a decision tree, and a default running order.
 
-- **[Choose Your Tool](/behavioural-change/choose-your-tool/)**
+- **[Choose Your Tool](/behavioural-change/choose-your-tool/)** — also an [interactive router](/behavioural-change/choose-tool/)
 - **[The 8-Week Sequence](/behavioural-change/the-8-week-sequence/)**
 - **[Toolkit Map (MOC)](/behavioural-change/toolkit-map-moc/)**
 
@@ -82,12 +82,12 @@ Orientation, a decision tree, and a default running order.
 
 The models — and a note on when each one is the wrong tool.
 
-- **[ADKAR — Individual Change](/behavioural-change/adkar-individual-change/)** — a specific person or team is stuck and you need to know at which step
+- **[ADKAR — Individual Change](/behavioural-change/adkar-individual-change/)** — also a [stuck-step finder](/behavioural-change/adkar-tool/) — a specific person or team is stuck and you need to know at which step
 - **[Bridges Transition Model](/behavioural-change/bridges-transition-model/)** — the change involves loss — of role, status, identity, competence or team
 - **[COM-B and the Behaviour Change Wheel](/behavioural-change/com-b-and-the-behaviour-change-wheel/)** — you need to know why a behaviour isn't happening before you design anything
 - **[Diffusion of Innovations](/behavioural-change/diffusion-of-innovations/)** — deciding who to roll out to first, and who to stop arguing with
 - **[EAST — Easy Attractive Social Timely](/behavioural-change/east-easy-attractive-social-timely/)** — you've diagnosed the barrier and need practical tactics fast
-- **[Habit Loop and Behavioural Drift](/behavioural-change/habit-loop-and-behavioural-drift/)** — adoption spiked then fell, or you're designing for the long term
+- **[Habit Loop and Behavioural Drift](/behavioural-change/habit-loop-and-behavioural-drift/)** — also a [drift explainer](/behavioural-change/drift-tool/) — adoption spiked then fell, or you're designing for the long term
 - **[Myths and Traps in Change Management](/behavioural-change/myths-and-traps-in-change-management/)** — before you brief anyone senior
 - **[Social Norms and Influence](/behavioural-change/social-norms-and-influence/)** — you need cheap, high-leverage influence and have exhausted the obvious
 - **[Switch — Rider Elephant Path](/behavioural-change/switch-rider-elephant-path/)** — you need to explain change to a leadership team in three minutes
@@ -139,7 +139,7 @@ Stop it sliding back.
 Sponsorship, executive failure modes, and challenging upward.
 
 - **[Challenging Upward — Scripts](/behavioural-change/challenging-upward-scripts/)**
-- **[Executive Failure Modes](/behavioural-change/executive-failure-modes/)**
+- **[Executive Failure Modes](/behavioural-change/executive-failure-modes/)** — also an [interactive signal picker](/behavioural-change/exec-failure-tool/)
 - **[Leader Behaviour Contract](/behavioural-change/leader-behaviour-contract/)**
 - **[Sponsor Briefing Pack](/behavioural-change/sponsor-briefing-pack/)** — also an [interactive briefing builder](/behavioural-change/sponsor-briefing-tool/) with Word and PowerPoint output
 - **[The One-Page Board Narrative](/behavioural-change/the-one-page-board-narrative/)**

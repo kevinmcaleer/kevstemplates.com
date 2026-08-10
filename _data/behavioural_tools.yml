@@ -8,6 +8,30 @@
 # `prefills_from` drives the chaining hint shown on each tool page. Keep it in
 # step with the fromX() importers in the tool scripts.
 
+- group: Start here
+  blurb: When you do not know where to begin
+  tools:
+    - name: Choose Your Tool
+      short: Choose Your Tool
+      link: /behavioural-change/choose-tool/
+      reference: /behavioural-change/choose-your-tool/
+      gives: a route into the right tool from what your week looks like
+
+- group: Understand
+  blurb: Work out why the outcome you are getting keeps happening
+  tools:
+    - name: ADKAR Stuck-Step Finder
+      short: ADKAR
+      link: /behavioural-change/adkar-tool/
+      reference: /behavioural-change/adkar-individual-change/
+      gives: which of the five steps is blocked, and whether your planned fix addresses it
+
+    - name: Drift Explainer
+      short: Drift Explainer
+      link: /behavioural-change/drift-tool/
+      reference: /behavioural-change/habit-loop-and-behavioural-drift/
+      gives: which of the four causes of drift you have, and the structural fix
+
 - group: Diagnose
   blurb: Work out what is actually going on before designing anything
   tools:
@@ -55,6 +79,12 @@
 - group: Advise
   blurb: Make the ask to the person who can remove the barrier
   tools:
+    - name: Executive Failure Modes
+      short: Exec Failure Modes
+      link: /behavioural-change/exec-failure-tool/
+      reference: /behavioural-change/executive-failure-modes/
+      gives: the named failure mode, why it is fatal, and the words to raise it
+
     - name: Sponsor Briefing Pack
       short: Sponsor Briefing
       link: /behavioural-change/sponsor-briefing-tool/

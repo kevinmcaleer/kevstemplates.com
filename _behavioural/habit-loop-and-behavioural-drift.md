@@ -9,6 +9,10 @@ kind: "framework"
 use_when: "Adoption spiked then fell, or you're designing for the long term"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Pick the shape your adoption curve made and the signs you recognise, and it names which of the four causes of drift you have and the structural fix.</p>
+<a class="btn btn-primary" href="/behavioural-change/drift-tool/">Explain your curve &rarr;</a>
+</div>
 Roughly 40% of daily workplace actions are habitual rather than decided. You are not competing with people's opinions — you are competing with their **automaticity**.
 
 ---

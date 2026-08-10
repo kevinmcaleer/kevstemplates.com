@@ -8,6 +8,10 @@ order: 7
 kind: "reference"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Tick the signals you have actually observed and it names the failure mode, explains why it produces the outcome you are getting, and gives you the words to raise it.</p>
+<a class="btn btn-primary" href="/behavioural-change/exec-failure-tool/">Name what you are seeing &rarr;</a>
+</div>
 The eight ways senior leaders sink their own change. Each is well-intentioned. Learn to spot them early and name them constructively.
 
 ---

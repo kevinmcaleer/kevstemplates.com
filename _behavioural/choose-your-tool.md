@@ -8,6 +8,10 @@ order: 1
 kind: "index"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Pick the sentence that sounds most like your week and it routes you, including the branch that separates “can’t” from “won’t”.</p>
+<a class="btn btn-primary" href="/behavioural-change/choose-tool/">Use the interactive router &rarr;</a>
+</div>
 A decision tree for when you don't know where to start.
 
 ---

@@ -6,7 +6,11 @@
 #cop-tool,
 #crt-tool,
 #ff-tool,
-#rd-tool {
+#rd-tool,
+#efm-tool,
+#adkar-tool,
+#drift-tool,
+#router-tool {
   margin-top: 1.5rem;
 
   .bct-toolbar {
@@ -138,6 +142,39 @@
 
   // The restraining table carries the ask columns and needs the room
   .bct-wide { min-width: 60rem; }
+
+  // Signal checkboxes, grouped by failure mode
+  .bct-signal-group {
+    border-left: 3px solid #e5e5e5;
+    padding-left: 0.85rem;
+    margin-bottom: 1rem;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  .bct-signal-mode {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .form-check { margin-bottom: 0.2rem; }
+  .form-check-label { font-weight: 400; font-size: 0.9rem; }
+
+  // Router situation buttons
+  .bct-router-start {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .bct-router-situation {
+    text-align: left;
+    white-space: normal;
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+  }
 
   // The seven types, shown as reference inside the resistance form
   .bct-types {
@@ -590,6 +627,88 @@
     color: #1a1a1a;
   }
 
+  // Executive failure modes
+  .bct-mode {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-left: 4px solid #cbd5e1;
+    border-radius: 0 4px 4px 0;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.85rem;
+
+    p { margin-bottom: 0.4rem; font-size: 0.92rem; }
+    p:last-child { margin-bottom: 0; }
+
+    &.is-lead { border-left-color: #dc2626; }
+  }
+
+  .bct-mode-head { font-weight: 600; font-size: 1.05rem !important; }
+  .bct-mode-signals { color: #555; font-style: italic; }
+  .bct-mode-note { color: #8a5200; }
+
+  .bct-say {
+    border-left: 3px solid $clr-teal-100;
+    background: #f0fdfa;
+    padding: 0.7rem 0.9rem;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+  }
+
+  .bct-say-label {
+    font-size: 0.7rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #767676;
+    margin-bottom: 0.2rem !important;
+  }
+
+  // ADKAR track
+  .bct-adkar-track {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .bct-adkar-step {
+    flex: 1 1 6rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 0.5rem 0.6rem;
+    text-align: center;
+    background: #fff;
+
+    strong { display: block; font-size: 1.2rem; }
+
+    &.is-clear { border-color: $clr-teal-100; }
+    &.is-blocked { border-color: #dc2626; }
+    &.is-barrier { background: #fef2f2; border-width: 2px; }
+    &.is-later { opacity: 0.45; }
+  }
+
+  .bct-adkar-name { display: block; font-size: 0.75rem; color: #555; }
+  .bct-adkar-score { display: block; font-weight: 600; font-size: 0.9rem; }
+
+  .bct-decode.is-killer { border-left-color: #dc2626; }
+
+  // Router
+  .bct-router-question { font-size: 1.05rem; margin-bottom: 0.75rem; }
+
+  .bct-router-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .bct-router-option { text-align: left; white-space: normal; }
+
+  .bct-router-routes {
+    padding-left: 1.25rem;
+
+    li { margin-bottom: 0.35rem; }
+  }
+
   .bct-agenda {
     font-size: 0.9rem;
 
@@ -635,7 +754,10 @@
   #cop-tool button,
   #crt-tool button,
   #ff-tool button,
-  #rd-tool button {
+  #rd-tool button,
+  #efm-tool button,
+  #adkar-tool button,
+  #drift-tool button {
     display: none !important;
   }
 
@@ -649,7 +771,10 @@
   #cop-tool .bct-tool-section,
   #crt-tool .bct-tool-section,
   #ff-tool .bct-tool-section,
-  #rd-tool .bct-tool-section {
+  #rd-tool .bct-tool-section,
+  #efm-tool .bct-tool-section,
+  #adkar-tool .bct-tool-section,
+  #drift-tool .bct-tool-section {
     page-break-inside: avoid;
     border: 1px solid #ccc;
   }
@@ -666,7 +791,13 @@
   #ff-tool input,
   #ff-tool select,
   #rd-tool input,
-  #rd-tool select {
+  #rd-tool select,
+  #efm-tool input,
+  #efm-tool select,
+  #adkar-tool input,
+  #adkar-tool select,
+  #drift-tool input,
+  #drift-tool select {
     border: none;
     border-bottom: 1px solid #ccc;
     -webkit-appearance: none;

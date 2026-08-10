@@ -9,6 +9,10 @@ kind: "framework"
 use_when: "A specific person or team is stuck and you need to know at which step"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Score the five questions and it finds the first blocked step — then checks your intended next action against it, because you cannot fix a Desire gap with more Knowledge.</p>
+<a class="btn btn-primary" href="/behavioural-change/adkar-tool/">Find the stuck step &rarr;</a>
+</div>
 From Prosci. Its value isn't as a programme plan — it's as a **diagnostic for an individual**. Change happens one person at a time, and each person is stuck at exactly one step. Identify that step and you know what to do.
 
 ---

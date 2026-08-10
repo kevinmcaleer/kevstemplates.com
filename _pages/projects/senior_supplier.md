@@ -157,6 +157,7 @@ Replacement is disruptive but cheaper than living with a broken supplier voice o
 - [Project Sponsor](/projects/project_sponsor) - The senior champion
 - [Executive](/projects/executive) - The Project Board chair
 - [Senior User](/projects/senior_user) - User representative on the Board
+- [Project Manager](/projects/project_manager) - Day-to-day delivery lead
 - [Identify Stakeholders](/projects/identify_stakeholders) - Wider stakeholder management
 - [Vendor Management](/projects/vendor_management) - Managing external suppliers
 - [Delivery Approach](/projects/delivery_approach) - How the supplier will build

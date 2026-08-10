@@ -144,6 +144,7 @@ If users don't adopt, the benefits don't materialise — and that's a Senior Use
 - [Project Sponsor](/projects/project_sponsor) - The senior champion
 - [Executive](/projects/executive) - The Project Board chair
 - [Senior Supplier](/projects/senior_supplier) - Supplier representative on the Board
+- [Project Manager](/projects/project_manager) - Day-to-day delivery lead
 - [Identify Stakeholders](/projects/identify_stakeholders) - Wider stakeholder management
 - [Requirements Capture](/projects/requirements_capture) - Specifying user needs
 - [Business Change Management](/projects/business_change_management) - Driving adoption

@@ -124,6 +124,7 @@ Treat the sponsor as your most important stakeholder. A simple engagement plan:
 - [Executive](/projects/executive) - The Project Board chair
 - [Senior User](/projects/senior_user) - User representative on the Board
 - [Senior Supplier](/projects/senior_supplier) - Supplier representative on the Board
+- [Project Manager](/projects/project_manager) - Day-to-day delivery lead
 - [Identify Stakeholders](/projects/identify_stakeholders) - Wider stakeholder management
 - [Project Mandate](/projects/project_mandate) - Where the sponsor formalises the project
 - [Business Case](/projects/business_case) - Sponsor-owned justification

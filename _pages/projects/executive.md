@@ -128,6 +128,7 @@ In many organisations these roles overlap or are held by the same person. When t
 - [Project Sponsor](/projects/project_sponsor) - The senior champion above the Board
 - [Senior User](/projects/senior_user) - User representative on the Board
 - [Senior Supplier](/projects/senior_supplier) - Supplier representative on the Board
+- [Project Manager](/projects/project_manager) - Reports to the Executive
 - [Business Case](/projects/business_case) - Executive-owned justification
 - [Identify Stakeholders](/projects/identify_stakeholders) - Wider stakeholder management
 - [End of Stage Report](/projects/end_of_stage_report) - What the Executive reviews

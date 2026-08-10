@@ -104,6 +104,7 @@ Some stakeholders are not just interested parties — they hold formal accountab
 | **[Executive](/projects/executive)** | Chairs the Project Board; accountable for project success |
 | **[Senior User](/projects/senior_user)** | Represents users on the Board; signs off fit for purpose |
 | **[Senior Supplier](/projects/senior_supplier)** | Represents delivery on the Board; commits supplier resources |
+| **[Project Manager](/projects/project_manager)** | Runs the project day-to-day; reports to the Board |
 {:class="table table-single table-narrow"}
 
 See [Project Roles](/projects/project_roles) for a full overview of how these roles work together.
@@ -411,6 +412,7 @@ flowchart TD
 - [Executive](/projects/executive) - The Project Board chair
 - [Senior User](/projects/senior_user) - User representative on the Board
 - [Senior Supplier](/projects/senior_supplier) - Supplier representative on the Board
+- [Project Manager](/projects/project_manager) - Day-to-day delivery lead
 - [Stakeholder Register](/projects/stakeholder_register) - Track and manage stakeholders
 - [Communication Plan](/projects/communication_plan) - Plan stakeholder communications
 - [Comms Strategy](/projects/comms_strategy) - Communications strategy overview

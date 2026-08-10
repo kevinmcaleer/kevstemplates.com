@@ -101,6 +101,8 @@
               link: /projects/senior_user
             - name: Senior Supplier
               link: /projects/senior_supplier
+            - name: Project Manager
+              link: /projects/project_manager
 
 - name: Programmes
   icon: fa-layer-group

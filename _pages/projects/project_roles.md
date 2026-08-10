@@ -4,7 +4,7 @@ name: Project Roles
 section: Project
 process: startup
 description: Overview of the key project roles - Project Sponsor, Executive, Senior User and Senior Supplier - and how they fit into the project governance structure.
-tags: [Roles, Governance, Project Board, Sponsor, Executive, Senior User, Senior Supplier]
+tags: [Roles, Governance, Project Board, Sponsor, Executive, Senior User, Senior Supplier, Project Manager]
 themes: [Governance, Stakeholder Engagement]
 last_updated: 2026-05-18
 ---
@@ -23,6 +23,7 @@ Every project needs clear accountability. The roles below define who decides, wh
 | **[Executive](/projects/executive)** | The business case | Value for money and viability |
 | **[Senior User](/projects/senior_user)** | The users and beneficiaries | Fit for purpose and usability |
 | **[Senior Supplier](/projects/senior_supplier)** | Those delivering the product | Feasibility and integrity of the solution |
+| **[Project Manager](/projects/project_manager)** | Day-to-day delivery | Delivering products within agreed tolerances |
 {:class="table table-single table-narrow"}
 
 ---
@@ -42,7 +43,7 @@ flowchart LR
     class S,E,SU,SS,PM blue
 </div>
 
-The **Project Sponsor** secures funding and champions the project at executive level. The **Executive** chairs the Project Board and is ultimately accountable for success. The **Senior User** and **Senior Supplier** sit on the Board alongside the Executive, ensuring user and delivery interests are represented in every decision.
+The **Project Sponsor** secures funding and champions the project at executive level. The **Executive** chairs the Project Board and is ultimately accountable for success. The **Senior User** and **Senior Supplier** sit on the Board alongside the Executive, ensuring user and delivery interests are represented in every decision. The **Project Manager** reports to the Board and runs the project day-to-day within agreed tolerances.
 
 ---
 
@@ -58,6 +59,8 @@ The Project Board is made up of three roles:
 {:class="table table-single table-narrow"}
 
 The **Project Sponsor** is sometimes the same person as the Executive, especially in smaller organisations. In larger or programme-aligned projects, the Sponsor sits above the Board, providing strategic backing.
+
+The **Project Manager** is *not* a Board member — they report to the Board, present options and recommendations, but the Board decides.
 
 ---
 
@@ -92,6 +95,7 @@ When appointing to these roles, consider:
 - [Executive](/projects/executive) - Chairs the Project Board and owns the business case
 - [Senior User](/projects/senior_user) - Represents user interests on the Board
 - [Senior Supplier](/projects/senior_supplier) - Represents delivery interests on the Board
+- [Project Manager](/projects/project_manager) - Day-to-day leader, reports to the Board
 - [Identify Stakeholders](/projects/identify_stakeholders) - Wider stakeholder management
 - [Stakeholder Register](/projects/stakeholder_register) - Track and manage stakeholders
 - [Project Mandate](/projects/project_mandate) - Where roles are first formalised

@@ -156,18 +156,32 @@ window.BCT = (function () {
     }
 
     var savedTimer;
-    function flagSaved() {
+    function flagSaved(message, ms) {
       var el = q('[data-saved]');
       if (!el) { return; }
-      el.textContent = 'Saved locally';
+      el.textContent = message || 'Saved locally';
       el.classList.add('is-on');
       clearTimeout(savedTimer);
-      savedTimer = setTimeout(function () { el.classList.remove('is-on'); }, 1600);
+      savedTimer = setTimeout(function () { el.classList.remove('is-on'); }, ms || 1600);
     }
 
     function save() {
       try { localStorage.setItem(storeKey, JSON.stringify(collect())); } catch (e) { /* private mode */ }
       flagSaved();
+    }
+
+    // Explicit save, for the button. Confirms for longer than the autosave
+    // flicker, and says plainly that the work will still be here.
+    function saveNow() {
+      var stored = true;
+      try {
+        localStorage.setItem(storeKey, JSON.stringify(collect()));
+      } catch (e) {
+        stored = false;
+      }
+      flagSaved(stored
+        ? 'Saved to this device — it will be here when you come back'
+        : 'This browser will not store data (private mode?) — use Download a copy instead', 5000);
     }
 
     function load() {
@@ -220,7 +234,7 @@ window.BCT = (function () {
 
     return {
       root: root, q: q, qa: qa, val: val,
-      collect: collect, restore: restore, save: save, load: load, clear: clear,
+      collect: collect, restore: restore, save: save, saveNow: saveNow, load: load, clear: clear,
       addRow: addRow, fillRows: fillRows, wire: wire, importJson: importJson
     };
   }

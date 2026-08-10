@@ -419,6 +419,7 @@
 
   tool.wire({
     '#cop-generate': run,
+    '#cop-save': function () { tool.saveNow(); },
     '#cop-word': function () {
       var a = analysis();
       B.download(B.slugify(a.d.fields.initiative, 'change-on-a-page') + '.doc', 'application/msword', docHtml(a.d, a.r));

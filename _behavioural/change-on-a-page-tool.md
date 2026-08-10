@@ -17,7 +17,11 @@ Everything stays in your browser. Nothing is uploaded, and your answers are save
 
 <div id="cop-tool">
 <div class="bct-toolbar">
+<span class="bct-toolbar-note">Saves to this device as you type</span>
 <label class="btn btn-sm btn-outline-primary mb-0" for="cop-import-diagnosis">Pre-fill from a saved diagnosis<input type="file" id="cop-import-diagnosis" accept="application/json,.json" hidden></label>
+<button type="button" class="btn btn-sm btn-primary" id="cop-save">Save progress</button>
+<button type="button" class="btn btn-sm btn-outline-secondary" id="cop-json">Download a copy</button>
+<label class="btn btn-sm btn-outline-secondary mb-0" for="cop-import">Load a saved copy<input type="file" id="cop-import" accept="application/json,.json" hidden></label>
 <button type="button" class="btn btn-sm btn-outline-secondary" id="cop-clear">Clear form</button>
 <span data-saved class="bct-saved" aria-live="polite"></span>
 </div>
@@ -182,8 +186,6 @@ Everything stays in your browser. Nothing is uploaded, and your answers are save
 <button type="button" class="btn btn-outline-primary" id="cop-word">Download as Word</button>
 <button type="button" class="btn btn-outline-primary" id="cop-markdown">Download as Markdown</button>
 <button type="button" class="btn btn-outline-secondary" id="cop-print">Print / save as PDF</button>
-<button type="button" class="btn btn-outline-secondary" id="cop-json">Save a copy (JSON)</button>
-<label class="btn btn-outline-secondary mb-0" for="cop-import">Load a saved copy<input type="file" id="cop-import" accept="application/json,.json" hidden></label>
 </div>
 <p class="bct-help">Version it in the filename and keep the old versions. When someone says “that is not what we agreed”, you will want the history.</p>
 </div>

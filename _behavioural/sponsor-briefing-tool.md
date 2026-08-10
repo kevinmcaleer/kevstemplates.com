@@ -15,6 +15,10 @@ Everything stays in your browser. Nothing is uploaded, and your answers are save
 
 <div id="sbp-tool">
 <div class="bct-toolbar">
+<span class="bct-toolbar-note">Saves to this device as you type</span>
+<button type="button" class="btn btn-sm btn-primary" id="sbp-save">Save progress</button>
+<button type="button" class="btn btn-sm btn-outline-secondary" id="sbp-json">Download a copy</button>
+<label class="btn btn-sm btn-outline-secondary mb-0" for="sbp-import">Load a saved copy<input type="file" id="sbp-import" accept="application/json,.json" hidden></label>
 <button type="button" class="btn btn-sm btn-outline-secondary" id="sbp-clear">Clear form</button>
 <span data-saved class="bct-saved" aria-live="polite"></span>
 </div>
@@ -114,8 +118,6 @@ Everything stays in your browser. Nothing is uploaded, and your answers are save
 <button type="button" class="btn btn-outline-primary" id="sbp-pptx">Download as PowerPoint</button>
 <button type="button" class="btn btn-outline-primary" id="sbp-markdown">Download as Markdown</button>
 <button type="button" class="btn btn-outline-secondary" id="sbp-print">Print / save as PDF</button>
-<button type="button" class="btn btn-outline-secondary" id="sbp-json">Save a copy (JSON)</button>
-<label class="btn btn-outline-secondary mb-0" for="sbp-import">Load a saved copy<input type="file" id="sbp-import" accept="application/json,.json" hidden></label>
 </div>
 <p class="bct-help">The PowerPoint export builds a six-slide deck in your browser. It pulls its builder from a CDN on first use, so that one button needs a connection — Word, Markdown and PDF work offline.</p>
 </div>

@@ -444,6 +444,7 @@
 
   tool.wire({
     '#sbp-generate': run,
+    '#sbp-save': function () { tool.saveNow(); },
     '#sbp-word': function () {
       var a = analysis();
       B.download(B.slugify(a.d.fields.change_name, 'sponsor-briefing') + '.doc', 'application/msword', docHtml(a.d, a.r));

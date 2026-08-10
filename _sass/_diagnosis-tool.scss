@@ -3,20 +3,33 @@
 
 #bct-tool,
 #sbp-tool,
-#cop-tool {
+#cop-tool,
+#crt-tool {
   margin-top: 1.5rem;
 
   .bct-toolbar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 0.75rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .bct-toolbar-note {
+    margin-right: auto;
+    font-size: 0.8rem;
+    color: #767676;
   }
 
   .bct-saved {
+    flex-basis: 100%;
+    text-align: right;
     font-size: 0.8rem;
-    color: #767676;
+    color: $clr-teal-100;
+    font-weight: 600;
     opacity: 0;
     transition: opacity 0.25s ease;
 
@@ -69,6 +82,7 @@
     td { vertical-align: middle; }
 
     .bct-narrow { width: 7.5rem; }
+    .bct-tiny { width: 3rem; }
   }
 
   .bct-generate-bar {
@@ -259,6 +273,52 @@
     margin-bottom: 0.5rem;
   }
 
+  // Readiness assessment scoring
+  .bct-scores {
+    font-size: 0.9rem;
+
+    th { font-size: 0.75rem; text-transform: uppercase; color: #767676; }
+    td { vertical-align: middle; }
+  }
+
+  .bct-weight {
+    font-size: 0.75rem;
+    color: #fff;
+    background: $clr-teal-100;
+    border-radius: 3px;
+    padding: 0 0.3rem;
+  }
+
+  .bct-bar {
+    display: block;
+    width: 100%;
+    min-width: 6rem;
+    height: 0.6rem;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+
+    > span {
+      display: block;
+      height: 100%;
+      background: $clr-teal-100;
+    }
+
+    &.is-low > span { background: #d97706; }
+    &.is-stop > span { background: #dc2626; }
+  }
+
+  .bct-stopline {
+    color: #dc2626;
+    font-weight: 600;
+    margin-top: 0.5rem;
+  }
+
+  .bct-band-good    { border-left-color: $clr-teal-100; background: #f0fdfa; }
+  .bct-band-ok      { border-left-color: $clr-teal-100; background: #f0fdfa; }
+  .bct-band-warn    { border-left-color: #d97706; background: #fffbeb; }
+  .bct-band-bad     { border-left-color: #dc2626; background: #fef2f2; }
+
   .bct-agenda {
     font-size: 0.9rem;
 
@@ -301,7 +361,8 @@
   .bct-exports,
   #bct-tool button,
   #sbp-tool button,
-  #cop-tool button {
+  #cop-tool button,
+  #crt-tool button {
     display: none !important;
   }
 
@@ -312,7 +373,8 @@
 
   #bct-tool .bct-tool-section,
   #sbp-tool .bct-tool-section,
-  #cop-tool .bct-tool-section {
+  #cop-tool .bct-tool-section,
+  #crt-tool .bct-tool-section {
     page-break-inside: avoid;
     border: 1px solid #ccc;
   }
@@ -323,7 +385,9 @@
   #sbp-tool input,
   #sbp-tool select,
   #cop-tool input,
-  #cop-tool select {
+  #cop-tool select,
+  #crt-tool input,
+  #crt-tool select {
     border: none;
     border-bottom: 1px solid #ccc;
     -webkit-appearance: none;

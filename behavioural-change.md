@@ -98,7 +98,7 @@ Find out what's actually going on before you design anything.
 
 - **[Barrier Analysis — COM-B Interview Guide](/behavioural-change/barrier-analysis-com-b-interview-guide/)**
 - **[Behavioural Diagnosis Canvas](/behavioural-change/behavioural-diagnosis-canvas/)** — also available as an [interactive tool](/behavioural-change/diagnosis-tool/) that generates your next steps
-- **[Change Readiness Assessment](/behavioural-change/change-readiness-assessment/)**
+- **[Change Readiness Assessment](/behavioural-change/change-readiness-assessment/)** — also a [scored interactive version](/behavioural-change/readiness-tool/)
 - **[Force Field Analysis](/behavioural-change/force-field-analysis/)**
 - **[Resistance Decoder](/behavioural-change/resistance-decoder/)**
 - **[Stakeholder Map and Power Grid](/behavioural-change/stakeholder-map-and-power-grid/)**

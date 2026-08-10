@@ -12,6 +12,12 @@ Score honestly. A low score isn't a reason not to proceed — it's a list of wha
 
 Score each 1 (not at all) to 5 (fully true).
 
+<div class="bct-callout bct-tip" markdown="1">
+**Score it on screen**
+
+The [interactive version](/behavioural-change/readiness-tool/) does the weighting and the thresholds for you, applies the stop signals, and tells you how to present the result — including which section to lead with, which is the part that decides whether a bad score gets heard or argued with.
+</div>
+
 ---
 
 ## A · Sponsorship — weight ×3

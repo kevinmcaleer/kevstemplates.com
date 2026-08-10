@@ -5,7 +5,8 @@
 #sbp-tool,
 #cop-tool,
 #crt-tool,
-#ff-tool {
+#ff-tool,
+#rd-tool {
   margin-top: 1.5rem;
 
   .bct-toolbar {
@@ -137,6 +138,14 @@
 
   // The restraining table carries the ask columns and needs the room
   .bct-wide { min-width: 60rem; }
+
+  // The seven types, shown as reference inside the resistance form
+  .bct-types {
+    font-size: 0.9rem;
+
+    td { vertical-align: top; padding: 0.45rem 0.5rem; }
+    td:first-child { width: 2.5rem; }
+  }
 }
 
 // --- navigation across the tools -------------------------------------------
@@ -530,6 +539,57 @@
 
   .bct-missing { color: #b45309; }
 
+  // Resistance decoder output
+  .bct-mix {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+  }
+
+  .bct-mix-item {
+    font-size: 0.9rem;
+    color: #333;
+
+    strong { color: #1a1a1a; }
+
+    &.is-clarity { color: #17605f; }
+  }
+
+  .bct-decode {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-left: 4px solid $clr-teal-100;
+    border-radius: 0 4px 4px 0;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.75rem;
+
+    p { margin-bottom: 0.35rem; font-size: 0.92rem; }
+    p:last-child { margin-bottom: 0; }
+  }
+
+  .bct-decode-heard {
+    font-size: 1.02rem !important;
+    font-style: italic;
+    color: #1a1a1a;
+  }
+
+  .bct-decode-who { font-style: normal; color: #767676; font-size: 0.85rem; }
+
+  .bct-decode-type { font-weight: 600; }
+
+  .bct-decode-probe { color: #17605f; }
+
+  .bct-reframe {
+    border-left: 4px solid $clr-teal-100;
+    background: #f0fdfa;
+    border-radius: 0 4px 4px 0;
+    padding: 0.9rem 1.1rem;
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    color: #1a1a1a;
+  }
+
   .bct-agenda {
     font-size: 0.9rem;
 
@@ -574,7 +634,8 @@
   #sbp-tool button,
   #cop-tool button,
   #crt-tool button,
-  #ff-tool button {
+  #ff-tool button,
+  #rd-tool button {
     display: none !important;
   }
 
@@ -587,7 +648,8 @@
   #sbp-tool .bct-tool-section,
   #cop-tool .bct-tool-section,
   #crt-tool .bct-tool-section,
-  #ff-tool .bct-tool-section {
+  #ff-tool .bct-tool-section,
+  #rd-tool .bct-tool-section {
     page-break-inside: avoid;
     border: 1px solid #ccc;
   }
@@ -602,7 +664,9 @@
   #crt-tool input,
   #crt-tool select,
   #ff-tool input,
-  #ff-tool select {
+  #ff-tool select,
+  #rd-tool input,
+  #rd-tool select {
     border: none;
     border-bottom: 1px solid #ccc;
     -webkit-appearance: none;

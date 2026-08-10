@@ -8,6 +8,10 @@ order: 3
 kind: "tool"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Log what you actually heard and it works out which of the seven types each one is, gives you the first move for each, and builds the sponsor reframe with your real numbers in it.</p>
+<a class="btn btn-primary" href="/behavioural-change/resistance-tool/">Decode this interactively &rarr;</a>
+</div>
 > **Resistance is data, not defiance.**
 
 When someone pushes back, they are telling you something about your change. The skill is decoding *which* thing. Treating all resistance as an attitude problem is both wrong and useless — it points to no action except pressure, which makes it worse.

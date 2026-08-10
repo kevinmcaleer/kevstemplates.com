@@ -32,6 +32,12 @@
       reference: /behavioural-change/force-field-analysis/
       gives: the restraints to remove, ranked
 
+    - name: Resistance Decoder
+      short: Resistance Decoder
+      link: /behavioural-change/resistance-tool/
+      reference: /behavioural-change/resistance-decoder/
+      gives: which of the seven types the pushback is, and the first move for each
+
 - group: Plan
   blurb: Turn the diagnosis into an artefact people can act on
   tools:

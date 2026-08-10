@@ -100,7 +100,7 @@ Find out what's actually going on before you design anything.
 - **[Behavioural Diagnosis Canvas](/behavioural-change/behavioural-diagnosis-canvas/)** — also available as an [interactive tool](/behavioural-change/diagnosis-tool/) that generates your next steps
 - **[Change Readiness Assessment](/behavioural-change/change-readiness-assessment/)** — also a [scored interactive version](/behavioural-change/readiness-tool/)
 - **[Force Field Analysis](/behavioural-change/force-field-analysis/)** — also a [scored interactive version](/behavioural-change/force-field-tool/) that builds your sponsor ask
-- **[Resistance Decoder](/behavioural-change/resistance-decoder/)**
+- **[Resistance Decoder](/behavioural-change/resistance-decoder/)** — also an [interactive decoder](/behavioural-change/resistance-tool/) that classifies what you heard
 - **[Stakeholder Map and Power Grid](/behavioural-change/stakeholder-map-and-power-grid/)**
 - **[Target Behaviour Definition](/behavioural-change/target-behaviour-definition/)**
 

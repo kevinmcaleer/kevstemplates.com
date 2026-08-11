@@ -10,7 +10,8 @@
 #efm-tool,
 #adkar-tool,
 #drift-tool,
-#router-tool {
+#router-tool,
+#dif-tool {
   margin-top: 1.5rem;
 
   .bct-toolbar {
@@ -174,6 +175,13 @@
     white-space: normal;
     font-size: 1rem;
     padding: 0.6rem 0.9rem;
+  }
+
+  // Candidate marker grid — narrow, wrapping column heads
+  .bct-cand {
+    th { font-size: 0.7rem; line-height: 1.2; text-align: center; }
+    .bct-tiny-col { width: 6.5rem; }
+    td { vertical-align: middle; }
   }
 
   // The seven types, shown as reference inside the resistance form
@@ -692,6 +700,8 @@
 
   .bct-decode.is-killer { border-left-color: #dc2626; }
 
+  tr.is-network td { background: #f0fdfa; }
+
   // Router
   .bct-router-question { font-size: 1.05rem; margin-bottom: 0.75rem; }
 
@@ -757,7 +767,8 @@
   #rd-tool button,
   #efm-tool button,
   #adkar-tool button,
-  #drift-tool button {
+  #drift-tool button,
+  #dif-tool button {
     display: none !important;
   }
 
@@ -774,7 +785,8 @@
   #rd-tool .bct-tool-section,
   #efm-tool .bct-tool-section,
   #adkar-tool .bct-tool-section,
-  #drift-tool .bct-tool-section {
+  #drift-tool .bct-tool-section,
+  #dif-tool .bct-tool-section {
     page-break-inside: avoid;
     border: 1px solid #ccc;
   }
@@ -797,7 +809,9 @@
   #adkar-tool input,
   #adkar-tool select,
   #drift-tool input,
-  #drift-tool select {
+  #drift-tool select,
+  #dif-tool input,
+  #dif-tool select {
     border: none;
     border-bottom: 1px solid #ccc;
     -webkit-appearance: none;

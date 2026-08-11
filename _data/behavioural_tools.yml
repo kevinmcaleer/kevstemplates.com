@@ -32,6 +32,12 @@
       reference: /behavioural-change/habit-loop-and-behavioural-drift/
       gives: which of the four causes of drift you have, and the structural fix
 
+    - name: Diffusion — Who First?
+      short: Who First?
+      link: /behavioural-change/diffusion-tool/
+      reference: /behavioural-change/diffusion-of-innovations/
+      gives: your ranked Early Adopters, the spread blockers, and a wave plan
+
 - group: Diagnose
   blurb: Work out what is actually going on before designing anything
   tools:

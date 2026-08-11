@@ -9,6 +9,10 @@ kind: "framework"
 use_when: "Deciding who to roll out to first, and who to stop arguing with"
 toolkit: "Behavioural Change Toolkit"
 ---
+<div class="bct-open-tool" markdown="1">
+<p>Score the five attributes and list the people others actually go to. It ranks your Early Adopters, names the spread blockers, and sequences the waves — including the check on whether you are being pushed to start with the sceptic.</p>
+<a class="btn btn-primary" href="/behavioural-change/diffusion-tool/">Work out who first &rarr;</a>
+</div>
 Everett Rogers. Answers a question every rollout faces: **who first?**
 
 ---

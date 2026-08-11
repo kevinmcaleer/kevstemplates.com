@@ -85,7 +85,7 @@ The models — and a note on when each one is the wrong tool.
 - **[ADKAR — Individual Change](/behavioural-change/adkar-individual-change/)** — also a [stuck-step finder](/behavioural-change/adkar-tool/) — a specific person or team is stuck and you need to know at which step
 - **[Bridges Transition Model](/behavioural-change/bridges-transition-model/)** — the change involves loss — of role, status, identity, competence or team
 - **[COM-B and the Behaviour Change Wheel](/behavioural-change/com-b-and-the-behaviour-change-wheel/)** — you need to know why a behaviour isn't happening before you design anything
-- **[Diffusion of Innovations](/behavioural-change/diffusion-of-innovations/)** — deciding who to roll out to first, and who to stop arguing with
+- **[Diffusion of Innovations](/behavioural-change/diffusion-of-innovations/)** — also a [who-first planner](/behavioural-change/diffusion-tool/) — deciding who to roll out to first, and who to stop arguing with
 - **[EAST — Easy Attractive Social Timely](/behavioural-change/east-easy-attractive-social-timely/)** — you've diagnosed the barrier and need practical tactics fast
 - **[Habit Loop and Behavioural Drift](/behavioural-change/habit-loop-and-behavioural-drift/)** — also a [drift explainer](/behavioural-change/drift-tool/) — adoption spiked then fell, or you're designing for the long term
 - **[Myths and Traps in Change Management](/behavioural-change/myths-and-traps-in-change-management/)** — before you brief anyone senior

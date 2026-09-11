@@ -295,7 +295,7 @@ For each Blueprint component, identify:
 The Blueprint drives project definition:
 
 <div class="mermaid">
-flowchart TD
+flowchart LR
     A[Blueprint<br/>Component] --> B[Gap<br/>Identified]
     B --> C[Project<br/>Defined]
     C --> D[Project<br/>Delivers]

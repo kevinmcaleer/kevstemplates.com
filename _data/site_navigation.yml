@@ -135,6 +135,8 @@
           sections:
             - name: Knowledge Management
               link: /programmes/knowledge_management
+            - name: Knowledge Transfer
+              link: /programmes/knowledge_transfer
             - name: Information Management
               link: /programmes/information_management
 

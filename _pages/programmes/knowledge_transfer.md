@@ -2,8 +2,8 @@
 layout: programme
 name: Knowledge Transfer
 section: Programme
-description: Plan and run knowledge transfer for leavers, project to BAU handovers and supplier changes, with a 14 point agenda and self-help handover checklist.
-tags: [programme, project, knowledge, knowledge transfer, KT, handover, transition, succession]
+description: Plan knowledge transfer for leavers, planned absences, BAU handovers and supplier changes, with a 14 point agenda and handover checklists.
+tags: [programme, project, knowledge, knowledge transfer, KT, handover, transition, succession, maternity leave, planned absence]
 themes: [Knowledge Management, Transition]
 color: tangerine-300
 downloads:
@@ -13,6 +13,9 @@ downloads:
  - name: Knowledge Transfer Agenda Tracker
    description: Excel tracker for planning KT sessions by topic, with SMEs, methods, documents, status and a progress summary
    file: knowledge_transfer_agenda.xlsx
+ - name: Personal Handover Plan
+   description: Short Word template for handing over your own role before planned absence such as maternity or parental leave
+   file: personal_handover_plan.docx
 last_updated: 2026-10-13
 ---
 
@@ -26,6 +29,7 @@ Knowledge transfer (KT) is the practical job of moving knowledge from one part o
 
 | Trigger | What Needs to Move | From | To |
 |---------|-------------------|------|----|
+| **Planned absence** | Day-to-day work, deadlines, contacts and authority to act | Individual | Temporary cover |
 | **Leaver or role change** | How the job is done, contacts, work in progress | Individual | Successor or team |
 | **Project to BAU handover** | How to run and support the new service | Project team | Operations and support |
 | **Supplier transition** | Service operation, technical detail, history | Outgoing supplier | Incoming supplier or in-house team |
@@ -138,6 +142,45 @@ Ask the leaver to tidy as they go: remove superseded documents, assign new owner
 
 ---
 
+## Personal Handover for Planned Absence
+
+Maternity, paternity, adoption and shared parental leave, sabbaticals, secondments and planned medical leave all need a handover, but rarely the full 14 point agenda. The person is coming back, the cover is temporary, and the aim is simple: nothing is dropped, the cover can act, and the person on leave can switch off.
+
+<div class="mermaid">
+flowchart LR
+    A[Leave agreed] --> B[Write handover plan]
+    B --> C[Handover meetings]
+    C --> D[Cover tries tasks]
+    D --> E[Before I go checks]
+    E --> F[Absence]
+    F --> G[Handback]
+    classDef blue fill:#108BB9,stroke:none,color:#fff
+    class A,B,C,D,E,F,G blue
+</div>
+
+A controlled handover captures:
+
+| What to Capture | Why It Matters | Example |
+|-----------------|----------------|---------|
+| **Absence details** | Everyone knows the dates and who is covering | Last working day, expected return, main cover |
+| **Staying in touch** | The person on leave is only contacted when it matters | What to contact me about, one named contact, keeping in touch days |
+| **Responsibilities and authority** | Cover can make decisions, not just keep things ticking over | Approvals, budget limits, chairing meetings, unofficial roles |
+| **Work in progress** | Work picks up where it was left | Status, next steps, due date, where the latest version is saved |
+| **Key dates and deadlines** | Nothing that falls during the absence is missed | Reporting cycles, contract renewals, annual reviews |
+| **Regular tasks and meetings** | The routine keeps running, or is paused on purpose | Frequency, instructions, who covers it, can it pause |
+| **Key contacts** | Cover knows who to call and stakeholders know who to call instead | Name, role, why they matter, introduced to cover |
+| **Documents, systems and access** | Cover can get to what they need on day one | Shared mailboxes, approval workflows, document ownership |
+| **Risks and things to watch** | Problems are spotted early | What to look out for and who to escalate to |
+| **Things only I know** | Tacit know-how is not lost | Frequent questions, workarounds, history and politics |
+| **Handback** | The return is planned, not a surprise | What changed, decisions made, what returns and what stays with cover |
+{:class="table table-single table-narrow"}
+
+Start as soon as the leave dates are agreed, and hold the handover meetings at least two weeks before the last day so the cover can try key tasks while the person is still around. Agree contact arrangements with the line manager, and check your organisation's HR policy on keeping in touch during leave.
+
+<a href="/downloads/personal_handover_plan.docx" class="btn btn-orange mb-3"><i class="fa-solid fa-file-arrow-down"></i> Personal Handover Plan (Word)</a>
+
+---
+
 ## Knowledge Transfer Methods
 
 | Method | Description | Best For |
@@ -211,6 +254,10 @@ The KT plan brings together the KT overview, success factors, roles, the 14 poin
 <a href="/downloads/knowledge_transfer_agenda.xlsx" class="btn btn-orange mb-3"><i class="fa-solid fa-file-arrow-down"></i> Knowledge Transfer Agenda Tracker (Excel)</a>
 
 The tracker lists every sub-topic with drop-downs for applicability, method, document status and progress, and a summary sheet showing completion and planned hours by topic.
+
+<a href="/downloads/personal_handover_plan.docx" class="btn btn-orange mb-3"><i class="fa-solid fa-file-arrow-down"></i> Personal Handover Plan (Word)</a>
+
+A shorter, personal template for planned absence such as maternity or parental leave: cover and delegated authority, work in progress, key dates, contacts, access, a before I go checklist and a handback section for the return.
 
 ---
 

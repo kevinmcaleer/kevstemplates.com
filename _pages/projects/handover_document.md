@@ -460,6 +460,7 @@ flowchart TD
 ## Related Resources
 
 - [Service Transition](/projects/service_transition) - Transition planning
+- [Knowledge Transfer](/programmes/knowledge_transfer) - KT plan, 14 point agenda and handover checklist
 - [Support Model](/projects/support_model) - Support arrangements
 - [End of Project Report](/projects/end_of_project_report) - Project closure
 - [Post Implementation Review](/projects/post_implementation_review) - PIR process

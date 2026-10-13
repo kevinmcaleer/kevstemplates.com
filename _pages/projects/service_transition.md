@@ -172,6 +172,7 @@ flowchart LR
 ## Related Resources
 
 - [Support Model](/projects/support_model) - Support structure
+- [Knowledge Transfer](/programmes/knowledge_transfer) - KT plan, 14 point agenda and handover checklist
 - [Technical Readiness](/projects/technical_readiness) - Technical preparation
 - [Early Life Support](/projects/early_life_support) - Post go-live support
 - [Implementation Approach](/projects/implementation_approach) - Go-live planning

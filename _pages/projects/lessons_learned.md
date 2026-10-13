@@ -590,4 +590,5 @@ flowchart LR
 - [Project Closure](/projects/project_closure) - Closure activities
 - [End Project Report](/projects/end_project_report) - Final reporting
 - [Continuous Service Improvement](/projects/continuous_service_improvement) - Ongoing improvement
+- [Knowledge Management](/programmes/knowledge_management) - Wider knowledge management approach
 

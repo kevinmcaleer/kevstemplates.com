@@ -11,7 +11,12 @@ downloads:
    description: Excel Requirements Template
    file: requirements_template.xlsx
 themes: [Planning, Delivery]
-last_updated: 2026-01-13
+last_updated: 2026-11-17
+redirect_from:
+  - /projects/business_requirements
+  - /projects/business_requirements.html
+  - /projects/service_requirements
+  - /projects/service_requirements.html
 ---
 
 # Requirements Management
@@ -208,10 +213,99 @@ All requirement changes should:
 
 ---
 
+## Business Requirements
+
+Business requirements state what the organisation needs to achieve, independent of any solution. They describe the **what** and **why**, not the **how**, and every lower-level requirement should trace back to one.
+
+### Capturing Business Requirements
+
+#### Sources
+- Stakeholder interviews
+- Workshops and focus groups
+- Document analysis
+- Process observation
+- Surveys and questionnaires
+
+#### Key Questions
+- What problem are we solving?
+- What outcomes are needed?
+- Who are the stakeholders?
+- What constraints exist?
+- How will success be measured?
+
+
+### Documentation
+
+A Business Requirements Document (BRD) typically includes:
+- Executive summary
+- Business objectives
+- Scope and boundaries
+- Stakeholder needs
+- Assumptions and constraints
+- Success criteria
+
+---
+
+---
+
+## Service Requirements
+
+Service requirements (often called non-functional requirements) define how the solution must behave in live operation: availability, performance, capacity, recovery, security and support. Agree them with the people who will run the service.
+
+### Key Service Requirement Areas
+
+| Area | Description | Example Measures |
+|------|-------------|------------------|
+| **Availability** | When the service must be operational | 99.9% uptime, 24/7/365 |
+| **Performance** | Speed and responsiveness | <2 second response time |
+| **Capacity** | Volume handling | 1000 concurrent users |
+| **Recoverability** | Recovery from failure | RPO: 1 hour, RTO: 4 hours |
+| **Security** | Protection requirements | Data encryption, access controls |
+| **Support** | Help and maintenance | L1/L2/L3 support structure |
+{:class="table table-single table-narrow"}
+
+
+### Key Metrics
+
+| Metric | Description |
+|--------|-------------|
+| **SLA** | Service Level Agreement - contractual commitments |
+| **RTO** | Recovery Time Objective - max downtime allowed |
+| **RPO** | Recovery Point Objective - max data loss allowed |
+| **MTTR** | Mean Time To Repair - average recovery time |
+| **MTBF** | Mean Time Between Failures - reliability measure |
+{:class="table table-single table-narrow"}
+
+
+### Gathering Service Requirements
+
+Consider:
+- Business criticality of the service
+- Cost of downtime
+- User expectations
+- Regulatory requirements
+- Existing SLAs for similar services
+- Budget constraints
+
+
+### Documentation
+
+Service requirements should specify:
+- Service hours and availability targets
+- Performance benchmarks
+- Capacity requirements
+- Backup and recovery requirements
+- Security and compliance needs
+- Support arrangements
+- Maintenance windows
+
+---
+
+---
+
 ## Related Resources
 
-- [Requirements Capture](/projects/requirements_capture) - Elicitation techniques
-- [Business Requirements](/projects/business_requirements) - Business needs
-- [Business Analysis](/projects/business_analysis) - Analysis techniques
+- [Requirements Elicitation](/best_practice/requirements_elicitation) - Elicitation techniques
+- [Business Analysis](/best_practice/business_analysis) - Analysis techniques
 - [Test Approach](/projects/test_approach) - Testing against requirements
 

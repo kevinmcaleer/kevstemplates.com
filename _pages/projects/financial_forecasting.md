@@ -202,6 +202,6 @@ When forecast differs from budget:
 
 - [Financial Planning](/projects/financial_planning) - Budget development
 - [Project Reporting](/projects/project_reporting) - Status reporting
-- [Risk Management](/projects/risk_management) - Risk reserves
-- [Project Board](/projects/project_board) - Financial governance
+- [Risk Management](/risk-management) - Risk reserves
+- [Project Board](/projects/project_roles) - Financial governance
 

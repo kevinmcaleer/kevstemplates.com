@@ -578,8 +578,8 @@ additional budget of £8,000.
 
 ## Related Resources
 
-- [Project Governance](/projects/project_governance) - Governance framework
-- [Project Board](/projects/project_board) - Board responsibilities
-- [Risk Management](/projects/risk_management) - Risk reporting
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
+- [Project Board](/projects/project_roles) - Board responsibilities
+- [Risk Management](/risk-management) - Risk reporting
 - [Financial Forecasting](/projects/financial_forecasting) - Financial reporting
 

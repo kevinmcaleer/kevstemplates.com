@@ -34,6 +34,17 @@ bundle install
 bundle exec jekyll serve --watch --livereload
 ```
 
+## Checking Links
+
+After building, check for broken internal links:
+
+```bash
+bundle exec jekyll build
+python3 scripts/check_links.py _site
+```
+
+Link to pages without a trailing slash (`/planning/wbs`, not `/planning/wbs/`), because most pages are output as `.html` files. Do not link to pages that have not been written yet.
+
 ## Content Guidelines
 
 ### Diagrams and Workflows
@@ -130,7 +141,6 @@ This ensures consistent table styling across the site.
 │   ├── methodologies/   # PM methodologies (PRINCE2, Agile, etc.)
 │   └── best_practice/   # Best practice toolkit
 ├── _sass/               # SCSS stylesheets
-├── _templates/          # Template definitions
 ├── assets/              # Static assets (css, img, js)
 ├── bootstrap/           # Bootstrap framework files
 ├── downloads/           # Downloadable templates (DOCX, XLSX)
@@ -173,13 +183,25 @@ Colour classes available (from `_sass/_colors.scss`):
 1. Place the file (DOCX, XLSX, PPTX) in `downloads/`
 2. Reference in the page's front matter under `downloads:`
 
+### Merging or Moving Pages
+
+The site uses `jekyll-redirect-from`. When a page is merged into another or moved, delete the old file and add its old URL to the surviving page's front matter, with and without `.html`, so bookmarks and search results still work:
+
+```yaml
+redirect_from:
+  - /projects/old_page
+  - /projects/old_page.html
+```
+
+Then repoint internal links to the new page and run the link checker.
+
 ### New Navigation Item
 
 Edit `_data/navigation.yml` for top nav or `_data/lifecycle.yml` for project lifecycle.
 
 ### Update Site Sidebar Navigation
 
-The site has a collapsible sidebar navigation (`_includes/site_sidebar.html`) with a hierarchical structure inspired by Microsoft TechNet. Edit `_data/site_navigation.yml` to modify the sidebar structure:
+A collapsible sidebar navigation (`_includes/site_sidebar.html`) with a hierarchical structure inspired by Microsoft TechNet exists, but **no layout currently includes it**. It was left out because it adds another long list of links to every page (see the usability epic, #144). If it is wired in, edit `_data/site_navigation.yml` to modify the sidebar structure:
 
 ```yaml
 # Hierarchy: Tomes > Volumes > Books > Sections > Chapters > Pages
@@ -197,7 +219,9 @@ The site has a collapsible sidebar navigation (`_includes/site_sidebar.html`) wi
               link: /section-link
 ```
 
-The sidebar automatically expands to show the current page's location in the hierarchy.
+When included, the sidebar expands to show the current page's location in the hierarchy.
+
+The project toolkit pages use a separate sidebar (`_includes/sidebar_project_parts.html`), built from `_data/lifecycle.yml` and each page's `process:` front matter. Its stages collapse, with the current stage open.
 
 ## Key Files
 
@@ -205,7 +229,7 @@ The sidebar automatically expands to show the current page's location in the hie
 - `_layouts/default.html` - Base HTML template
 - `_layouts/project.html` - Project toolkit pages with sidebar
 - `_includes/project_toolkit.html` - Project tools button grid
-- `_includes/site_sidebar.html` - Collapsible site navigation sidebar
+- `_includes/site_sidebar.html` - Collapsible site navigation sidebar (not currently used)
 - `_sass/_colors.scss` - Color palette definitions
 - `_sass/_sidebar.scss` - Sidebar styling
 - `_data/site_navigation.yml` - Hierarchical site navigation structure

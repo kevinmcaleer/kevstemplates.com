@@ -1,0 +1,13 @@
+{%- comment -%}Outputs the page content with the download box placed after the first heading.{%- endcomment -%}
+{%- capture dl_box -%}{% include download_box.html %}{%- endcapture -%}
+{%- if dl_box contains '<aside' -%}
+{%- if content contains '</h1>' -%}
+{%- assign h1_close = '</h1>' | append: dl_box -%}
+{{ content | replace_first: '</h1>', h1_close }}
+{%- else -%}
+{{ dl_box }}
+{{ content }}
+{%- endif -%}
+{%- else -%}
+{{ content }}
+{%- endif -%}

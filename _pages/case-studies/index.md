@@ -41,7 +41,7 @@ Learn from practical examples and real-world scenarios. These case studies demon
           <li>Scope creep and change control</li>
           <li>Testing and go-live planning</li>
         </ul>
-        <a href="/case-studies/crm-implementation" class="btn btn-outline-primary">View Case Study</a>
+        <a href="#case-study-crm-system-implementation" class="btn btn-outline-primary">View Case Study</a>
       </div>
     </div>
   </div>
@@ -58,7 +58,7 @@ Learn from practical examples and real-world scenarios. These case studies demon
           <li>Multiple stakeholder groups</li>
           <li>Risk management in practice</li>
         </ul>
-        <a href="/case-studies/office-relocation" class="btn btn-outline-success">View Case Study</a>
+        <a href="#case-study-office-relocation" class="btn btn-outline-success">View Case Study</a>
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@ Learn from practical examples and real-world scenarios. These case studies demon
           <li>Marketing and development coordination</li>
           <li>MVP and iterative releases</li>
         </ul>
-        <a href="/case-studies/product-launch" class="btn btn-outline-info">View Case Study</a>
+        <span class="badge badge-light">Full write-up coming soon</span>
       </div>
     </div>
   </div>
@@ -92,7 +92,7 @@ Learn from practical examples and real-world scenarios. These case studies demon
           <li>Recovery planning</li>
           <li>Stakeholder communication</li>
         </ul>
-        <a href="/case-studies/project-recovery" class="btn btn-outline-warning">View Case Study</a>
+        <span class="badge badge-light">Full write-up coming soon</span>
       </div>
     </div>
   </div>

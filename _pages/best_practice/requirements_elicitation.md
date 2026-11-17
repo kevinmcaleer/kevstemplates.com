@@ -6,6 +6,9 @@ description: Techniques for gathering, documenting, and validating project requi
 tags: [Requirements, Elicitation, Stakeholders, Best Practice]
 color: stone-500
 last_updated: 2026-03-19
+redirect_from:
+  - /projects/requirements_capture
+  - /projects/requirements_capture.html
 ---
 
 # Table of Contents
@@ -258,8 +261,8 @@ Requirements traceability links each requirement forward to design, build, and t
 
 ## Related Resources
 
-- [Business Analysis](/best-practice/business-analysis/) — Broader BA techniques and frameworks that support elicitation
-- [Planning and Estimating](/best-practice/planning-and-estimating/) — Using requirements to inform project estimates
-- [Document Management](/best-practice/document-management/) — Managing requirements documents and artefacts
-- [Configuration Management](/best-practice/configuration-management/) — Controlling requirements baselines through configuration management
-- [Version Management](/best-practice/version-management/) — Versioning requirements documents as they evolve
+- [Business Analysis](/best_practice/business_analysis) — Broader BA techniques and frameworks that support elicitation
+- [Planning and Estimating](/best_practice/planning_estimating) — Using requirements to inform project estimates
+- [Document Management](/best_practice/document_management) — Managing requirements documents and artefacts
+- [Configuration Management](/best_practice/configuration_management) — Controlling requirements baselines through configuration management
+- [Version Management](/best_practice/version_management) — Versioning requirements documents as they evolve

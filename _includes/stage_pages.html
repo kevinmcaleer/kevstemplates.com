@@ -1,0 +1,13 @@
+{%- comment -%}All project pages for a lifecycle stage. Parameter: process (startup, initiation, planning, delivery, closure).{%- endcomment -%}
+{%- assign download_files = site.static_files | where_exp: "f", "f.path contains '/downloads/'" | map: "name" -%}
+{%- assign stage_pages = site.pages | where_exp: "p", "p.path contains '/projects/'" | where: "process", include.process | sort: "name" %}
+<div class="row stage-page-list">
+{%- for p in stage_pages -%}
+{%- assign has_dl = false -%}
+{%- for d in p.downloads -%}{%- if download_files contains d.file -%}{%- assign has_dl = true -%}{%- endif -%}{%- endfor %}
+<div class="col-12 col-md-6 mb-3">
+<a href="{{ p.url }}"><strong>{{ p.name }}</strong></a>{% if has_dl %} <span class="badge badge-light" title="Has a downloadable template"><i class="fas fa-download"></i> template</span>{% endif %}
+{%- if p.description %}<br><span class="text-muted small">{{ p.description | truncate: 120 }}</span>{% endif %}
+</div>
+{%- endfor %}
+</div>

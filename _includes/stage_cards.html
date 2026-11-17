@@ -1,0 +1,28 @@
+{%- assign download_files = site.static_files | where_exp: "f", "f.path contains '/downloads/'" | map: "name" -%}
+{%- assign project_pages = site.pages | where_exp: "p", "p.path contains '/projects/'" -%}
+<div class="row stage-cards">
+{%- for stage in site.data.lifecycle -%}
+{%- assign stage_pages = project_pages | where: "process", stage.process %}
+<div class="col-12 col-md-6 col-xl-4 mb-3">
+<div class="card h-100">
+<div class="card-header stage-card-header"><span class="stage-number">{{ forloop.index }}</span> <a href="{{ stage.link }}">{{ stage.name }}</a></div>
+<div class="card-body">
+<p class="card-text text-muted small">{{ stage.summary }}</p>
+<ul class="list-unstyled mb-0">
+{%- for key in stage.key -%}
+{%- assign url = "/projects/" | append: key -%}
+{%- assign kp = project_pages | where: "url", url | first -%}
+{%- if kp %}
+<li class="mb-1"><a href="{{ kp.url }}">{{ kp.name }}</a>
+{%- assign has_dl = false -%}
+{%- for d in kp.downloads -%}{%- if download_files contains d.file -%}{%- assign has_dl = true -%}{%- endif -%}{%- endfor -%}
+{%- if has_dl %} <span class="badge badge-light" title="Has a downloadable template"><i class="fas fa-download"></i> template</span>{% endif %}</li>
+{%- endif -%}
+{%- endfor %}
+</ul>
+</div>
+<div class="card-footer bg-transparent border-0 pt-0"><a href="{{ stage.link }}" class="small">All {{ stage_pages.size }} {{ stage.name | downcase }} pages <i class="fas fa-arrow-right"></i></a></div>
+</div>
+</div>
+{%- endfor %}
+</div>

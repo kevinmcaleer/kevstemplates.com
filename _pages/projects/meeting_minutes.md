@@ -234,5 +234,5 @@ Document decisions clearly:
 - [Action Tracker](/projects/action_tracker) - Track meeting actions
 - [Decision Log](/projects/decision_log) - Record project decisions
 - [Project Reporting](/projects/project_reporting) - Status reporting
-- [Project Governance](/projects/project_governance) - Governance framework
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
 

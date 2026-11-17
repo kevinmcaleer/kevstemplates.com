@@ -427,9 +427,9 @@ Verification:
 
 ## Related Resources
 
-- [Implementation Approach](/projects/implementation_approach) - Deployment strategy
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Deployment strategy
 - [Service Transition](/projects/service_transition) - Go-live planning
 - [Risk Register](/projects/risk_register) - Risk management
 - [Test Approach](/projects/test_approach) - Testing strategy
-- [Support Model](/projects/support_model) - Operational support
+- [Support Model](/projects/service_transition#support-model) - Operational support
 

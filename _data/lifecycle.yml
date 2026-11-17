@@ -1,10 +1,27 @@
+# Project lifecycle stages. `process` matches the `process:` front matter on project pages.
+# `key` lists the templates shown on the Projects toolkit stage cards.
 - name: Startup
   link: /projects/lifecycle/01startup
+  process: startup
+  summary: Confirm there is a worthwhile project and appoint the people to run it.
+  key: [project_mandate, project_brief, project_sponsor, project_roles]
 - name: Initiation
   link: /projects/lifecycle/02initiation
+  process: initiation
+  summary: Agree the business case, scope, controls and plan before committing to delivery.
+  key: [business_case, project_initiation_document, project_charter, stakeholder_register]
 - name: Planning
   link: /projects/lifecycle/03planning
+  process: planning
+  summary: Define the products, requirements and plans that delivery will work to.
+  key: [stage_plan, product_description, requirements, plan_on_a_page]
 - name: Delivery
   link: /projects/lifecycle/04delivery
+  process: delivery
+  summary: Build, control and report, managing risks, issues and change as you go.
+  key: [project_reporting, risk_register, project_change_control, action_tracker]
 - name: Closure
   link: /projects/lifecycle/05closure
+  process: closure
+  summary: Hand over, review what was achieved and capture lessons for next time.
+  key: [end_of_project_report, handover_document, lessons_learned, post_implementation_review]

@@ -272,5 +272,5 @@ Include in status reports:
 - [Decision Log](/projects/decision_log) - Tracking decisions
 - [Risk Register](/projects/risk_register) - RAID log
 - [Project Reporting](/projects/project_reporting) - Status reporting
-- [Project Governance](/projects/project_governance) - Governance framework
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
 

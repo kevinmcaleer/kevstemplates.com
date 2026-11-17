@@ -212,5 +212,5 @@ UAT confirms the solution meets business needs:
 
 - [Quality Planning](/projects/quality_planning) - Quality management
 - [Requirements](/projects/requirements) - Requirements to test against
-- [Implementation Approach](/projects/implementation_approach) - Go-live planning
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Go-live planning
 

@@ -203,6 +203,6 @@ Use this checklist before finalising and communicating any estimate.
 
 ## Related Resources
 
-- [Business Analysis](/best-practice/business-analysis/) — Analysis techniques that inform estimation inputs
-- [Requirements Elicitation](/best-practice/requirements-elicitation/) — Gathering complete requirements to reduce estimation uncertainty
-- [Document Management](/best-practice/document-management/) — Managing estimation artefacts and basis of estimate documents
+- [Business Analysis](/best_practice/business_analysis) — Analysis techniques that inform estimation inputs
+- [Requirements Elicitation](/best_practice/requirements_elicitation) — Gathering complete requirements to reduce estimation uncertainty
+- [Document Management](/best_practice/document_management) — Managing estimation artefacts and basis of estimate documents

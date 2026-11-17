@@ -1,0 +1,161 @@
+// Homepage sections
+.home-section {
+  margin-top: 1.5rem;
+}
+
+a.home-card {
+  color: white;
+  text-decoration: none;
+  border: 0;
+  overflow: hidden;
+  transition: transform 0.1s ease-in-out;
+
+  .card-body {
+    color: white;
+  }
+
+  .card-title {
+    color: white;
+    text-transform: none;
+    font-size: 1.05rem;
+  }
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.download-card {
+  .card-title {
+    text-transform: none;
+    font-size: 1rem;
+  }
+  .download-format {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+// Project toolkit lifecycle stage cards
+.stage-cards {
+  .stage-card-header {
+    background-color: $clr-teal-100;
+    font-weight: 600;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .stage-number {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    background: white;
+    color: $clr-teal-100;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-right: 0.25rem;
+  }
+}
+
+// Collapsible stages in the project sidebar
+.project-sidebar-nav {
+  details.nav-stage > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::after {
+      content: "+";
+      font-weight: 400;
+      margin-left: 0.25rem;
+    }
+  }
+  details.nav-stage[open] > summary::after {
+    content: "\2212";
+  }
+  .nav-count {
+    margin-left: auto;
+    margin-right: 0.25rem;
+    font-weight: 400;
+    color: #888;
+  }
+}
+
+// Top navigation dropdown and footer links
+header .dropdown-menu {
+  a.dropdown-item {
+    color: #212529;
+    &:hover {
+      color: white;
+      background-color: $clr-orange;
+      text-shadow: none;
+    }
+  }
+}
+
+footer .footer-links a {
+  color: white;
+  margin-right: 1.25rem;
+  text-decoration: none;
+  &:hover {
+    color: $clr-orange;
+  }
+}
+
+// Open the dropdown on hover or keyboard focus too, so it works before
+// (or without) Bootstrap's JavaScript
+@media (min-width: 576px) {
+  header .dropdown:hover > .dropdown-menu,
+  header .dropdown:focus-within > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+// Download box at the top of template pages
+.download-box {
+  border-left: 4px solid $clr-orange;
+  background: #fff8f2;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  .download-box-title {
+    font-weight: 600;
+  }
+}
+
+// Collapsible theme and tag lists
+.theme-list {
+  .theme-group {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0.5rem 0;
+    > summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}
+
+// Templates library filters
+.template-filters {
+  .btn {
+    margin: 0 0.25rem 0.5rem 0;
+  }
+  .btn.btn-blue {
+    background-color: $clr-blue;
+    color: white;
+  }
+  .filter-label {
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+}

@@ -7,8 +7,8 @@ process: initiation
 description: A key project control and document describing the project in detail from all aspects.
 tags: [Governance, Initiation, Project Controls]
 downloads:
- - name: Project Initiation Document.docx
-   description: PID Template
+ - name: Project Initiation Document (PID)
+   description: Word template for the PID, bringing together the business case, plans, controls and project organisation
    file: project_initiation_document.docx
 themes: [Project Initiation, Baseline, Governance]
 ---

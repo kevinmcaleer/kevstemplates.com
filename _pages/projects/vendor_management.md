@@ -568,9 +568,9 @@ flowchart LR
 
 ## Related Resources
 
-- [Project Governance](/projects/project_governance) - Governance framework
-- [Risk Management](/projects/risk_management) - Managing project risks
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
+- [Risk Management](/risk-management) - Managing project risks
 - [Financial Planning](/projects/financial_planning) - Budget and cost control
 - [Stakeholder Management](/projects/identify_stakeholders) - Stakeholder engagement
-- [Change Control](/projects/change_control) - Managing changes
+- [Change Control](/projects/project_change_control) - Managing changes
 

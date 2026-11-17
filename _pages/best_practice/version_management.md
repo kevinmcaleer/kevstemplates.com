@@ -17,7 +17,7 @@ last_updated: 2026-03-19
 
 Version management ensures that project teams always work from the correct version of a document, that changes are tracked and traceable, and that previous versions can be recovered if needed. Without version control, teams risk making decisions based on outdated information, duplicating effort, and losing valuable work.
 
-This guide covers the practical standards for versioning project documents and deliverables, from simple numbering schemes through to managing concurrent edits in multi-team environments. It complements the broader guidance on [Document Management](/best-practice/document-management/) and [Configuration Management](/best-practice/configuration-management/).
+This guide covers the practical standards for versioning project documents and deliverables, from simple numbering schemes through to managing concurrent edits in multi-team environments. It complements the broader guidance on [Document Management](/best_practice/document_management) and [Configuration Management](/best_practice/configuration_management).
 
 ## Version Numbering Scheme
 
@@ -192,7 +192,7 @@ Version management is a subset of the broader discipline of configuration manage
 | **Tools** | File naming, version history tables | Configuration management database (CMDB) |
 {:class="table table-single table-narrow"}
 
-For detailed guidance on configuration management, see the [Configuration Management](/best-practice/configuration-management/) page.
+For detailed guidance on configuration management, see the [Configuration Management](/best_practice/configuration_management) page.
 
 ## Common Pitfalls
 
@@ -219,6 +219,6 @@ Manual version control (filename-based) should only be used when no automated al
 
 ## Related Resources
 
-- [Document Management](/best-practice/document-management/) — Broader document management framework including naming, access, and retention
-- [Configuration Management](/best-practice/configuration-management/) — System-level control of all project deliverables
-- [Planning and Estimating](/best-practice/planning-and-estimating/) — Managing estimation artefact versions through the planning cycle
+- [Document Management](/best_practice/document_management) — Broader document management framework including naming, access, and retention
+- [Configuration Management](/best_practice/configuration_management) — System-level control of all project deliverables
+- [Planning and Estimating](/best_practice/planning_estimating) — Managing estimation artefact versions through the planning cycle

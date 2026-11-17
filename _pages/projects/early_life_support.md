@@ -190,7 +190,7 @@ flowchart LR
 ## Related Resources
 
 - [Service Transition](/projects/service_transition) - Transition planning
-- [Support Model](/projects/support_model) - Support structure
-- [Implementation Approach](/projects/implementation_approach) - Go-live planning
+- [Support Model](/projects/service_transition#support-model) - Support structure
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Go-live planning
 - [Lessons Learned](/projects/lessons_learned) - Capture insights
 

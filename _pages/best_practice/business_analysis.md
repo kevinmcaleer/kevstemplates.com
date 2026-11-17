@@ -6,6 +6,9 @@ description: Business analysis techniques and frameworks for understanding busin
 tags: [Business Analysis, Requirements, Solutions, Best Practice]
 color: stone-400
 last_updated: 2026-03-19
+redirect_from:
+  - /projects/business_analysis
+  - /projects/business_analysis.html
 ---
 
 # Table of Contents
@@ -242,7 +245,7 @@ Then [expected outcome].
 
 ## Related Resources
 
-- [Requirements Elicitation](/best-practice/requirements-elicitation/) — Detailed techniques for gathering requirements
-- [Planning and Estimating](/best-practice/planning-and-estimating/) — Using analysis outputs to inform estimation
-- [Document Management](/best-practice/document-management/) — Managing BA deliverables and documentation
-- [Configuration Management](/best-practice/configuration-management/) — Controlling requirements as configuration items
+- [Requirements Elicitation](/best_practice/requirements_elicitation) — Detailed techniques for gathering requirements
+- [Planning and Estimating](/best_practice/planning_estimating) — Using analysis outputs to inform estimation
+- [Document Management](/best_practice/document_management) — Managing BA deliverables and documentation
+- [Configuration Management](/best_practice/configuration_management) — Controlling requirements as configuration items

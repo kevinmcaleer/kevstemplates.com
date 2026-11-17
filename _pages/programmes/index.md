@@ -8,15 +8,6 @@ last_updated: 2026-01-13
 ---
 # Programme Toolkit
 
-{% include programme_toolkit.html %}
----
+Guidance and templates for running a programme: setting up governance and assurance, defining the blueprint, managing stakeholders, and keeping knowledge and information under control as projects come and go. Pick a tool below.
 
-- [Programme Lifecycle](/programmes/programme_lifecycle) - Programme stages and tranches
-- [Programme Governance](/programmes/programme_governance) - Governance framework and controls
-- [Programme Assurance](/programmes/programme_assurance) - Assurance activities and reviews
-- [Programme Healthcheck](/programmes/programme_healthcheck) - Health assessment tool
-- [Blueprint](/programmes/blueprint) - Future state definition and design
-- [Stakeholder Management](/programmes/stakeholder_management) - Stakeholder engagement and communications
-- [Knowledge Management](/programmes/knowledge_management) - Capturing and sharing knowledge
-- [Information Management](/programmes/information_management) - Information management standards
-- [Behavioural Change Toolkit](/behavioural-change/) - 46 tools for diagnosing and landing behaviour change
+{% include programme_toolkit.html %}

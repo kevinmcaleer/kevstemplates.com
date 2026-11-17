@@ -1,0 +1,68 @@
+{%- assign download_files = site.static_files | where_exp: "f", "f.path contains '/downloads/'" | map: "name" -%}
+<section class="home-section">
+<h2>Start here</h2>
+<div class="row">
+<div class="col-12 col-sm-6 col-lg-3 mb-3">
+<a class="card h-100 home-card" href="/projects/lifecycle">
+<div class="card-body teal-100">
+<h5 class="card-title"><i class="fas fa-tasks mr-2"></i>Running a project</h5>
+<p class="card-text">Follow the lifecycle from mandate to closure, with a template for each stage.</p>
+</div>
+</a>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 mb-3">
+<a class="card h-100 home-card" href="/programmes">
+<div class="card-body royal-blue-100">
+<h5 class="card-title"><i class="fas fa-layer-group mr-2"></i>Running a programme</h5>
+<p class="card-text">Governance, blueprint, stakeholders and knowledge transfer across projects.</p>
+</div>
+</a>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 mb-3">
+<a class="card h-100 home-card" href="/portfolio">
+<div class="card-body purple-100">
+<h5 class="card-title"><i class="fas fa-th mr-2"></i>Running a PMO or portfolio</h5>
+<p class="card-text">Demand, prioritisation, resource capacity, reporting and portfolio health.</p>
+</div>
+</a>
+</div>
+<div class="col-12 col-sm-6 col-lg-3 mb-3">
+<a class="card h-100 home-card" href="/getting-started">
+<div class="card-body stone-700">
+<h5 class="card-title"><i class="fas fa-seedling mr-2"></i>New to project management</h5>
+<p class="card-text">The basics, a glossary, methodologies and certifications to get you going.</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+
+<section class="home-section">
+<h2>Popular downloads</h2>
+<div class="row">
+{%- for file in site.data.featured_downloads -%}
+{%- if download_files contains file -%}
+{%- for p in site.pages -%}
+{%- for d in p.downloads -%}
+{%- if d.file == file %}
+<div class="col-12 col-sm-6 col-lg-3 mb-3">
+{% include download_card.html page=p download=d %}
+</div>
+{%- endif -%}
+{%- endfor -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor %}
+</div>
+<p><a href="/templates" class="btn btn-blue">Browse all templates <i class="fas fa-arrow-right ml-1"></i></a></p>
+</section>
+
+<section class="home-section">
+<h2>Recently updated</h2>
+{%- assign dated = site.pages | where_exp: "p", "p.last_updated" | sort: "last_updated" | reverse %}
+<ul class="list-unstyled row home-recent">
+{%- for p in dated limit: 6 %}
+<li class="col-12 col-md-6 mb-2"><a href="{{ p.url }}">{{ p.name }}</a> <span class="text-muted small">{{ p.last_updated | date: "%-d %B %Y" }}</span>{% if p.description %}<br><span class="text-muted small">{{ p.description | truncate: 110 }}</span>{% endif %}</li>
+{%- endfor %}
+</ul>
+</section>

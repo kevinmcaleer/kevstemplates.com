@@ -2,42 +2,32 @@
 layout: default
 title: Themes
 name: Themes
-description: Browse all content by management theme
+description: Browse guides and templates by management theme, such as governance, planning, stakeholder engagement and control.
 permalink: /themes/
 ---
 
 # Themes
 
-Browse all content organised by management theme.
+Browse guides and templates by management theme. Open a theme to see its pages.
 
 {% assign theme_array = '' | split: ',' %}
-{% for page in site.pages %}
-  {% for theme in page.themes %}
-    {% assign theme_array = theme_array | push: theme %}
-  {% endfor %}
-{% endfor %}
-
+{% for page in site.pages %}{% for theme in page.themes %}{% assign t = theme | downcase | strip %}{% assign theme_array = theme_array | push: t %}{% endfor %}{% endfor %}
 {% assign unique_themes = theme_array | uniq | sort_natural %}
 
-<div class="mb-4">
-  <strong>Quick Links:</strong>
-  {% for theme in unique_themes %}
-    <a href="#{{ theme | slugify }}" class="badge bg-primary text-decoration-none me-1 mb-1">{{ theme }}</a>
-  {% endfor %}
-</div>
-
----
-
-{% for theme in unique_themes %}
-<h2 id="{{ theme | slugify }}">{{ theme | capitalize }}</h2>
-<ul class="list-unstyled">
-{% for page in site.pages %}
-  {% if page.themes contains theme %}
-    <li class="mb-2">
-      <a href="{{ page.url }}">{{ page.name | default: page.title }}</a>
-      {% if page.description %}<br><small class="text-muted">{{ page.description | truncate: 100 }}</small>{% endif %}
-    </li>
-  {% endif %}
-{% endfor %}
+<div class="theme-list">
+{%- for theme in unique_themes -%}
+{%- assign matches = "" | split: "" -%}
+{%- for p in site.pages -%}
+{%- assign p_themes = p.themes | join: "|" | downcase | split: "|" -%}
+{%- if p_themes contains theme -%}{%- assign matches = matches | push: p -%}{%- endif -%}
+{%- endfor %}
+<details class="theme-group" id="{{ theme | slugify }}">
+<summary><span class="theme-name">{{ theme | capitalize }}</span> <span class="badge badge-light">{{ matches.size }}</span></summary>
+<ul class="list-unstyled mt-2">
+{%- for p in matches %}
+<li class="mb-2"><a href="{{ p.url }}">{{ p.name | default: p.title }}</a>{% if p.description %}<br><small class="text-muted">{{ p.description | truncate: 100 }}</small>{% endif %}</li>
+{%- endfor %}
 </ul>
-{% endfor %}
+</details>
+{%- endfor %}
+</div>

@@ -145,6 +145,6 @@ Use a RACI matrix to link OBS and WBS:
 ## Related Resources
 
 - [Resource & Cost Modelling](/projects/resource_and_cost_modelling) - Cost planning
-- [Project Team](/projects/project_team) - Team structure
+- [Project Team](/projects/project_resources_obs) - Team structure
 - [Deliverables / WBS / PBS](/projects/deliverables_wbs_pbs) - Work breakdown
 

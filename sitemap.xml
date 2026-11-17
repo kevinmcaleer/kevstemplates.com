@@ -51,15 +51,4 @@ layout: null
   {% endif %}
   {% endfor %}
 
-  <!-- Templates collection -->
-  {% for template in site.templates %}
-  <url>
-    <loc>https://kevstemplates.com{{ template.url | remove: '.html' }}</loc>
-    {% if template.date %}
-    <lastmod>{{ template.date | date: '%Y-%m-%d' }}</lastmod>
-    {% endif %}
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  {% endfor %}
 </urlset>

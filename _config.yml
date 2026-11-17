@@ -58,9 +58,6 @@ collections:
   pages:
     output: true
     permalink: /:path
-  templates:
-    output: true
-    permalink: /:path
   behavioural:
     output: true
 

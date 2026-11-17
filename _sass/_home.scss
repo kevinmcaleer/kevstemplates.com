@@ -38,3 +38,55 @@ a.home-card {
     letter-spacing: 0.04em;
   }
 }
+
+// Project toolkit lifecycle stage cards
+.stage-cards {
+  .stage-card-header {
+    background-color: $clr-teal-100;
+    font-weight: 600;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .stage-number {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 50%;
+    background: white;
+    color: $clr-teal-100;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-right: 0.25rem;
+  }
+}
+
+// Collapsible stages in the project sidebar
+.project-sidebar-nav {
+  details.nav-stage > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::after {
+      content: "+";
+      font-weight: 400;
+      margin-left: 0.25rem;
+    }
+  }
+  details.nav-stage[open] > summary::after {
+    content: "\2212";
+  }
+  .nav-count {
+    margin-left: auto;
+    margin-right: 0.25rem;
+    font-weight: 400;
+    color: #888;
+  }
+}

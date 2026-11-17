@@ -1,17 +1,26 @@
-- name: Home
-  link: /
+# Top navigation. Items with `children` render as a dropdown.
 - name: Projects
   link: /projects
 - name: Programmes
   link: /programmes
 - name: Portfolio
   link: /portfolio
-- name: Methodologies
-  link: /methodologies
-- name: Risk Management
-  link: /risk-management
-- name: Planning
-  link: /planning
+- name: Guides
+  children:
+    - name: Getting Started
+      link: /getting-started
+    - name: Methodologies
+      link: /methodologies
+    - name: Risk Management
+      link: /risk-management
+    - name: Planning & Scheduling
+      link: /planning
+    - name: Best Practice
+      link: /best_practice
+    - name: Behavioural Change
+      link: /behavioural-change/
+    - name: Glossary
+      link: /glossary
 - name: Templates
   link: /templates
 - name: Selector

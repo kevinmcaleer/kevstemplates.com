@@ -90,3 +90,34 @@ a.home-card {
     color: #888;
   }
 }
+
+// Top navigation dropdown and footer links
+header .dropdown-menu {
+  a.dropdown-item {
+    color: #212529;
+    &:hover {
+      color: white;
+      background-color: $clr-orange;
+      text-shadow: none;
+    }
+  }
+}
+
+footer .footer-links a {
+  color: white;
+  margin-right: 1.25rem;
+  text-decoration: none;
+  &:hover {
+    color: $clr-orange;
+  }
+}
+
+// Open the dropdown on hover or keyboard focus too, so it works before
+// (or without) Bootstrap's JavaScript
+@media (min-width: 576px) {
+  header .dropdown:hover > .dropdown-menu,
+  header .dropdown:focus-within > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}

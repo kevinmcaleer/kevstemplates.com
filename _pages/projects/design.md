@@ -6,7 +6,10 @@ process: delivery
 description: Creating the detailed design for the solution based on requirements.
 tags: [Design, Architecture, Solution, Delivery]
 themes: [Delivery, Technical]
-last_updated: 2026-01-13
+last_updated: 2026-11-17
+redirect_from:
+  - /projects/detail_stage
+  - /projects/detail_stage.html
 ---
 
 # Design
@@ -141,10 +144,54 @@ Before proceeding to build, validate design through:
 
 ---
 
+## Detail Stage
+
+On larger projects, detailed design happens in a separate detail stage between planning and build. It elaborates requirements and designs until they are ready to build.
+
+### Purpose
+
+The Detail Stage bridges the gap between initial planning and delivery by:
+- Elaborating requirements to sufficient detail
+- Creating detailed designs and specifications
+- Confirming technical feasibility
+- Refining estimates and plans
+- Preparing for build/implementation
+
+
+### Key Activities
+
+| Activity | Description |
+|----------|-------------|
+| **Requirements elaboration** | Breaking down high-level requirements into detailed specs |
+| **Solution design** | Creating detailed technical and business designs |
+| **Interface definition** | Specifying integration points and data flows |
+| **Process design** | Documenting detailed business processes |
+| **Test planning** | Developing detailed test cases and scripts |
+{:class="table table-single table-narrow"}
+
+
+### Inputs
+
+- Approved business case
+- High-level requirements
+- Solution architecture
+- Project plan
+
+### Outputs
+
+- Detailed requirements specification
+- Detailed design documents
+- Updated estimates
+- Build-ready specifications
+
+---
+
+---
+
 ## Related Resources
 
 - [Requirements](/projects/requirements) - Requirements to design against
-- [Define Blueprint](/projects/define_blueprint) - Solution blueprint
+- [Programme Blueprint](/programmes/blueprint) - Solution blueprint
 - [Test Approach](/projects/test_approach) - Testing the design
 - [Build / Procure](/projects/build_procure) - Building the solution
 

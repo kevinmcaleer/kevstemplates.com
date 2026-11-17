@@ -6,6 +6,9 @@ description: Techniques for gathering, documenting, and validating project requi
 tags: [Requirements, Elicitation, Stakeholders, Best Practice]
 color: stone-500
 last_updated: 2026-03-19
+redirect_from:
+  - /projects/requirements_capture
+  - /projects/requirements_capture.html
 ---
 
 # Table of Contents

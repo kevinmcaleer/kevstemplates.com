@@ -6,7 +6,10 @@ process: delivery
 description: Transitioning the solution from project delivery into live service operation.
 tags: [Transition, Service, Handover, Operations]
 themes: [Delivery, Operations]
-last_updated: 2026-01-13
+last_updated: 2026-11-17
+redirect_from:
+  - /projects/support_model
+  - /projects/support_model.html
 ---
 
 # Service Transition
@@ -169,11 +172,59 @@ flowchart LR
 
 ---
 
+## Support Model
+
+The support model defines how the delivered solution will be supported in live operation: team structure, processes and service levels. Agree it early in delivery so the support teams can be recruited, trained and ready before go-live.
+
+### Purpose
+
+Planning the support model ensures:
+- Smooth transition from project to operations
+- Clear ownership and accountability
+- Defined service levels
+- Appropriate skills and resources
+- Sustainable ongoing support
+
+
+### Key Components
+
+| Component | Description |
+|-----------|-------------|
+| **Support tiers** | L1, L2, L3 support structure and escalation |
+| **Service levels** | Response times, resolution targets, availability |
+| **Team structure** | Roles, responsibilities, and sizing |
+| **Processes** | Incident, problem, change management |
+| **Tools** | Service desk, monitoring, knowledge base |
+| **Knowledge transfer** | Training and documentation for support teams |
+{:class="table table-single table-narrow"}
+
+
+### Support Tiers
+
+| Tier | Responsibility | Typical Issues |
+|------|----------------|----------------|
+| **L1 - Service Desk** | First contact, triage, known issues | Password resets, FAQs, logging tickets |
+| **L2 - Application Support** | Technical investigation, fixes | Configuration, data issues, workarounds |
+| **L3 - Development/Vendor** | Complex issues, code changes | Bugs, enhancements, integrations |
+{:class="table table-single table-narrow"}
+
+
+### Considerations
+
+- Volume of expected support requests
+- Business criticality and required availability
+- In-house vs outsourced support
+- On-call and out-of-hours requirements
+- Handover and training timeline
+
+---
+
+---
+
 ## Related Resources
 
-- [Support Model](/projects/support_model) - Support structure
 - [Knowledge Transfer](/programmes/knowledge_transfer) - KT plan, 14 point agenda and handover checklist
 - [Technical Readiness](/projects/technical_readiness) - Technical preparation
 - [Early Life Support](/projects/early_life_support) - Post go-live support
-- [Implementation Approach](/projects/implementation_approach) - Go-live planning
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Go-live planning
 

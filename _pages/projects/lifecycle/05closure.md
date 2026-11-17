@@ -37,7 +37,7 @@ flowchart LR
 | Activity | Templates and guides |
 |----------|----------------------|
 | Confirm acceptance of the products | [Closure Meeting](/projects/closure_meeting) |
-| Hand over to operations and support | [Handover Document](/projects/handover_document), [Early Life Support](/projects/early_life_support), [Support Model](/projects/support_model) |
+| Hand over to operations and support | [Handover Document](/projects/handover_document), [Early Life Support](/projects/early_life_support), [Support Model](/projects/service_transition#support-model) |
 | Evaluate the project and capture lessons | [End of Project Report](/projects/end_of_project_report), [Project Closure Report](/projects/project_closure_report), [Lessons Learned](/projects/lessons_learned) |
 | Plan the post-project review of benefits | [Benefits Review](/projects/benefits_review), [Post Implementation Review](/projects/post_implementation_review) |
 | Release people and close the books | [Project Resources / OBS](/projects/project_resources_obs), [Financial Forecasting](/projects/financial_forecasting) |

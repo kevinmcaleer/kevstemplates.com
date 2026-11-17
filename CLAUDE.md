@@ -183,6 +183,18 @@ Colour classes available (from `_sass/_colors.scss`):
 1. Place the file (DOCX, XLSX, PPTX) in `downloads/`
 2. Reference in the page's front matter under `downloads:`
 
+### Merging or Moving Pages
+
+The site uses `jekyll-redirect-from`. When a page is merged into another or moved, delete the old file and add its old URL to the surviving page's front matter, with and without `.html`, so bookmarks and search results still work:
+
+```yaml
+redirect_from:
+  - /projects/old_page
+  - /projects/old_page.html
+```
+
+Then repoint internal links to the new page and run the link checker.
+
 ### New Navigation Item
 
 Edit `_data/navigation.yml` for top nav or `_data/lifecycle.yml` for project lifecycle.

@@ -13,6 +13,9 @@ downloads:
    description: Template for assessing current vs future capabilities
    file: capability_assessment.xlsx
 last_updated: 2026-01-13
+redirect_from:
+  - /projects/define_blueprint
+  - /projects/define_blueprint.html
 ---
 
 # Programme Blueprint

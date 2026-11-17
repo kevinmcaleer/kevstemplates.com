@@ -210,6 +210,6 @@ Before go-live, confirm:
 
 - [Test Approach](/projects/test_approach) - Testing strategy
 - [Build / Procure](/projects/build_procure) - Solution construction
-- [Implementation Approach](/projects/implementation_approach) - Go-live planning
-- [Support Model](/projects/support_model) - Support structure
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Go-live planning
+- [Support Model](/projects/service_transition#support-model) - Support structure
 

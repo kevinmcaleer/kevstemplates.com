@@ -186,5 +186,5 @@ flowchart LR
 - [Training Needs](/projects/training_needs) - Needs analysis
 - [Training Plan](/projects/training_plan) - Training planning
 - [Business Change Management](/projects/business_change_management) - Change adoption
-- [Implementation Approach](/projects/implementation_approach) - Go-live planning
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Go-live planning
 

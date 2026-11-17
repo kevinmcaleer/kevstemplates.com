@@ -347,7 +347,7 @@ Start with customers and work backwards:
 
 ## Related Resources
 
-- [Business Analysis](/projects/business_analysis) - Analysis techniques
+- [Business Analysis](/best_practice/business_analysis) - Analysis techniques
 - [Requirements](/projects/requirements) - Requirements gathering
 - [Identify Stakeholders](/projects/identify_stakeholders) - Stakeholder identification
 - [Workshop Planner](/projects/workshop_planner) - Workshop facilitation

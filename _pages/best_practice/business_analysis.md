@@ -6,6 +6,9 @@ description: Business analysis techniques and frameworks for understanding busin
 tags: [Business Analysis, Requirements, Solutions, Best Practice]
 color: stone-400
 last_updated: 2026-03-19
+redirect_from:
+  - /projects/business_analysis
+  - /projects/business_analysis.html
 ---
 
 # Table of Contents

@@ -37,11 +37,11 @@ flowchart LR
 
 | Activity | Templates and guides |
 |----------|----------------------|
-| Capture and agree requirements | [Requirements](/projects/requirements), [Business Requirements](/projects/business_requirements), [Service Requirements](/projects/service_requirements) |
+| Capture and agree requirements | [Requirements](/projects/requirements), [Business Requirements](/projects/requirements#business-requirements), [Service Requirements](/projects/requirements#service-requirements) |
 | Define the products and their quality criteria | [Product Description](/projects/product_description), [Deliverables / WBS / PBS](/projects/deliverables_wbs_pbs) |
-| Map processes and design the solution | [SIPOC Process Worksheet](/projects/sipoc), [Design](/projects/design), [Define Blueprint](/projects/define_blueprint) |
+| Map processes and design the solution | [SIPOC Process Worksheet](/projects/sipoc), [Design](/projects/design), [Programme Blueprint](/programmes/blueprint) |
 | Estimate, schedule and cost the work | [Stage Plan](/projects/stage_plan), [Financial Planning](/projects/financial_planning), [Resource & Cost Modelling](/projects/resource_and_cost_modelling) |
-| Plan testing, training and implementation | [Test Approach](/projects/test_approach), [Training Plan](/projects/training_plan), [Implementation Approach](/projects/implementation_approach) |
+| Plan testing, training and implementation | [Test Approach](/projects/test_approach), [Training Plan](/projects/training_plan), [Implementation Approach](/projects/delivery_approach#implementation-approach) |
 | Run planning workshops | [Workshop Planner](/projects/workshop_planner) |
 {:class="table table-single table-narrow"}
 

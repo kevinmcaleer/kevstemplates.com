@@ -184,5 +184,5 @@ flowchart LR
 - [Design](/projects/design) - Solution design
 - [Test Approach](/projects/test_approach) - Testing strategy
 - [Technical Readiness](/projects/technical_readiness) - Technical preparation
-- [Implementation Approach](/projects/implementation_approach) - Deployment planning
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Deployment planning
 

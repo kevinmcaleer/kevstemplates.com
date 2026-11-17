@@ -162,7 +162,7 @@ Build a network of change champions:
 
 ## Related Resources
 
-- [Implementation Approach](/projects/implementation_approach) - Transition planning
+- [Implementation Approach](/projects/delivery_approach#implementation-approach) - Transition planning
 - [Identify Stakeholders](/projects/identify_stakeholders) - Stakeholder management
 - [Comms Strategy](/projects/comms_strategy) - Communication planning
 

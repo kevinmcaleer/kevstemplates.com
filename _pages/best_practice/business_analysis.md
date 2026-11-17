@@ -242,7 +242,7 @@ Then [expected outcome].
 
 ## Related Resources
 
-- [Requirements Elicitation](/best-practice/requirements-elicitation/) — Detailed techniques for gathering requirements
-- [Planning and Estimating](/best-practice/planning-and-estimating/) — Using analysis outputs to inform estimation
-- [Document Management](/best-practice/document-management/) — Managing BA deliverables and documentation
-- [Configuration Management](/best-practice/configuration-management/) — Controlling requirements as configuration items
+- [Requirements Elicitation](/best_practice/requirements_elicitation) — Detailed techniques for gathering requirements
+- [Planning and Estimating](/best_practice/planning_estimating) — Using analysis outputs to inform estimation
+- [Document Management](/best_practice/document_management) — Managing BA deliverables and documentation
+- [Configuration Management](/best_practice/configuration_management) — Controlling requirements as configuration items

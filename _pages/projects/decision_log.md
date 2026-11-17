@@ -241,7 +241,7 @@ The Decision Log relates to:
 
 ## Related Resources
 
-- [Project Governance](/projects/project_governance) - Governance framework
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
 - [Project Change Control](/projects/project_change_control) - Change management
 - [Meeting Minutes](/projects/meeting_minutes) - Recording meeting decisions
 - [Action Tracker](/projects/action_tracker) - Tracking resulting actions

@@ -13,4 +13,4 @@ color: teal-100
 {% include delivery.html %}
 ---
 
-In this stage, the project starts to execute the plan. The [Business Case](business_case) is
+In this stage, the project starts to execute the plan. The [Business Case](/projects/business_case) is

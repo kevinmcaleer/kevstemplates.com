@@ -17,7 +17,7 @@ last_updated: 2026-03-19
 
 Effective document management underpins every aspect of project delivery. Without clear standards for creating, storing, naming, versioning, and retiring documents, teams waste time searching for information, work from outdated versions, and lose critical knowledge when people move on.
 
-This guide sets out the principles and practical standards that project teams should adopt from day one. It complements the more detailed guidance on [Version Management](/best-practice/version-management/) and [Configuration Management](/best-practice/configuration-management/).
+This guide sets out the principles and practical standards that project teams should adopt from day one. It complements the more detailed guidance on [Version Management](/best_practice/version_management) and [Configuration Management](/best_practice/configuration_management).
 
 ## Document Management Principles
 
@@ -95,7 +95,7 @@ A consistent naming convention eliminates ambiguity about what a document contai
 
 ## Version Control
 
-Version control ensures that everyone works from the correct version and that changes are traceable. See the detailed [Version Management](/best-practice/version-management/) guide for full coverage.
+Version control ensures that everyone works from the correct version and that changes are traceable. See the detailed [Version Management](/best_practice/version_management) guide for full coverage.
 
 **Key rules:**
 - Draft documents use versions below 1.0 (e.g. v0.1, v0.2)
@@ -237,7 +237,7 @@ High-quality documents share common characteristics:
 
 ## Related Resources
 
-- [Version Management](/best-practice/version-management/) — Detailed guidance on version numbering and control
-- [Configuration Management](/best-practice/configuration-management/) — Managing configuration items across the project
-- [Requirements Elicitation](/best-practice/requirements-elicitation/) — Documenting and managing requirements
-- [Planning and Estimating](/best-practice/planning-and-estimating/) — Planning artefacts and their management
+- [Version Management](/best_practice/version_management) — Detailed guidance on version numbering and control
+- [Configuration Management](/best_practice/configuration_management) — Managing configuration items across the project
+- [Requirements Elicitation](/best_practice/requirements_elicitation) — Documenting and managing requirements
+- [Planning and Estimating](/best_practice/planning_estimating) — Planning artefacts and their management

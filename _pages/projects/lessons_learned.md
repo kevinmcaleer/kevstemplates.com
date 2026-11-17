@@ -587,8 +587,7 @@ flowchart LR
 
 ## Related Resources
 
-- [Project Closure](/projects/project_closure) - Closure activities
-- [End Project Report](/projects/end_project_report) - Final reporting
-- [Continuous Service Improvement](/projects/continuous_service_improvement) - Ongoing improvement
+- [Project Closure](/projects/lifecycle/05closure) - Closure activities
+- [End Project Report](/projects/end_of_project_report) - Final reporting
 - [Knowledge Management](/programmes/knowledge_management) - Wider knowledge management approach
 

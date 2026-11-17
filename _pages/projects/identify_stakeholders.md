@@ -417,5 +417,5 @@ flowchart TD
 - [Communication Plan](/projects/communication_plan) - Plan stakeholder communications
 - [Comms Strategy](/projects/comms_strategy) - Communications strategy overview
 - [Soft Skills](/career/soft-skills) - Communication and influence skills
-- [Project Governance](/projects/project_governance) - Governance framework
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
 

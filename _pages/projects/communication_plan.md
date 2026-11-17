@@ -370,5 +370,5 @@ flowchart LR
 - [Identify Stakeholders](/projects/identify_stakeholders) - Stakeholder identification
 - [Stakeholder Register](/projects/stakeholder_register) - Stakeholder tracking
 - [Project Reporting](/projects/project_reporting) - Status reporting
-- [Project Governance](/projects/project_governance) - Governance framework
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
 

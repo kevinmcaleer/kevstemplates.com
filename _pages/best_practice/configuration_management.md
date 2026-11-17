@@ -237,7 +237,7 @@ Configuration management and change control are closely linked. Change control g
 
 ## Related Resources
 
-- [Version Management](/best-practice/version-management/) — Document-level version control practices
-- [Document Management](/best-practice/document-management/) — Broader document management framework
-- [Business Analysis](/best-practice/business-analysis/) — Managing requirements as configuration items
-- [Requirements Elicitation](/best-practice/requirements-elicitation/) — Gathering and controlling requirements baselines
+- [Version Management](/best_practice/version_management) — Document-level version control practices
+- [Document Management](/best_practice/document_management) — Broader document management framework
+- [Business Analysis](/best_practice/business_analysis) — Managing requirements as configuration items
+- [Requirements Elicitation](/best_practice/requirements_elicitation) — Gathering and controlling requirements baselines

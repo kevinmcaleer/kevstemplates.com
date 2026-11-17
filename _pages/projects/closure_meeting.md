@@ -208,5 +208,5 @@ flowchart LR
 - [Project Closure Report](/projects/project_closure_report) - Closure documentation
 - [Lessons Learned](/projects/lessons_learned) - Capturing insights
 - [Benefits Review](/projects/benefits_review) - Benefits assessment
-- [Project Board](/projects/project_board) - Governance forum
+- [Project Board](/projects/project_roles) - Governance forum
 

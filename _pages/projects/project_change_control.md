@@ -183,8 +183,7 @@ Track all changes in a central register:
 
 ## Related Resources
 
-- [Scope Management](/projects/scope) - Managing project scope
-- [Project Governance](/projects/project_governance) - Governance framework
-- [Risk Management](/projects/risk_management) - Managing project risks
-- [Project Board](/projects/project_board) - Decision-making forum
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
+- [Risk Management](/risk-management) - Managing project risks
+- [Project Board](/projects/project_roles) - Decision-making forum
 

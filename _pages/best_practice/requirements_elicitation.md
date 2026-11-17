@@ -258,8 +258,8 @@ Requirements traceability links each requirement forward to design, build, and t
 
 ## Related Resources
 
-- [Business Analysis](/best-practice/business-analysis/) — Broader BA techniques and frameworks that support elicitation
-- [Planning and Estimating](/best-practice/planning-and-estimating/) — Using requirements to inform project estimates
-- [Document Management](/best-practice/document-management/) — Managing requirements documents and artefacts
-- [Configuration Management](/best-practice/configuration-management/) — Controlling requirements baselines through configuration management
-- [Version Management](/best-practice/version-management/) — Versioning requirements documents as they evolve
+- [Business Analysis](/best_practice/business_analysis) — Broader BA techniques and frameworks that support elicitation
+- [Planning and Estimating](/best_practice/planning_estimating) — Using requirements to inform project estimates
+- [Document Management](/best_practice/document_management) — Managing requirements documents and artefacts
+- [Configuration Management](/best_practice/configuration_management) — Controlling requirements baselines through configuration management
+- [Version Management](/best_practice/version_management) — Versioning requirements documents as they evolve

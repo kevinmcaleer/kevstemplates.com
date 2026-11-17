@@ -34,6 +34,17 @@ bundle install
 bundle exec jekyll serve --watch --livereload
 ```
 
+## Checking Links
+
+After building, check for broken internal links:
+
+```bash
+bundle exec jekyll build
+python3 scripts/check_links.py _site
+```
+
+Link to pages without a trailing slash (`/planning/wbs`, not `/planning/wbs/`), because most pages are output as `.html` files. Do not link to pages that have not been written yet.
+
 ## Content Guidelines
 
 ### Diagrams and Workflows

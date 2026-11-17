@@ -17,7 +17,7 @@ downloads:
    file: project_mandate.docx
 links:
  - name: Startup
-   link: lifecycle/startup
+   link: /projects/lifecycle/01startup
  - name: Project Toolkit
    link: index
 ---

@@ -253,6 +253,6 @@ Track both **current** and **desired** engagement levels to identify gaps.
 
 - [Identify Stakeholders](/projects/identify_stakeholders) - Stakeholder identification process
 - [Communication Plan](/projects/communication_plan) - Communication planning
-- [Project Governance](/projects/project_governance) - Governance structure
-- [Project Board](/projects/project_board) - Board composition
+- [Project Organisation](/best_practice/org_structure) - Governance structure and roles
+- [Project Board](/projects/project_roles) - Board composition
 

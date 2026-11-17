@@ -14,10 +14,11 @@ layout: default
     <div class="card bg-light mb-3" style="max-width: 18rem;">
       <div class="card-header">Downloads</div>
       <div class="card-body">
-        {% for file in page.downloads %}
+        {% assign download_files = site.static_files | where_exp: "f", "f.path contains '/downloads/'" | map: "name" %}
+        {% for file in page.downloads %}{% if download_files contains file.file %}
         <a href="/downloads/{{file.file}}"><h5 class="card-title black"><i class="fa-solid fa-file-arrow-down"></i> {{file.name}}</h5></a>
         <p class="card-text">{{file.description}}</p>
-        {% endfor %}
+        {% endif %}{% endfor %}
       </div>
     </div>
   </div>

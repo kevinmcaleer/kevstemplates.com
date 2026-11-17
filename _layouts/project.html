@@ -18,7 +18,7 @@ layout: default
         <p class="text-muted">{{ page.description }}</p>
       </div>
     </div>
-    {{ content }}
+        {% include content_with_downloads.html %}
     {% include last_updated.html %}
   </div>
 

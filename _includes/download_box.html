@@ -1,0 +1,26 @@
+{%- comment -%}
+Download box shown at the top of a page. Lists only the page's front-matter
+downloads whose file exists in downloads/.
+{%- endcomment -%}
+{%- if page.downloads and page.downloads.size > 0 -%}
+{%- assign download_files = site.static_files | where_exp: "f", "f.path contains '/downloads/'" | map: "name" -%}
+{%- assign available = "" | split: "" -%}
+{%- for d in page.downloads -%}{%- if download_files contains d.file -%}{%- assign available = available | push: d -%}{%- endif -%}{%- endfor -%}
+{%- if available.size > 0 %}
+<aside class="download-box mb-4" aria-label="Downloads">
+<p class="download-box-title mb-2"><i class="fas fa-download mr-1"></i>Download {% if available.size == 1 %}the template{% else %}the templates{% endif %}</p>
+<ul class="list-unstyled mb-0">
+{%- for d in available -%}
+{%- assign ext = d.file | split: "." | last | downcase -%}
+{%- case ext -%}
+{%- when "docx" -%}{%- assign fmt = "Word" -%}
+{%- when "xlsx" -%}{%- assign fmt = "Excel" -%}
+{%- when "pptx" -%}{%- assign fmt = "PowerPoint" -%}
+{%- else -%}{%- assign fmt = ext | upcase -%}
+{%- endcase %}
+<li class="mb-2"><a href="/downloads/{{ d.file }}" class="btn btn-orange btn-sm mr-2" download><i class="fas fa-download mr-1"></i>{{ d.name }}</a><span class="text-muted small">{{ fmt }}{% if d.description and d.description != d.name %} · {{ d.description }}{% endif %}</span></li>
+{%- endfor %}
+</ul>
+</aside>
+{%- endif -%}
+{%- endif -%}

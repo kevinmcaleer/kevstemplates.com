@@ -12,6 +12,7 @@
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | truncate: 160 }}{% else %}{{ site.description | strip_html | truncate: 160 }}{% endif %}">
   <meta name="keywords" content="project management, templates, PM toolkit, {% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
   <meta name="author" content="Kevin McAleer">
+  {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
 
   <!-- Open Graph / Social Media -->
   <meta property="og:title" content="{% if page.name %}{{ page.name }} | {% endif %}{{ site.title }}">

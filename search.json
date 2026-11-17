@@ -2,7 +2,7 @@
 layout: null
 ---
 [
-  {% assign pages_list = site.pages | concat: site.templates %}
+  {% assign pages_list = site.pages | concat: site.behavioural %}
   {% for page in pages_list %}
   {% if page.name and page.url %}
   {

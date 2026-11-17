@@ -12,8 +12,8 @@ derivation:
 dependencies:
 acceptance_criteria:
 downloads: 
- - name: Project mandate
-   description: Project Mandate Word Template
+ - name: Project Mandate Template
+   description: Word template for the Project Mandate that triggers project start-up
    file: project_mandate.docx
 links:
  - name: Startup

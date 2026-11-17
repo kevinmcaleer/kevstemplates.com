@@ -1,0 +1,25 @@
+{%- comment -%}
+Renders one download as a card. Parameters: page (the source page), download (its front-matter entry).
+{%- endcomment -%}
+{%- assign ext = include.download.file | split: "." | last | downcase -%}
+{%- case ext -%}
+{%- when "docx" -%}{%- assign icon = "fa-file-word" -%}{%- assign fmt = "Word" -%}
+{%- when "xlsx" -%}{%- assign icon = "fa-file-excel" -%}{%- assign fmt = "Excel" -%}
+{%- when "pptx" -%}{%- assign icon = "fa-file-powerpoint" -%}{%- assign fmt = "PowerPoint" -%}
+{%- when "pdf" -%}{%- assign icon = "fa-file-pdf" -%}{%- assign fmt = "PDF" -%}
+{%- when "zip" -%}{%- assign icon = "fa-file-archive" -%}{%- assign fmt = "Zip" -%}
+{%- else -%}{%- assign icon = "fa-file" -%}{%- assign fmt = ext | upcase -%}
+{%- endcase -%}
+<div class="card h-100 download-card" data-section="{{ include.page.section | default: 'Other' | slugify }}" data-format="{{ ext }}">
+<div class="card-body">
+<p class="download-format text-muted small mb-1"><i class="far {{ icon }} mr-1"></i>{{ fmt }}</p>
+<h5 class="card-title">{{ include.download.name }}</h5>
+{%- if include.download.description and include.download.description != include.download.name %}
+<p class="card-text text-muted small">{{ include.download.description }}</p>
+{%- endif %}
+<p class="card-text small mb-0">From: <a href="{{ include.page.url }}">{{ include.page.name }}</a></p>
+</div>
+<div class="card-footer bg-transparent border-0 pt-0">
+<a href="/downloads/{{ include.download.file }}" class="btn btn-orange btn-sm" download><i class="fas fa-download mr-1"></i>Download</a>
+</div>
+</div>

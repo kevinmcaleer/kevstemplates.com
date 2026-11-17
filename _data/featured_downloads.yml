@@ -1,0 +1,10 @@
+# Downloads shown on the homepage, in order. Each entry is a file in downloads/
+# that is listed under `downloads:` in a page's front matter.
+- project_mandate.docx
+- project_brief.docx
+- project_initiation_document.docx
+- raid_log.xlsx
+- lessons_report_template.docx
+- project_closure_report.docx
+- knowledge_transfer_plan.docx
+- portfolio_healthcheck.xlsx

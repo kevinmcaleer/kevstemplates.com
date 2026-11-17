@@ -8,8 +8,8 @@ tags: [brief, startup]
 themes: [startup]
 purpose: Briefly outline the projects purpose, aims and outputs
 downloads:
- - name: "Project brief.docx"
-   description: Project Brief
+ - name: Project Brief Template
+   description: Word template for the Project Brief, covering background, objectives, scope, outline business case and approach
    file: project_brief.docx
 ---
 

@@ -1,0 +1,40 @@
+// Homepage sections
+.home-section {
+  margin-top: 1.5rem;
+}
+
+a.home-card {
+  color: white;
+  text-decoration: none;
+  border: 0;
+  overflow: hidden;
+  transition: transform 0.1s ease-in-out;
+
+  .card-body {
+    color: white;
+  }
+
+  .card-title {
+    color: white;
+    text-transform: none;
+    font-size: 1.05rem;
+  }
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.download-card {
+  .card-title {
+    text-transform: none;
+    font-size: 1rem;
+  }
+  .download-format {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}

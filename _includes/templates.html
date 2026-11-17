@@ -1,33 +1,28 @@
-<h1>Downloadable Templates</h1>
-<p>Browse all downloadable templates and resources from across the site.</p>
-
+{%- assign download_files = site.static_files | where_exp: "f", "f.path contains '/downloads/'" | map: "name" -%}
+{%- assign section_order = "Project,Programme,Portfolio,Best Practice,Risk Management" | split: "," -%}
+{%- assign with_downloads = site.pages | where_exp: "p", "p.downloads.size > 0" -%}
+{%- assign all_sections = with_downloads | map: "section" | compact | uniq -%}
+{%- for s in all_sections -%}
+{%- unless section_order contains s or s == "Projects" -%}{%- assign section_order = section_order | push: s -%}{%- endunless -%}
+{%- endfor -%}
+{%- for section in section_order -%}
+{%- assign count = 0 -%}
+{%- for p in with_downloads -%}{%- if p.section == section or section == "Project" and p.section == "Projects" -%}{%- for d in p.downloads -%}{%- if download_files contains d.file -%}{%- assign count = count | plus: 1 -%}{%- endif -%}{%- endfor -%}{%- endif -%}{%- endfor -%}
+{%- if count > 0 %}
+<h2 id="{{ section | slugify }}">{{ section }} <span class="text-muted small">({{ count }})</span></h2>
 <div class="row">
-{% assign pages_with_downloads = site.pages | where_exp: "page", "page.downloads.size > 0" | sort: "section" %}
-{% assign current_section = "" %}
-{% for page in pages_with_downloads %}
-  {% if page.section != current_section %}
-    {% assign current_section = page.section %}
-    </div>
-    <div class="row mt-4">
-    <div class="col-12">
-      <h2>{{ current_section }}</h2>
-    </div>
-  {% endif %}
-  {% for download in page.downloads %}
-    <div class="col-12 col-md-6 col-lg-4 mb-3">
-      <div class="card h-100">
-        <div class="card-body">
-          <h5 class="card-title">{{ download.name }}</h5>
-          <p class="card-text text-muted small">{{ download.description }}</p>
-          <p class="card-text small">From: <a href="{{ page.url }}">{{ page.name }}</a></p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <a href="/downloads/{{ download.file }}" class="btn btn-primary btn-sm">
-            <i class="bi bi-download"></i> Download
-          </a>
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-{% endfor %}
+{%- for p in with_downloads -%}
+{%- if p.section == section or section == "Project" and p.section == "Projects" -%}
+{%- for d in p.downloads -%}
+{%- if download_files contains d.file %}
+<div class="col-12 col-md-6 col-lg-4 mb-3">
+{% include download_card.html page=p download=d %}
 </div>
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{%- endfor %}
+</div>
+{%- endif -%}
+{%- endfor %}
+<p class="mt-4"><a href="/downloads/behavioural-change-toolkit.zip" class="btn btn-blue" download><i class="fas fa-download mr-1"></i>Behavioural Change Toolkit (zip)</a> The whole toolkit as an Obsidian vault of linked notes. See the <a href="/behavioural-change/">Behavioural Change Toolkit</a>.</p>
